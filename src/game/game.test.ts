@@ -3,6 +3,7 @@ import {
   ROUNDS_PER_GAME,
   currentRound,
   gameReducer,
+  isSameSong,
   initialGameState,
   maxScore,
   startGame,
@@ -31,6 +32,20 @@ describe('startGame', () => {
     if (action.type !== 'start') throw new Error('expected a start action')
     expect(action.tracks).toHaveLength(ROUNDS_PER_GAME)
     expect(new Set(action.tracks.map((t) => t.id)).size).toBe(ROUNDS_PER_GAME)
+  })
+
+  it('never picks two versions of the same song', () => {
+    const versions = [track('1', 'Angie'), track('2', 'Angie - 2015 Remaster'), track('3', 'Mars')]
+    for (let i = 0; i < 20; i++) {
+      const action = startGame(versions)
+      if (action.type !== 'start') throw new Error('expected a start action')
+      expect(action.tracks).toHaveLength(2)
+    }
+  })
+
+  it('treats differently spelled versions of a song as the same song', () => {
+    expect(isSameSong(track('1', 'Racing in the Street'), track('2', 'Racing in the Streets - 2008 Remaster'))).toBe(true)
+    expect(isSameSong(track('1', 'Into The Breach I'), track('2', 'Into The Breach II'))).toBe(false)
   })
 
   it('uses every track when the playlist is shorter than a game', () => {

@@ -8,7 +8,7 @@
  * passes them in the `start` action, so the reducer is deterministic.
  */
 import type { Track } from '../lib/playlist'
-import { isCorrectGuess } from './match'
+import { displayTitle, isCorrectGuess, songKey } from './match'
 import { pickRandom } from './pick'
 import { HINTS, MAX_POINTS, pointsFor } from './scoring'
 
@@ -43,12 +43,29 @@ export type GameAction =
 
 export const initialGameState: GameState = { phase: 'ready', rounds: [], roundIndex: 0, score: 0 }
 
-/** Builds a `start` action with up to 10 random, distinct tracks. */
+/**
+ * Builds a `start` action with up to 10 random tracks. Different versions of
+ * the same song (a remaster and the original, say) never both appear.
+ */
 export function startGame(
   playlistTracks: readonly Track[],
   random: () => number = Math.random,
 ): GameAction {
-  return { type: 'start', tracks: pickRandom(playlistTracks, ROUNDS_PER_GAME, random) }
+  const tracks = pickRandom(playlistTracks, ROUNDS_PER_GAME, random, isSameSong)
+  return { type: 'start', tracks }
+}
+
+/**
+ * Two tracks are the same song if they share a song key, or if either title
+ * would be accepted as a guess for the other ("Racing in the Street" and
+ * "Racing in the Streets - 2008 Remaster").
+ */
+export function isSameSong(a: Track, b: Track): boolean {
+  return (
+    songKey(a.name) === songKey(b.name) ||
+    isCorrectGuess(displayTitle(a.name), b.name) ||
+    isCorrectGuess(displayTitle(b.name), a.name)
+  )
 }
 
 export function currentRound(state: GameState): Round | undefined {

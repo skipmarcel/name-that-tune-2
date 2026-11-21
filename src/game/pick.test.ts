@@ -42,6 +42,15 @@ describe('pickRandom', () => {
     expect(new Set(pickRandom([1, 2, 3], 3, () => 0.999999))).toEqual(new Set([1, 2, 3]))
   })
 
+  it('skips items that duplicate one already picked', () => {
+    const songs = ['Angie', 'Angie (Remaster)', 'Mars', 'Mars (Live)', 'Floe']
+    const sameFirstWord = (a: string, b: string) => a.split(' ')[0] === b.split(' ')[0]
+    for (let seed = 0; seed < 50; seed++) {
+      const picked = pickRandom(songs, 5, seeded(seed), sameFirstWord)
+      expect(picked.map((s) => s.split(' ')[0]).sort()).toEqual(['Angie', 'Floe', 'Mars'])
+    }
+  })
+
   it('gives every item a fair chance of being picked', () => {
     const random = seeded(4)
     const counts = new Array<number>(20).fill(0)

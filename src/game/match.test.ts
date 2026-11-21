@@ -1,4 +1,4 @@
-import { acceptedAnswers, displayTitle, isCorrectGuess, levenshtein, normalize, similarity } from './match'
+import { acceptedAnswers, displayTitle, isCorrectGuess, levenshtein, normalize, similarity, songKey } from './match'
 
 describe('normalize', () => {
   it('ignores case, accents, punctuation and spacing', () => {
@@ -49,6 +49,18 @@ describe('acceptedAnswers', () => {
   })
 })
 
+describe('songKey', () => {
+  it('treats different versions of a song as the same song', () => {
+    expect(songKey('Angie - 2015 Remaster')).toBe(songKey('Angie'))
+    expect(songKey('A Real Hero (feat. Electric Youth)')).toBe(songKey('A Real Hero'))
+    expect(songKey('In My Room - Remastered')).toBe('in my room')
+  })
+
+  it('keeps different songs apart', () => {
+    expect(songKey('Into The Breach I')).not.toBe(songKey('Into The Breach II'))
+  })
+})
+
 describe('isCorrectGuess', () => {
   it.each([
     ['the big ship', 'The Big Ship - 2004 Remaster'],
@@ -63,6 +75,9 @@ describe('isCorrectGuess', () => {
     ['levitating', 'Levitating (feat. DaBaby)'],
     ['mind and body', 'Mind & Body'],
     ['into the breach 1', 'Into The Breach 1'],
+    ["l'ete indien", "L'été indien - Septemberwind"], // subtitle after a dash is optional
+    ["L'été indien - Septemberwind", "L'été indien - Septemberwind"],
+    ['song 2', 'Song 2 - Blur Cover'],
     ['glassworks i opening', 'Glassworks: I. Opening'],
   ])('accepts %j for %j', (guess, title) => {
     expect(isCorrectGuess(guess, title)).toBe(true)

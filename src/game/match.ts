@@ -4,8 +4,8 @@
  * Titles and guesses are normalized (case, accents, punctuation, "&" vs "and")
  * and compared with a typo-tolerant similarity check. Numbers and roman
  * numerals must match exactly, so "Dance II" doesn't count for "Dance I".
- * A guess may leave out version suffixes ("- 2004 Remaster"), featured
- * artists and anything in brackets ("(Prologue)", "[Bonus Track]").
+ * A guess may leave out version suffixes ("- 2004 Remaster"), subtitles after
+ * a dash, featured artists and anything in brackets ("(Prologue)").
  */
 
 /** Minimum similarity (0–1) for a guess to count, after normalization. */
@@ -55,11 +55,25 @@ export function displayTitle(title: string): string {
   return stripVersionInfo(title) || title
 }
 
+/** The part before a " - " subtitle: "L'été indien - Septemberwind" → "L'été indien". */
+function stripSubtitle(title: string): string {
+  return title.split(/\s+[-–—]\s+/)[0]
+}
+
 /** Every normalized form of the title that counts as correct. */
 export function acceptedAnswers(title: string): string[] {
   const base = stripVersionInfo(title)
-  const forms = [title, base, stripBrackets(base)].map(normalize).filter(Boolean)
+  const main = stripSubtitle(base)
+  const forms = [title, base, stripBrackets(base), main, stripBrackets(main)].map(normalize).filter(Boolean)
   return [...new Set(forms)]
+}
+
+/**
+ * Identifies a song regardless of version, so a remaster and the original
+ * count as the same song: "Angie - 2015 Remaster" and "Angie" → "angie".
+ */
+export function songKey(title: string): string {
+  return normalize(stripBrackets(stripSubtitle(stripVersionInfo(title)))) || normalize(title)
 }
 
 /** Classic edit distance (insertions, deletions, substitutions). */

@@ -31,7 +31,8 @@ This is a ground-up rebuild of [name-that-tune](https://github.com/skipmarcel/na
 | Testing   | [Vitest](https://vitest.dev) + [Testing Library](https://testing-library.com) |
 | Linting   | [Oxlint](https://oxc.rs)                                                   |
 | Music API | [Spotify Web API](https://developer.spotify.com/documentation/web-api) + [iFrame API](https://developer.spotify.com/documentation/embeds/references/iframe-api) |
-| Hosting   | [Vercel](https://vercel.com) (static site)                                 |
+| Hosting   | [Vercel](https://vercel.com) (static site + two serverless functions)      |
+| Storage   | [Upstash Redis](https://upstash.com) via Vercel's Redis integration        |
 | CI        | GitHub Actions                                                             |
 
 ## How it works
@@ -41,17 +42,21 @@ This is a ground-up rebuild of [name-that-tune](https://github.com/skipmarcel/na
 ┌───────────────────────┐  sign in (PKCE)        ┌──────────────┐  track IDs   ┌──────────────────────┐
 │ npm run sync-playlist │ ─────────────────────▶ │ React app    │ ───────────▶ │ Hidden Spotify embed │
 │                       │  GET playlist items    │ (browser)    │              │ (iFrame API)         │
-└───────────┬───────────┘  page by page          └──────▲───────┘              └──────────────────────┘
-            │ writes                                    │ bundled at build time
-            ▼                                           │
-   src/data/playlists/*.json ───────────────────────────┘
+└───────────┬───────────┘  page by page          └──┬────▲──────┘              └──────────────────────┘
+            │ writes                    ticket,     │    │ signed ticket,
+            ▼                           guesses     ▼    │ server-computed score
+   src/data/playlists/*.json ──────────▶ ┌──────────────────────┐      ┌───────────────┐
+     (bundled into the app and           │ /api/games           │ ───▶ │ Upstash Redis │
+      read by the API)                   │ /api/leaderboard     │      │ (top scores)  │
+                                         └──────────────────────┘      └───────────────┘
 ```
 
 Some decisions worth calling out:
 
 - **The song list is synced ahead of time.** Spotify only returns a playlist's tracks to its signed-in owner or collaborators, so the game can't read them with app credentials alone. `npm run sync-playlist` has the owner sign in once in the browser (Authorization Code flow with PKCE, so no secret is involved), follows Spotify's pagination to read every track, drops local files, episodes and duplicates, and saves each playlist to `src/data/playlists/<id>.json`. The files are committed, so players never need a Spotify account and the game makes no API calls just to start. The trade-off is that the sync has to be run again after a playlist changes.
 - **Players choose the playlist.** The playlists on offer, and the names players see, are listed in `src/data/playlists.config.json`, so a playlist called "Faves" on Spotify can appear as "Obscure Folk and Rock" in the game.
-- **No secrets in the app.** The original project put the Spotify client secret in the front-end bundle, where anyone could read it. This version needs no secret at all: the sync uses PKCE, which only needs the public client ID, and playback goes through Spotify's embed, which needs no token. The game deploys as a plain static site. (An earlier version served tokens from a serverless function; it was removed once nothing needed it.)
+- **No Spotify secret anywhere.** The original project put the Spotify client secret in the front-end bundle, where anyone could read it. This version doesn't use one: the sync uses PKCE, which only needs the public client ID, and playback goes through Spotify's embed, which needs no token. (An earlier version served Spotify tokens from a serverless function; it was removed once nothing needed it.) The only server secret is the leaderboard's ticket-signing key.
+- **The leaderboard never trusts a score from the browser.** When a game starts, `POST /api/games` picks the 10 tracks on the server and returns them in an HMAC-signed ticket (fetched ahead of time on the home screen, so Start can still begin playback inside the click). When it ends, the browser sends the ticket plus each round's winning guess and hint count. The server checks the signature, re-checks every guess against the real titles with the same matching code the game uses, and stores the score it computed. Tickets are single-use and expire after 3 hours, games faster than 2 seconds a song are rejected, submissions are rate-limited per IP, and names are Unicode-normalized and stripped of invisible characters. Someone could still look answers up mid-game; the goal is that the only way onto the board is to actually name the songs. If the API is unreachable, the game still plays, unranked.
 - **The answer stays hidden.** The track plays through Spotify's embed player, which displays the song title. The player is kept off-screen (and hidden from screen readers) and controlled with the iFrame API, so the game's own UI handles play and pause, and the title and artist are only revealed after you guess. Playback starts from the Start and Next button clicks, because browsers only allow audio to start from a user gesture. Listeners who aren't signed in to Spotify in their browser may only hear a short preview of each track.
 - **Guesses are judged leniently.** A guess is normalized (lowercased, accents and punctuation stripped, "feat.", remaster/live suffixes, subtitles after a dash and bracketed parts optional) and up to two typos are forgiven. Numbers and roman numerals must match, so "Dance II" doesn't count for "Dance I". The rules are checked against every title in the synced playlists.
 - **No song twice in a game.** Different versions of a song ("Angie" and "Angie - 2015 Remaster") count as the same song when picking the 10 tracks.
@@ -88,13 +93,20 @@ Then open http://localhost:5173.
 
 | Variable                | Description                                     |
 | ----------------------- | ----------------------------------------------- |
-| `SPOTIFY_CLIENT_ID`     | Client ID from the Spotify Developer Dashboard  |
+| `SPOTIFY_CLIENT_ID`     | Client ID from the Spotify Developer Dashboard (used only by `npm run sync-playlist`) |
+| `KV_REST_API_URL`, `KV_REST_API_TOKEN` | Upstash Redis credentials, set automatically by Vercel's Redis integration. Optional locally: without them `npm run dev` keeps scores in memory |
+| `LEADERBOARD_SECRET`    | Long random string that signs game tickets (`openssl rand -hex 32`). Required on Vercel; generated per run locally |
 
 `.env` is ignored by git. Never commit real credentials.
 
 ## Project structure
 
 ```
+api/                    Vercel functions: /api/games and /api/leaderboard
+server/
+  leaderboard/            Ticket signing, server-side scoring, name cleanup,
+                          Redis/in-memory storage and the request handlers
+  vite-api-plugin.ts      Serves /api/* during `npm run dev`
 scripts/
   sync-playlist.ts      Signs in to Spotify and saves each playlist's tracks
 src/                    React app
@@ -108,6 +120,8 @@ src/                    React app
     game.ts                 Round-based game state reducer
   lib/playlist.ts         Saved playlist format and Spotify item parsing
   player/                 Spotify iFrame API loader and the useSpotifyPlayer hook
+  leaderboard/            API client and the useLeaderboard hook
+tests/                  End-to-end leaderboard flow: the app against the real API in-process
 ```
 
 ## Scripts
@@ -134,7 +148,7 @@ src/                    React app
 - [x] Lenient guess matching
 - [x] Hint system and scoring
 - [x] 10-round game with an end screen
-- [ ] Saved leaderboard
+- [x] Shared leaderboard with server-side scoring
 - [x] Responsive, accessible UI
 - [ ] Deploy to Vercel
 

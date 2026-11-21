@@ -16,6 +16,7 @@ function TestPlayer({ loadApi }: { loadApi: () => Promise<SpotifyIFrameAPI> }) {
       <button onClick={() => player.playTrack('track2')}>two</button>
       <button onClick={player.pause}>pause</button>
       <button onClick={player.play}>resume</button>
+      <button onClick={player.replay}>replay</button>
     </div>
   )
 }
@@ -79,6 +80,15 @@ describe('useSpotifyPlayer', () => {
     await userEvent.click(screen.getByText('pause'))
     await userEvent.click(screen.getByText('resume'))
     expect(fake.controllers[0].calls).toEqual(['pause', 'resume'])
+  })
+
+  it('restarts the track on replay', async () => {
+    const fake = createFakeIframeApi()
+    render(<TestPlayer loadApi={fake.loadApi} />)
+    await waitFor(() => expect(state()).toMatch(/^ready/))
+    await userEvent.click(screen.getByText('one'))
+    await userEvent.click(screen.getByText('replay'))
+    expect(fake.controllers[0].calls).toEqual(['restart'])
   })
 
   it('does not auto-play on ready after the player paused', async () => {

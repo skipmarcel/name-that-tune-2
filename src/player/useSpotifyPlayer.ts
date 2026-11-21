@@ -24,6 +24,8 @@ export interface SpotifyPlayer {
   playTrack: (trackId: string) => void
   play: () => void
   pause: () => void
+  /** Starts the current track again from the beginning. */
+  replay: () => void
 }
 
 export interface SpotifyPlayerOptions {
@@ -146,5 +148,10 @@ export function useSpotifyPlayer({ loadApi = loadSpotifyIframeApi }: SpotifyPlay
     containerRef.current = element
   }, [])
 
-  return { attachEmbed, status, ...playback, playTrack, play, pause }
+  const replay = useCallback(() => {
+    wantPlayingRef.current = true
+    controllerRef.current?.restart()
+  }, [])
+
+  return { attachEmbed, status, ...playback, playTrack, play, pause, replay }
 }

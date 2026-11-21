@@ -26,9 +26,10 @@ async function renderApp(playlists: PlaylistOption[]) {
 }
 
 describe('App', () => {
-  it('renders the game title', async () => {
+  it('renders the home screen', async () => {
     await renderApp([playlist('a', 'For Coding', manyTracks('a', 3))])
-    expect(screen.getByRole('heading', { name: /song sleuth/i })).toBeInTheDocument()
+    expect(screen.getByRole('heading', { level: 1, name: /name that tune/i })).toBeInTheDocument()
+    expect(screen.getByRole('button', { name: 'Start' })).toBeEnabled()
   })
 
   it('lets the player choose between playlists, with the first selected', async () => {
@@ -50,7 +51,7 @@ describe('App', () => {
   it('shows unsynced playlists as unavailable', async () => {
     await renderApp([playlist('a', 'Empty', []), playlist('b', 'Ready', manyTracks('b', 3))])
     expect(screen.getByRole('radio', { name: /empty/i })).toBeDisabled()
-    expect(screen.getByText('not synced yet')).toBeInTheDocument()
+    expect(screen.getByText('Not synced yet')).toBeInTheDocument()
     expect(screen.getByRole('radio', { name: /ready/i })).toBeChecked()
   })
 
@@ -72,32 +73,38 @@ describe('App', () => {
     expect(controller.options.uri).toBe('spotify:track:t1')
     act(() => controller.emit('ready'))
     expect(controller.calls).toContain('play')
-    expect(screen.getByText('Song 1 of 1 · Score 0')).toBeInTheDocument()
+    expect(screen.getByText(/of 1/)).toHaveTextContent('Song 1 of 1')
+    expect(screen.getByText('Worth 3 points')).toBeInTheDocument()
 
     // A wrong guess keeps the round open.
-    const input = screen.getByLabelText('Name that tune')
+    const input = screen.getByLabelText('Song title')
     await user.type(input, 'Some Candy Talking{Enter}')
     expect(screen.getByText(/not quite/i)).toHaveTextContent('Some Candy Talking')
+    expect(input).toHaveFocus() // the guess box keeps focus after a miss
 
     // Hints: album art, then artist, then title letters.
-    await user.click(screen.getByRole('button', { name: /hint/i }))
-    await user.click(screen.getByRole('button', { name: /hint/i }))
+    await user.click(screen.getByRole('button', { name: 'Hint: album art (−1)' }))
+    expect(screen.getByText('Worth 2 points')).toBeInTheDocument()
+    await user.click(screen.getByRole('button', { name: 'Hint: artist (−1)' }))
     expect(screen.getByText('The Jesus and Mary Chain')).toBeInTheDocument()
-    await user.click(screen.getByRole('button', { name: /hint/i }))
+    await user.click(screen.getByRole('button', { name: 'Hint: title (−1)' }))
+    expect(screen.getByText('Worth 0 points')).toBeInTheDocument()
     expect(screen.getByText('J___ L___ H____')).toBeInTheDocument()
     expect(screen.getByRole('button', { name: 'No hints left' })).toBeDisabled()
 
     // A sloppy but close guess counts; three hints leave 0 points.
     await user.type(input, 'just like hony{Enter}')
     const reveal = screen.getByRole('region', { name: 'Answer' })
-    expect(within(reveal).getByRole('heading')).toHaveTextContent('Correct! +0 points')
-    expect(within(reveal).getByRole('link', { name: 'Open in Spotify' })).toHaveAttribute(
+    expect(within(reveal).getByRole('status')).toHaveTextContent('Correct! +0 points')
+    expect(within(reveal).getByRole('heading', { name: 'Just Like Honey' })).toBeInTheDocument()
+    expect(within(reveal).getByRole('link', { name: /open in spotify/i })).toHaveAttribute(
       'href',
       'https://open.spotify.com/track/t1',
     )
 
     await user.click(screen.getByRole('button', { name: 'See results' }))
-    expect(screen.getByRole('heading', { name: 'Final score: 0 / 3' })).toBeInTheDocument()
+    expect(screen.getByRole('heading', { name: 'Final score: 0 out of 3' })).toBeInTheDocument()
+    expect(screen.getByText('You named 1 of 1 songs.')).toBeInTheDocument()
     expect(controller.calls.at(-1)).toBe('pause')
 
     await user.click(screen.getByRole('button', { name: 'Play again' }))
@@ -111,20 +118,27 @@ describe('App', () => {
     const first = fake.controllers[0].options.uri
 
     await user.click(screen.getByRole('button', { name: 'Give up' }))
-    expect(screen.getByRole('heading', { name: 'The answer was' })).toBeInTheDocument()
+    expect(screen.getByRole('status')).toHaveTextContent('The answer was')
 
     await user.click(screen.getByRole('button', { name: 'Next song' }))
     expect(fake.controllers).toHaveLength(1)
     const second = first === 'spotify:track:x' ? 'spotify:track:y' : 'spotify:track:x'
     expect(fake.controllers[0].calls).toContain(`loadEntity ${second}`)
-    expect(screen.getByText('Song 2 of 2 · Score 0')).toBeInTheDocument()
+    expect(screen.getByText(/of 2/)).toHaveTextContent('Song 2 of 2')
 
     await user.click(screen.getByRole('button', { name: 'Give up' }))
     await user.click(screen.getByRole('button', { name: 'See results' }))
-    expect(screen.getByRole('heading', { name: 'Final score: 0 / 6' })).toBeInTheDocument()
+    expect(screen.getByRole('heading', { name: 'Final score: 0 out of 6' })).toBeInTheDocument()
   })
 
-  it('keeps the embed off-screen and out of the accessibility tree', async () => {
+  it('quits to the start screen from the logo', async () => {
+    const { user } = await renderApp([playlist('p', 'One', [track('x', 'Mars')])])
+    await user.click(screen.getByRole('button', { name: 'Start' }))
+    await user.click(screen.getByRole('button', { name: /quit to start/i }))
+    expect(screen.getByRole('button', { name: 'Start' })).toBeInTheDocument()
+  })
+
+  it('keeps the embed hidden and out of the accessibility tree', async () => {
     const { user } = await renderApp([playlist('p', 'One', [track('x', 'Mars')])])
     await user.click(screen.getByRole('button', { name: 'Start' }))
     const embed = document.querySelector('.embed-offscreen')

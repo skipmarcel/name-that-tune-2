@@ -55,6 +55,7 @@ Some decisions worth calling out:
 - **The answer stays hidden.** The track plays through Spotify's embed player, which displays the song title. The player is kept off-screen (and hidden from screen readers) and controlled with the iFrame API, so the game's own UI handles play and pause, and the title and artist are only revealed after you guess. Playback starts from the Start and Next button clicks, because browsers only allow audio to start from a user gesture. Listeners who aren't signed in to Spotify in their browser may only hear a short preview of each track.
 - **Guesses are judged leniently.** A guess is normalized (lowercased, accents and punctuation stripped, "feat.", remaster/live suffixes, subtitles after a dash and bracketed parts optional) and up to two typos are forgiven. Numbers and roman numerals must match, so "Dance II" doesn't count for "Dance I". The rules are checked against every title in the synced playlists.
 - **No song twice in a game.** Different versions of a song ("Angie" and "Angie - 2015 Remaster") count as the same song when picking the 10 tracks.
+- **Built for phones and keyboards.** The layout is a single column that works from 320px up, in light and dark mode. Inputs are 16px so iOS doesn't zoom, the guess box keeps focus after a wrong guess, focus moves to "Next song" after each answer, hints and results are announced to screen readers, and animations respect "reduce motion".
 - **Game logic is kept separate from the UI.** Scoring, track selection and guess matching are pure TypeScript functions with unit tests. The React components handle display and user input only.
 
 ## Getting started
@@ -134,7 +135,7 @@ src/                    React app
 - [x] Hint system and scoring
 - [x] 10-round game with an end screen
 - [ ] Saved leaderboard
-- [ ] Responsive, accessible UI
+- [x] Responsive, accessible UI
 - [ ] Deploy to Vercel
 
 ## What changed from the original

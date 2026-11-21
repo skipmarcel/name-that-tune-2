@@ -1,55 +1,68 @@
-import { useId, useState, type FormEvent } from 'react'
+import { useEffect, useId, useRef, useState, type FormEvent } from 'react'
 import type { Round } from '../game/game'
-import { HINTS, titleLettersHint } from '../game/scoring'
-import type { SpotifyPlayer } from '../player/useSpotifyPlayer'
+import { HINTS, pointsFor, titleLettersHint, type Hint } from '../game/scoring'
+import { PlayerControls, type PlayerState } from './PlayerControls'
 
 interface RoundViewProps {
   round: Round
-  player: Omit<SpotifyPlayer, 'attachEmbed'>
+  player: PlayerState
   onGuess: (text: string) => void
   onHint: () => void
   onGiveUp: () => void
 }
 
-function PlayerControls({ player }: { player: RoundViewProps['player'] }) {
-  if (player.status === 'error') {
-    return (
-      <p className="player-error" role="alert">
-        The Spotify player couldn&rsquo;t load. Check your connection, or allow open.spotify.com if you use a
-        content blocker.
-      </p>
-    )
+const HINT_LABELS: Record<Hint, string> = {
+  albumArt: 'Album art',
+  artist: 'Artist',
+  titleLetters: 'Title',
+}
+
+/** Focus the guess box on devices with a keyboard; on phones it would cover the screen. */
+const prefersAutoFocus =
+  typeof window !== 'undefined' && window.matchMedia?.('(pointer: fine)').matches === true
+
+function HintSlot({ hint, round }: { hint: Hint; round: Round }) {
+  const unlocked = HINTS.indexOf(hint) < round.hintsUsed
+  const { track } = round
+
+  let content: React.ReactNode = <span className="hint-locked" aria-hidden="true">?</span>
+  if (unlocked && hint === 'albumArt') {
+    content = track.imageUrl ? <img src={track.imageUrl} alt="Album cover" /> : <span>No art</span>
+  } else if (unlocked && hint === 'artist') {
+    content = <span className="hint-text">{track.artists.join(', ')}</span>
+  } else if (unlocked && hint === 'titleLetters') {
+    content = <span className="hint-text title-letters">{titleLettersHint(track.name)}</span>
   }
 
-  const loading = player.status === 'loading' || (player.isBuffering && !player.isPlaying)
   return (
-    <div className="player-controls">
-      <button
-        type="button"
-        className="play-button"
-        onClick={player.isPlaying ? player.pause : player.play}
-        aria-label={player.isPlaying ? 'Pause' : 'Play'}
-      >
-        {player.isPlaying ? '❚❚' : '▶'}
-      </button>
-      <progress
-        className="player-progress"
-        aria-label="Song progress"
-        value={player.position}
-        max={player.duration || 1}
-      />
-      <span className="player-status" aria-live="polite">
-        {loading ? 'Loading…' : ''}
+    <li className={`hint-slot hint-slot-${hint}${unlocked ? ' is-unlocked' : ''}`}>
+      <span className="hint-label">
+        {HINT_LABELS[hint]}
+        {!unlocked && <span className="visually-hidden"> (locked)</span>}
       </span>
-    </div>
+      <div className="hint-content">{content}</div>
+    </li>
   )
 }
 
 export function RoundView({ round, player, onGuess, onHint, onGiveUp }: RoundViewProps) {
   const [guess, setGuess] = useState('')
   const inputId = useId()
-  const { track, hintsUsed, wrongGuesses } = round
+  const rowRef = useRef<HTMLDivElement>(null)
+  const { hintsUsed, wrongGuesses } = round
   const hintsLeft = HINTS.length - hintsUsed
+  const worth = pointsFor(hintsUsed)
+
+  // Shake the guess box on each wrong guess, without remounting it (that
+  // would drop focus from the input).
+  useEffect(() => {
+    if (wrongGuesses.length === 0) return
+    if (window.matchMedia?.('(prefers-reduced-motion: reduce)').matches) return
+    rowRef.current?.animate?.(
+      [0, -6, 6, -6, 6, 0].map((x) => ({ transform: `translateX(${x}px)` })),
+      { duration: 350 },
+    )
+  }, [wrongGuesses.length])
 
   function submit(event: FormEvent) {
     event.preventDefault()
@@ -59,59 +72,60 @@ export function RoundView({ round, player, onGuess, onHint, onGiveUp }: RoundVie
   }
 
   return (
-    <section className="round" aria-label="Current song">
+    <section className="card round" aria-labelledby={`${inputId}-heading`}>
+      <div className="round-top">
+        <h2 id={`${inputId}-heading`} className="round-heading">
+          What&rsquo;s this song?
+        </h2>
+        <span className={`worth worth-${worth}`}>
+          Worth {worth} {worth === 1 ? 'point' : 'points'}
+        </span>
+      </div>
+
       <PlayerControls player={player} />
 
-      {hintsUsed > 0 && (
-        <dl className="hints">
-          {hintsUsed >= 1 && (
-            <div className="hint hint-art">
-              <dt>Album</dt>
-              <dd>
-                {track.imageUrl ? <img src={track.imageUrl} alt="Album cover" width={160} height={160} /> : '—'}
-              </dd>
-            </div>
-          )}
-          {hintsUsed >= 2 && (
-            <div className="hint">
-              <dt>Artist</dt>
-              <dd>{track.artists.join(', ')}</dd>
-            </div>
-          )}
-          {hintsUsed >= 3 && (
-            <div className="hint">
-              <dt>Title</dt>
-              <dd className="title-letters">{titleLettersHint(track.name)}</dd>
-            </div>
-          )}
-        </dl>
-      )}
+      <ul className="hint-slots" aria-label="Hints">
+        {HINTS.map((hint) => (
+          <HintSlot key={hint} hint={hint} round={round} />
+        ))}
+      </ul>
 
       <form className="guess-form" onSubmit={submit}>
-        <label htmlFor={inputId}>Name that tune</label>
-        <div className="guess-row">
+        <label htmlFor={inputId} className="visually-hidden">
+          Song title
+        </label>
+        <div className="guess-row" ref={rowRef}>
           <input
             id={inputId}
             value={guess}
             onChange={(e) => setGuess(e.target.value)}
             autoComplete="off"
             autoCapitalize="off"
+            autoCorrect="off"
             spellCheck={false}
-            placeholder="Song title"
+            enterKeyHint="go"
+            placeholder="Type the song title"
+            autoFocus={prefersAutoFocus}
           />
-          <button type="submit">Guess</button>
+          <button type="submit" className="button-primary">
+            Guess
+          </button>
         </div>
       </form>
 
       <p className="feedback" aria-live="polite">
-        {wrongGuesses.length > 0 && `Not quite: “${wrongGuesses.at(-1)}”. Try again.`}
+        {wrongGuesses.length > 0 && (
+          <>
+            Not quite: <q>{wrongGuesses.at(-1)}</q>. Try again.
+          </>
+        )}
       </p>
 
       <div className="round-actions">
-        <button type="button" onClick={onHint} disabled={hintsLeft === 0}>
-          {hintsLeft === 0 ? 'No hints left' : `Hint (−1 point)`}
+        <button type="button" className="button-secondary" onClick={onHint} disabled={hintsLeft === 0}>
+          {hintsLeft === 0 ? 'No hints left' : `Hint: ${HINT_LABELS[HINTS[hintsUsed]].toLowerCase()} (−1)`}
         </button>
-        <button type="button" className="secondary" onClick={onGiveUp}>
+        <button type="button" className="button-ghost" onClick={onGiveUp}>
           Give up
         </button>
       </div>

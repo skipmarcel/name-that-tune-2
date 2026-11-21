@@ -1,53 +1,106 @@
-import { useId, useState } from 'react'
+import { useReducer, useState } from 'react'
+import { PlaylistPicker } from './components/PlaylistPicker'
+import { ResultsView } from './components/ResultsView'
+import { RevealView } from './components/RevealView'
+import { RoundView } from './components/RoundView'
 import { playlistOptions } from './data/playlists'
+import { currentRound, gameReducer, initialGameState, maxScore, startGame } from './game/game'
 import type { PlaylistOption } from './lib/playlist'
+import type { SpotifyIFrameAPI } from './player/spotify-iframe'
+import { useSpotifyPlayer } from './player/useSpotifyPlayer'
 
 interface AppProps {
   playlists?: PlaylistOption[]
+  /** Injectable for tests; defaults to loading Spotify's real iFrame API. */
+  loadSpotifyApi?: () => Promise<SpotifyIFrameAPI>
 }
 
-function songCount(count: number) {
-  return `${count} ${count === 1 ? 'song' : 'songs'}`
-}
-
-function App({ playlists = playlistOptions }: AppProps) {
+function App({ playlists = playlistOptions, loadSpotifyApi }: AppProps) {
   const available = playlists.filter((p) => p.tracks.length > 0)
   const [selectedId, setSelectedId] = useState(available[0]?.id)
-  const groupName = useId()
+  const [state, dispatch] = useReducer(gameReducer, initialGameState)
+  const { attachEmbed, ...player } = useSpotifyPlayer({ loadApi: loadSpotifyApi })
+
+  const selected = available.find((p) => p.id === selectedId)
+  const round = currentRound(state)
+
+  // Playback starts inside these click handlers so browsers allow the audio.
+  function start() {
+    if (!selected) return
+    const action = startGame(selected.tracks)
+    dispatch(action)
+    if (action.type === 'start' && action.tracks[0]) player.playTrack(action.tracks[0].id)
+  }
+
+  function next() {
+    const upcoming = state.rounds[state.roundIndex + 1]
+    dispatch({ type: 'next' })
+    if (upcoming) player.playTrack(upcoming.track.id)
+    else player.pause()
+  }
+
+  function playAgain() {
+    player.pause()
+    dispatch({ type: 'reset' })
+  }
 
   return (
     <main className="app">
       <h1>Song Sleuth</h1>
-      <p>Hear a clip. Name the tune. Beat your high score.</p>
 
-      {available.length === 0 ? (
-        <p role="status">
-          No songs yet. Run <code>npm run sync-playlist</code> to load the playlists.
-        </p>
-      ) : (
-        <fieldset className="playlist-picker">
-          <legend>Choose a playlist</legend>
-          {playlists.map((playlist) => {
-            const synced = playlist.tracks.length > 0
-            return (
-              <label key={playlist.id} className="playlist-option">
-                <input
-                  type="radio"
-                  name={groupName}
-                  value={playlist.id}
-                  checked={selectedId === playlist.id}
-                  disabled={!synced}
-                  onChange={() => setSelectedId(playlist.id)}
-                />
-                <span className="playlist-title">{playlist.title}</span>
-                <span className="playlist-count">
-                  {synced ? songCount(playlist.tracks.length) : 'not synced yet'}
-                </span>
-              </label>
-            )
-          })}
-        </fieldset>
+      {state.phase === 'ready' && (
+        <>
+          <p>Hear a clip. Name the tune. Beat your high score.</p>
+          {available.length === 0 ? (
+            <p role="status">
+              No songs yet. Run <code>npm run sync-playlist</code> to load the playlists.
+            </p>
+          ) : (
+            <>
+              <PlaylistPicker playlists={playlists} selectedId={selectedId} onSelect={setSelectedId} />
+              <button type="button" className="start-button" onClick={start} disabled={!selected}>
+                Start
+              </button>
+            </>
+          )}
+        </>
       )}
+
+      {(state.phase === 'guessing' || state.phase === 'revealed') && round && (
+        <>
+          <p className="round-status">
+            Song {state.roundIndex + 1} of {state.rounds.length} · Score {state.score}
+          </p>
+          {state.phase === 'guessing' ? (
+            <RoundView
+              key={state.roundIndex}
+              round={round}
+              player={player}
+              onGuess={(text) => dispatch({ type: 'guess', text })}
+              onHint={() => dispatch({ type: 'hint' })}
+              onGiveUp={() => dispatch({ type: 'giveUp' })}
+            />
+          ) : (
+            <RevealView
+              round={round}
+              isLastRound={state.roundIndex === state.rounds.length - 1}
+              onNext={next}
+            />
+          )}
+        </>
+      )}
+
+      {state.phase === 'finished' && (
+        <ResultsView
+          rounds={state.rounds}
+          score={state.score}
+          maxScore={maxScore(state)}
+          onPlayAgain={playAgain}
+        />
+      )}
+
+      {/* The embed shows the song title, so it plays from off-screen. */}
+      <div ref={attachEmbed} className="embed-offscreen" aria-hidden="true" inert />
     </main>
   )
 }

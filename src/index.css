@@ -54,3 +54,204 @@ body {
   font-size: 0.875rem;
   opacity: 0.75;
 }
+
+button {
+  font: inherit;
+  padding: 0.6rem 1.1rem;
+  border: 0;
+  border-radius: 999px;
+  background: #1db954;
+  color: #000;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+button.secondary {
+  background: transparent;
+  color: inherit;
+  outline: 1px solid color-mix(in srgb, currentColor 35%, transparent);
+}
+
+button:focus-visible,
+input:focus-visible {
+  outline: 3px solid #1db954;
+  outline-offset: 2px;
+}
+
+.start-button {
+  margin-top: 1.25rem;
+  min-width: 10rem;
+}
+
+.round,
+.reveal,
+.results {
+  display: grid;
+  gap: 1rem;
+  width: min(28rem, calc(100vw - 2rem));
+  margin: 0 auto;
+}
+
+.round-status {
+  opacity: 0.75;
+}
+
+.player-controls {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.play-button {
+  width: 3rem;
+  height: 3rem;
+  padding: 0;
+  font-size: 1rem;
+}
+
+.player-progress {
+  width: 100%;
+  accent-color: #1db954;
+}
+
+.player-status {
+  min-width: 4.5rem;
+  font-size: 0.875rem;
+  opacity: 0.75;
+}
+
+.player-error {
+  color: #d33;
+}
+
+.hints {
+  display: grid;
+  gap: 0.5rem;
+  margin: 0;
+}
+
+.hint {
+  display: grid;
+  gap: 0.25rem;
+}
+
+.hint dt {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  opacity: 0.7;
+}
+
+.hint dd {
+  margin: 0;
+}
+
+.hint img,
+.reveal-track img {
+  border-radius: 0.5rem;
+}
+
+.title-letters {
+  font-family: ui-monospace, Menlo, monospace;
+  letter-spacing: 0.15em;
+}
+
+.guess-form {
+  display: grid;
+  gap: 0.5rem;
+  text-align: left;
+}
+
+.guess-form label {
+  font-weight: 600;
+}
+
+.guess-row {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 0.5rem;
+}
+
+.guess-row input {
+  font: inherit;
+  min-width: 0;
+  padding: 0.6rem 0.9rem;
+  border: 1px solid color-mix(in srgb, currentColor 35%, transparent);
+  border-radius: 999px;
+  background: transparent;
+  color: inherit;
+}
+
+.feedback {
+  min-height: 1.5em;
+  margin: 0;
+}
+
+.round-actions {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.reveal-track {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  text-align: left;
+}
+
+.reveal-track p {
+  margin: 0.15rem 0;
+}
+
+.reveal-title {
+  font-size: 1.25rem;
+  font-weight: 700;
+}
+
+.reveal-album {
+  opacity: 0.7;
+}
+
+.reveal-track a {
+  color: #1db954;
+}
+
+.results-list {
+  margin: 0;
+  padding-left: 1.5rem;
+  text-align: left;
+}
+
+.results-list li {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 0.25rem 0;
+}
+
+.results-artist {
+  opacity: 0.7;
+}
+
+.results-points {
+  font-variant-numeric: tabular-nums;
+  white-space: nowrap;
+}
+
+/* Keeps the Spotify embed playing while out of sight: it shows the answer. */
+.embed-offscreen {
+  position: fixed;
+  top: 0;
+  left: -10000px;
+  width: 300px;
+  height: 80px;
+  overflow: hidden;
+}

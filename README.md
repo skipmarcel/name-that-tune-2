@@ -1,5 +1,7 @@
 # Song Sleuth 🎵
 
+[![CI](https://github.com/skipmarcel/name-that-tune-2/actions/workflows/ci.yml/badge.svg)](https://github.com/skipmarcel/name-that-tune-2/actions/workflows/ci.yml)
+
 A "name that tune" game built on the Spotify Web API. You hear a random track from a playlist and guess the title. Hints cost points, and the game keeps track of your best scores.
 
 This is a ground-up rebuild of [name-that-tune](https://github.com/skipmarcel/name-that-tune), a vanilla-JS project I built with Amanda Guan in coding school in 2023. This version is written in React and TypeScript, has tests, and fixes the problems the original shipped with.
@@ -100,7 +102,7 @@ Then open http://localhost:5173.
 ## Roadmap
 
 - [x] Project setup: Vite, React, TypeScript, Vitest, Oxlint
-- [ ] CI with GitHub Actions (lint, typecheck, test, build)
+- [x] CI with GitHub Actions (lint, typecheck, test, build)
 - [ ] Serverless token endpoint
 - [ ] Load playlist tracks, including playlists over 100 songs (paginated)
 - [ ] Random track selection without repeats

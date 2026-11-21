@@ -55,6 +55,7 @@ Some decisions worth calling out:
 
 - **The Spotify client secret never reaches the browser.** The original project put the secret in the front-end bundle, where anyone could read it. Here a small serverless function exchanges the credentials for a short-lived access token, and the browser only ever sees that token.
 - **The answer stays hidden.** The track plays through Spotify's embed player, which displays the song title. The player is kept off-screen and controlled with the iFrame API, so the game's own UI handles play and pause, and the title and artist are only revealed after you guess.
+  The endpoint caches the token in memory until just before it expires and returns it with `Cache-Control: no-store`. It is public by design, because a client-credentials token can only read public catalog data. The same handler runs as a Vercel function (`api/token.ts`) and as Vite dev-server middleware, so `npm run dev` works without the Vercel CLI.
 - **Guesses are judged leniently.** A guess is normalized (lowercased, accents and punctuation stripped, "feat." and remaster/live suffixes removed) and then compared against the title using a similarity threshold. Small typos are forgiven.
 - **Game logic is kept separate from the UI.** Scoring, track selection and guess matching are pure TypeScript functions with unit tests. The React components handle display and user input only.
 
@@ -87,6 +88,17 @@ Then open http://localhost:5173.
 
 `.env` is ignored by git. Never commit real credentials.
 
+## Project structure
+
+```
+api/token.ts            Vercel function: GET /api/token
+server/                 Server-only code (never bundled into the browser)
+  spotify-token.ts        Client-credentials exchange and token cache
+  token-handler.ts        HTTP handler shared by Vercel and the dev server
+  vite-api-plugin.ts      Serves /api/* during `npm run dev`
+src/                    React app
+```
+
 ## Scripts
 
 | Command              | What it does                         |
@@ -103,7 +115,7 @@ Then open http://localhost:5173.
 
 - [x] Project setup: Vite, React, TypeScript, Vitest, Oxlint
 - [x] CI with GitHub Actions (lint, typecheck, test, build)
-- [ ] Serverless token endpoint
+- [x] Serverless token endpoint (`/api/token`)
 - [ ] Load playlist tracks, including playlists over 100 songs (paginated)
 - [ ] Random track selection without repeats
 - [ ] Hidden player controlled through the Spotify iFrame API

@@ -31,7 +31,7 @@ This is a ground-up rebuild of [name-that-tune](https://github.com/skipmarcel/na
 | Testing   | [Vitest](https://vitest.dev) + [Testing Library](https://testing-library.com) |
 | Linting   | [Oxlint](https://oxc.rs)                                                   |
 | Music API | [Spotify Web API](https://developer.spotify.com/documentation/web-api) + [iFrame API](https://developer.spotify.com/documentation/embeds/references/iframe-api) |
-| Hosting   | [Vercel](https://vercel.com) (static site + one serverless function)      |
+| Hosting   | [Vercel](https://vercel.com) (static site)                                 |
 | CI        | GitHub Actions                                                             |
 
 ## How it works
@@ -51,10 +51,10 @@ Some decisions worth calling out:
 
 - **The song list is synced ahead of time.** Spotify only returns a playlist's tracks to its signed-in owner or collaborators, so the game can't read them with app credentials alone. `npm run sync-playlist` has the owner sign in once in the browser (Authorization Code flow with PKCE, so no secret is involved), follows Spotify's pagination to read every track, drops local files, episodes and duplicates, and saves each playlist to `src/data/playlists/<id>.json`. The files are committed, so players never need a Spotify account and the game makes no API calls just to start. The trade-off is that the sync has to be run again after a playlist changes.
 - **Players choose the playlist.** The playlists on offer, and the names players see, are listed in `src/data/playlists.config.json`, so a playlist called "Faves" on Spotify can appear as "Obscure Folk and Rock" in the game.
-- **The Spotify client secret never reaches the browser.** The original project put the secret in the front-end bundle, where anyone could read it. Here a small serverless function exchanges the credentials for a short-lived access token, and the browser only ever sees that token.
-  The endpoint caches the token in memory until just before it expires and returns it with `Cache-Control: no-store`. It is public by design, because a client-credentials token can only read public catalog data. The same handler runs as a Vercel function (`api/token.ts`) and as Vite dev-server middleware, so `npm run dev` works without the Vercel CLI.
-- **The answer stays hidden.** The track plays through Spotify's embed player, which displays the song title. The player is kept off-screen and controlled with the iFrame API, so the game's own UI handles play and pause, and the title and artist are only revealed after you guess.
-- **Guesses are judged leniently.** A guess is normalized (lowercased, accents and punctuation stripped, "feat." and remaster/live suffixes removed) and then compared against the title using a similarity threshold. Small typos are forgiven.
+- **No secrets in the app.** The original project put the Spotify client secret in the front-end bundle, where anyone could read it. This version needs no secret at all: the sync uses PKCE, which only needs the public client ID, and playback goes through Spotify's embed, which needs no token. The game deploys as a plain static site. (An earlier version served tokens from a serverless function; it was removed once nothing needed it.)
+- **The answer stays hidden.** The track plays through Spotify's embed player, which displays the song title. The player is kept off-screen (and hidden from screen readers) and controlled with the iFrame API, so the game's own UI handles play and pause, and the title and artist are only revealed after you guess. Playback starts from the Start and Next button clicks, because browsers only allow audio to start from a user gesture. Listeners who aren't signed in to Spotify in their browser may only hear a short preview of each track.
+- **Guesses are judged leniently.** A guess is normalized (lowercased, accents and punctuation stripped, "feat.", remaster/live suffixes, subtitles after a dash and bracketed parts optional) and up to two typos are forgiven. Numbers and roman numerals must match, so "Dance II" doesn't count for "Dance I". The rules are checked against every title in the synced playlists.
+- **No song twice in a game.** Different versions of a song ("Angie" and "Angie - 2015 Remaster") count as the same song when picking the 10 tracks.
 - **Game logic is kept separate from the UI.** Scoring, track selection and guess matching are pure TypeScript functions with unit tests. The React components handle display and user input only.
 
 ## Getting started
@@ -62,7 +62,7 @@ Some decisions worth calling out:
 ### Prerequisites
 
 - [Node.js](https://nodejs.org) 22 or newer
-- A Spotify account and an app created in the [Spotify Developer Dashboard](https://developer.spotify.com/dashboard), which gives you a client ID and client secret. Add `http://127.0.0.1:5173/callback` as a redirect URI in the app's settings.
+- A Spotify account and an app created in the [Spotify Developer Dashboard](https://developer.spotify.com/dashboard), which gives you a client ID. Add `http://127.0.0.1:5173/callback` as a redirect URI in the app's settings.
 
 ### Setup
 
@@ -88,29 +88,25 @@ Then open http://localhost:5173.
 | Variable                | Description                                     |
 | ----------------------- | ----------------------------------------------- |
 | `SPOTIFY_CLIENT_ID`     | Client ID from the Spotify Developer Dashboard  |
-| `SPOTIFY_CLIENT_SECRET` | Client secret. Server-side only, never exposed to the browser |
 
 `.env` is ignored by git. Never commit real credentials.
 
 ## Project structure
 
 ```
-api/token.ts            Vercel function: GET /api/token
-server/                 Server-only code (never bundled into the browser)
-  spotify-token.ts        Client-credentials exchange and token cache
-  token-handler.ts        HTTP handler shared by Vercel and the dev server
-  vite-api-plugin.ts      Serves /api/* during `npm run dev`
 scripts/
   sync-playlist.ts      Signs in to Spotify and saves each playlist's tracks
 src/                    React app
   data/playlists.config.json  Playlists players can choose, and their display names
   data/playlists/         Synced track lists, bundled into the app
+  components/             Game screens: playlist picker, round, answer, results
   game/                   Pure, unit-tested game logic
     match.ts                Lenient, typo-tolerant guess matching
     scoring.ts              Hint order, points and the title-letters hint
     pick.ts                 Random track selection without repeats
     game.ts                 Round-based game state reducer
   lib/playlist.ts         Saved playlist format and Spotify item parsing
+  player/                 Spotify iFrame API loader and the useSpotifyPlayer hook
 ```
 
 ## Scripts
@@ -130,14 +126,13 @@ src/                    React app
 
 - [x] Project setup: Vite, React, TypeScript, Vitest, Oxlint
 - [x] CI with GitHub Actions (lint, typecheck, test, build)
-- [x] Serverless token endpoint (`/api/token`)
 - [x] Load playlist tracks, including playlists over 100 songs (paginated)
 - [x] Random track selection without repeats
 - [x] Choice of playlists
-- [ ] Hidden player controlled through the Spotify iFrame API
+- [x] Hidden player controlled through the Spotify iFrame API
 - [x] Lenient guess matching
 - [x] Hint system and scoring
-- [ ] 10-round game with an end screen (game logic done; screens next)
+- [x] 10-round game with an end screen
 - [ ] Saved leaderboard
 - [ ] Responsive, accessible UI
 - [ ] Deploy to Vercel
@@ -146,7 +141,7 @@ src/                    React app
 
 | Original (2023)                                       | Song Sleuth (this repo)                           |
 | ----------------------------------------------------- | ------------------------------------------------- |
-| Client secret in the front-end bundle                 | Secret kept in a serverless function              |
+| Client secret in the front-end bundle                 | No secret needed at all (PKCE sync, embed player) |
 | Spotify embed displayed the answer                    | Player hidden; answer revealed after the guess    |
 | Exact-match guessing                                  | Normalized, typo-tolerant matching                |
 | Game never ended (counter tied to a missing button)   | Round-based game state with an end screen         |

@@ -2,11 +2,13 @@
 
 [![CI](https://github.com/skipmarcel/name-that-tune-2/actions/workflows/ci.yml/badge.svg)](https://github.com/skipmarcel/name-that-tune-2/actions/workflows/ci.yml)
 
-A "name that tune" game built on the Spotify Web API. You hear a random track from a playlist and guess the title. Hints cost points, and the game keeps track of your best scores.
+**▶ Play it: [name-that-tune-2.vercel.app](https://name-that-tune-2.vercel.app)**
+
+A "name that tune" game built on Spotify. You hear a clip from a playlist and type the title. Hints cost points, and the best scores go on a shared leaderboard.
 
 This is a ground-up rebuild of [name-that-tune](https://github.com/skipmarcel/name-that-tune), a vanilla-JS project I built with Amanda Guan in coding school in 2023. This version is written in React and TypeScript, has tests, and fixes the problems the original shipped with.
 
-> **Status:** in active development. See the [roadmap](#roadmap) for what's done and what's next.
+> **Status:** live. See the [roadmap](#roadmap) for what's been built.
 
 ## How to play
 
@@ -150,7 +152,7 @@ tests/                  End-to-end leaderboard flow: the app against the real AP
 - [x] 10-round game with an end screen
 - [x] Shared leaderboard with server-side scoring
 - [x] Responsive, accessible UI
-- [ ] Deploy to Vercel
+- [x] Deploy to Vercel
 
 ## What changed from the original
 

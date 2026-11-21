@@ -1,17 +1,18 @@
 import { render, screen } from '@testing-library/react'
+import userEvent from '@testing-library/user-event'
 import App from './App'
-import type { SavedPlaylist, Track } from './lib/playlist'
+import type { PlaylistOption, Track } from './lib/playlist'
 
-function playlistWith(trackCount: number): SavedPlaylist {
+function playlist(id: string, title: string, trackCount: number): PlaylistOption {
   const tracks: Track[] = Array.from({ length: trackCount }, (_, i) => ({
-    id: `track${i}`,
+    id: `${id}-${i}`,
     name: `Song ${i}`,
     artists: ['Artist'],
     album: 'Album',
     imageUrl: null,
     durationMs: 180_000,
   }))
-  return { id: 'playlist', name: 'For Coding', syncedAt: '2026-11-21T00:00:00.000Z', tracks }
+  return { id, title, tracks }
 }
 
 describe('App', () => {
@@ -20,18 +21,30 @@ describe('App', () => {
     expect(screen.getByRole('heading', { name: /song sleuth/i })).toBeInTheDocument()
   })
 
-  it('shows how many songs were loaded', () => {
-    render(<App playlist={playlistWith(42)} />)
-    expect(screen.getByRole('status')).toHaveTextContent('42 songs loaded from “For Coding”')
+  it('lets the player choose between playlists, with the first selected', async () => {
+    render(<App playlists={[playlist('a', 'For Coding', 115), playlist('b', 'Obscure Folk and Rock', 1)]} />)
+
+    const coding = screen.getByRole('radio', { name: /for coding/i })
+    const folk = screen.getByRole('radio', { name: /obscure folk and rock/i })
+    expect(screen.getByRole('group', { name: /choose a playlist/i })).toBeInTheDocument()
+    expect(coding).toBeChecked()
+    expect(screen.getByText('115 songs')).toBeInTheDocument()
+    expect(screen.getByText('1 song')).toBeInTheDocument()
+
+    await userEvent.click(folk)
+    expect(folk).toBeChecked()
+    expect(coding).not.toBeChecked()
   })
 
-  it('uses the singular for one song', () => {
-    render(<App playlist={playlistWith(1)} />)
-    expect(screen.getByRole('status')).toHaveTextContent('1 song loaded')
+  it('shows unsynced playlists as unavailable', () => {
+    render(<App playlists={[playlist('a', 'Empty', 0), playlist('b', 'Ready', 3)]} />)
+    expect(screen.getByRole('radio', { name: /empty/i })).toBeDisabled()
+    expect(screen.getByText('not synced yet')).toBeInTheDocument()
+    expect(screen.getByRole('radio', { name: /ready/i })).toBeChecked()
   })
 
-  it('explains how to load songs when the playlist has not been synced', () => {
-    render(<App playlist={playlistWith(0)} />)
+  it('explains how to load songs when nothing has been synced', () => {
+    render(<App playlists={[playlist('a', 'Empty', 0)]} />)
     expect(screen.getByRole('status')).toHaveTextContent('npm run sync-playlist')
   })
 })

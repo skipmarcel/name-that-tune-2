@@ -104,6 +104,11 @@ scripts/
   sync-playlist.ts      Signs in to Spotify and saves the playlist's tracks
 src/                    React app
   data/playlist.json      Synced track list, bundled into the app
+  game/                   Pure, unit-tested game logic
+    match.ts                Lenient, typo-tolerant guess matching
+    scoring.ts              Hint order, points and the title-letters hint
+    pick.ts                 Random track selection without repeats
+    game.ts                 Round-based game state reducer
   lib/playlist.ts         Saved playlist format and Spotify item parsing
 ```
 
@@ -126,11 +131,11 @@ src/                    React app
 - [x] CI with GitHub Actions (lint, typecheck, test, build)
 - [x] Serverless token endpoint (`/api/token`)
 - [x] Load playlist tracks, including playlists over 100 songs (paginated)
-- [ ] Random track selection without repeats
+- [x] Random track selection without repeats
 - [ ] Hidden player controlled through the Spotify iFrame API
-- [ ] Lenient guess matching
-- [ ] Hint system and scoring
-- [ ] 10-round game with an end screen
+- [x] Lenient guess matching
+- [x] Hint system and scoring
+- [ ] 10-round game with an end screen (game logic done; screens next)
 - [ ] Saved leaderboard
 - [ ] Responsive, accessible UI
 - [ ] Deploy to Vercel

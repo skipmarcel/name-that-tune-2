@@ -37,22 +37,19 @@ This is a ground-up rebuild of [name-that-tune](https://github.com/skipmarcel/na
 ## How it works
 
 ```
-┌──────────────┐   GET /api/token    ┌──────────────────────┐   client credentials   ┌──────────────┐
-│ React app    │ ──────────────────▶ │ Serverless function  │ ─────────────────────▶ │ Spotify      │
-│ (browser)    │ ◀────────────────── │ (holds the secret)   │ ◀───────────────────── │ Accounts API │
-└──────┬───────┘   short-lived token └──────────────────────┘      access token      └──────────────┘
-       │
-       │  GET /v1/playlists/{id}/tracks (Bearer token)
-       ▼
-┌──────────────┐        ┌─────────────────────────────────────────────────┐
-│ Spotify      │        │ Hidden Spotify embed, controlled through the    │
-│ Web API      │        │ iFrame API, so the track plays without showing  │
-└──────────────┘        │ the answer on screen                            │
-                        └─────────────────────────────────────────────────┘
+ Ahead of time (playlist owner)                    At play time (anyone)
+┌───────────────────────┐  sign in (PKCE)        ┌──────────────┐  track IDs   ┌──────────────────────┐
+│ npm run sync-playlist │ ─────────────────────▶ │ React app    │ ───────────▶ │ Hidden Spotify embed │
+│                       │  GET playlist items    │ (browser)    │              │ (iFrame API)         │
+└───────────┬───────────┘  page by page          └──────▲───────┘              └──────────────────────┘
+            │ writes                                    │ bundled at build time
+            ▼                                           │
+     src/data/playlist.json ────────────────────────────┘
 ```
 
 Some decisions worth calling out:
 
+- **The song list is synced ahead of time.** Spotify only returns a playlist's tracks to its signed-in owner or collaborators, so the game can't read them with app credentials alone. `npm run sync-playlist` has the owner sign in once in the browser (Authorization Code flow with PKCE, so no secret is involved), follows Spotify's pagination to read every track, drops local files, episodes and duplicates, and saves the result to `src/data/playlist.json`. The file is committed, so players never need a Spotify account and the game makes no API calls just to start. The trade-off is that the sync has to be run again after the playlist changes.
 - **The Spotify client secret never reaches the browser.** The original project put the secret in the front-end bundle, where anyone could read it. Here a small serverless function exchanges the credentials for a short-lived access token, and the browser only ever sees that token.
   The endpoint caches the token in memory until just before it expires and returns it with `Cache-Control: no-store`. It is public by design, because a client-credentials token can only read public catalog data. The same handler runs as a Vercel function (`api/token.ts`) and as Vite dev-server middleware, so `npm run dev` works without the Vercel CLI.
 - **The answer stays hidden.** The track plays through Spotify's embed player, which displays the song title. The player is kept off-screen and controlled with the iFrame API, so the game's own UI handles play and pause, and the title and artist are only revealed after you guess.
@@ -64,7 +61,7 @@ Some decisions worth calling out:
 ### Prerequisites
 
 - [Node.js](https://nodejs.org) 22 or newer
-- A Spotify account and an app created in the [Spotify Developer Dashboard](https://developer.spotify.com/dashboard), which gives you a client ID and client secret
+- A Spotify account and an app created in the [Spotify Developer Dashboard](https://developer.spotify.com/dashboard), which gives you a client ID and client secret. Add `http://127.0.0.1:5173/callback` as a redirect URI in the app's settings.
 
 ### Setup
 
@@ -78,13 +75,20 @@ npm run dev
 
 Then open http://localhost:5173.
 
+### Using your own playlist
+
+1. Set `VITE_PLAYLIST_ID` in `.env` to a playlist you own or collaborate on. The share link works too.
+2. Stop the dev server if it's running (the sync uses the same port for the sign-in redirect).
+3. Run `npm run sync-playlist` and approve the Spotify sign-in that opens in your browser.
+4. Commit the updated `src/data/playlist.json`.
+
 ### Environment variables
 
 | Variable                | Description                                     |
 | ----------------------- | ----------------------------------------------- |
 | `SPOTIFY_CLIENT_ID`     | Client ID from the Spotify Developer Dashboard  |
 | `SPOTIFY_CLIENT_SECRET` | Client secret. Server-side only, never exposed to the browser |
-| `VITE_PLAYLIST_ID`      | ID of the public playlist to draw tracks from   |
+| `VITE_PLAYLIST_ID`      | Playlist to sync tracks from (read by `npm run sync-playlist`) |
 
 `.env` is ignored by git. Never commit real credentials.
 
@@ -96,7 +100,11 @@ server/                 Server-only code (never bundled into the browser)
   spotify-token.ts        Client-credentials exchange and token cache
   token-handler.ts        HTTP handler shared by Vercel and the dev server
   vite-api-plugin.ts      Serves /api/* during `npm run dev`
+scripts/
+  sync-playlist.ts      Signs in to Spotify and saves the playlist's tracks
 src/                    React app
+  data/playlist.json      Synced track list, bundled into the app
+  lib/playlist.ts         Saved playlist format and Spotify item parsing
 ```
 
 ## Scripts
@@ -110,13 +118,14 @@ src/                    React app
 | `npm run typecheck`  | Run the TypeScript compiler          |
 | `npm test`           | Run the test suite once              |
 | `npm run test:watch` | Run tests in watch mode              |
+| `npm run sync-playlist` | Save the playlist's tracks to `src/data/playlist.json` |
 
 ## Roadmap
 
 - [x] Project setup: Vite, React, TypeScript, Vitest, Oxlint
 - [x] CI with GitHub Actions (lint, typecheck, test, build)
 - [x] Serverless token endpoint (`/api/token`)
-- [ ] Load playlist tracks, including playlists over 100 songs (paginated)
+- [x] Load playlist tracks, including playlists over 100 songs (paginated)
 - [ ] Random track selection without repeats
 - [ ] Hidden player controlled through the Spotify iFrame API
 - [ ] Lenient guess matching

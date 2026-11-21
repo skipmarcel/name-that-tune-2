@@ -1,4 +1,4 @@
-import { displayTitle } from './match'
+import { displayTitle } from './match.js'
 
 /** Hints unlock in this order; each one used lowers the round's points. */
 export const HINTS = ['albumArt', 'artist', 'titleLetters'] as const

@@ -7,10 +7,10 @@
  * Randomness stays outside the reducer: `startGame` picks the tracks and
  * passes them in the `start` action, so the reducer is deterministic.
  */
-import type { Track } from '../lib/playlist'
-import { displayTitle, isCorrectGuess, songKey } from './match'
-import { pickRandom } from './pick'
-import { HINTS, MAX_POINTS, pointsFor } from './scoring'
+import type { Track } from '../lib/playlist.js'
+import { displayTitle, isCorrectGuess, songKey } from './match.js'
+import { pickRandom } from './pick.js'
+import { HINTS, MAX_POINTS, pointsFor } from './scoring.js'
 
 export const ROUNDS_PER_GAME = 10
 

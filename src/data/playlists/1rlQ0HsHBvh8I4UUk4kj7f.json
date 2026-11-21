@@ -1,0 +1,4055 @@
+{
+  "id": "1rlQ0HsHBvh8I4UUk4kj7f",
+  "name": "Faves",
+  "syncedAt": "2026-11-21T18:31:06.044Z",
+  "tracks": [
+    {
+      "id": "64aIYqSO1Dzlig7o8GtGp2",
+      "name": "Beneath the Rose",
+      "artists": [
+        "Micah P. Hinson"
+      ],
+      "album": "Micah P. Hinson and the Gospel of Progress",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b2734c742b803922e0987ff7c123",
+      "durationMs": 175142
+    },
+    {
+      "id": "45sTwKlrU9b5mKpt6j2y0K",
+      "name": "Terror In The Canyons (The Wounded Master)",
+      "artists": [
+        "Phosphorescent"
+      ],
+      "album": "Muchacho De Lujo (Deluxe Edition)",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b2737868c54c6323e3ad935e4dfb",
+      "durationMs": 245546
+    },
+    {
+      "id": "28EK7qsobexG3NJRrTE4tc",
+      "name": "Are You Alright?",
+      "artists": [
+        "Lucinda Williams"
+      ],
+      "album": "West",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b27360fff97b2fc5f0d86ba25bef",
+      "durationMs": 318293
+    },
+    {
+      "id": "2twOdZ7eEp1uyG2bzqlCz9",
+      "name": "Grantchester Meadows",
+      "artists": [
+        "Pink Floyd"
+      ],
+      "album": "Ummagumma",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b273547a72d0589353a9ce24d26b",
+      "durationMs": 447480
+    },
+    {
+      "id": "03aEzT7O9s9MlJJzg8gPVU",
+      "name": "Night City",
+      "artists": [
+        "Dirty Beaches"
+      ],
+      "album": "Night City",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b2731c79690d24a57c99e8c91aef",
+      "durationMs": 147080
+    },
+    {
+      "id": "6wg8nDWs3MAUEYEd8tO6Hf",
+      "name": "A Real Hero",
+      "artists": [
+        "College",
+        "Electric Youth"
+      ],
+      "album": "Drive",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b273ae2fcf0f206ac9562e9cf031",
+      "durationMs": 267720
+    },
+    {
+      "id": "3MFFDRC4wTN9JNGtzXsZlN",
+      "name": "Love Her Madly",
+      "artists": [
+        "The Doors"
+      ],
+      "album": "L.A. Woman",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b27311d9db4f0db1e2689ca22c3d",
+      "durationMs": 198466
+    },
+    {
+      "id": "72ZCJnJ62wQCGc1OExu2E2",
+      "name": "Dallas",
+      "artists": [
+        "The Flatlanders"
+      ],
+      "album": "The Odessa Tapes",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b273fe185a471c2644c81ba2aba3",
+      "durationMs": 181613
+    },
+    {
+      "id": "1oPnB4CkASo1P53qdOEvhI",
+      "name": "Houses",
+      "artists": [
+        "Elyse Weinberg"
+      ],
+      "album": "Elyse",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b273830de1dac3e216c41baf772e",
+      "durationMs": 220426
+    },
+    {
+      "id": "5QjuTblPokfD03fkfHUuVK",
+      "name": "Hang Me, Oh Hang Me",
+      "artists": [
+        "Dave Van Ronk"
+      ],
+      "album": "Folksinger",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b27350c29ad36361a29bb7118333",
+      "durationMs": 190106
+    },
+    {
+      "id": "5iedinFWh90J6VWN58JhDq",
+      "name": "Spring Wind",
+      "artists": [
+        "Greg Brown"
+      ],
+      "album": "If I Had Known - Essential Recordings 1980-1996",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b273d385e6b335e005f650ca275d",
+      "durationMs": 274920
+    },
+    {
+      "id": "5eZ7sbO4bOyouCopISJ4Mb",
+      "name": "Are You With Me Now?",
+      "artists": [
+        "Cate Le Bon"
+      ],
+      "album": "Mug Museum",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b273bd49fd90a073d1864fbce579",
+      "durationMs": 260573
+    },
+    {
+      "id": "3Zg3CUlhF033CIndULylsj",
+      "name": "Talkin' Like You (Two Tall Mountains)",
+      "artists": [
+        "Connie Converse"
+      ],
+      "album": "How Sad, How Lovely",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b27379c735a1d6bfc5a33857410f",
+      "durationMs": 151000
+    },
+    {
+      "id": "4YJ1KDI6tUSapyD6XTAg8i",
+      "name": "Hit Or Miss",
+      "artists": [
+        "Odetta"
+      ],
+      "album": "Odetta Sings",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b2733fbf596c80dee23ff2d49996",
+      "durationMs": 234530
+    },
+    {
+      "id": "31nItlXwgCCFpttS50Rbxf",
+      "name": "Fruits Of My Labor",
+      "artists": [
+        "Lucinda Williams"
+      ],
+      "album": "World Without Tears",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b273624f09ee8125c5e46956ebcf",
+      "durationMs": 288133
+    },
+    {
+      "id": "3I4TX1xzEFWJR6MMzjBslM",
+      "name": "Diana",
+      "artists": [
+        "Alexander 'Skip' Spence"
+      ],
+      "album": "Oar",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b273ff39e1c459aa3900ccb9de21",
+      "durationMs": 209333
+    },
+    {
+      "id": "2L93TdW2GMue1H2zlkt30F",
+      "name": "Suzanne",
+      "artists": [
+        "Leonard Cohen"
+      ],
+      "album": "Songs Of Leonard Cohen",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b2730633b57b08b40f3e776e7151",
+      "durationMs": 229293
+    },
+    {
+      "id": "09YfILH3QY7POQbhBc7DNv",
+      "name": "I Don't Want to Get Over You",
+      "artists": [
+        "The Magnetic Fields"
+      ],
+      "album": "69 Love Songs",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b2738557eb24f6c4bbbab97ea629",
+      "durationMs": 142600
+    },
+    {
+      "id": "2WCnGeYVvzgplvWtAqYGmz",
+      "name": "I Shatter",
+      "artists": [
+        "The Magnetic Fields"
+      ],
+      "album": "69 Love Songs",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b2738557eb24f6c4bbbab97ea629",
+      "durationMs": 189240
+    },
+    {
+      "id": "28xIU8mpgm4OW3TiJCeHKl",
+      "name": "East Wind - 2015 Remaster",
+      "artists": [
+        "Bert Jansch",
+        "John Renbourn"
+      ],
+      "album": "Bert & John",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b273a7e4977d8829b6fc741820a9",
+      "durationMs": 88985
+    },
+    {
+      "id": "5w5iVU4HJFqbjQmELVa2Bf",
+      "name": "A Sailor's Life",
+      "artists": [
+        "Fairport Convention"
+      ],
+      "album": "Unhalfbricking (Bonus Track Edition)",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b27362f2d2ef2ec6d1496020d61b",
+      "durationMs": 668360
+    },
+    {
+      "id": "3t5C5qQI3wqJasYIKOJEB7",
+      "name": "Who Knows Where The Time Goes?",
+      "artists": [
+        "Fairport Convention"
+      ],
+      "album": "Unhalfbricking (Bonus Track Edition)",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b27362f2d2ef2ec6d1496020d61b",
+      "durationMs": 305986
+    },
+    {
+      "id": "3b0QRCma32JntbrXZzH1ra",
+      "name": "Painting Box - 2010 Remaster",
+      "artists": [
+        "The Incredible String Band"
+      ],
+      "album": "The 5000 Spirits Or The Layers Of The Onion",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b273b84cc2da568028ea90d5f9d2",
+      "durationMs": 240413
+    },
+    {
+      "id": "6dNZhA2gfBUvRgPghyeWsc",
+      "name": "The First Girl I Loved - 2010 Remaster",
+      "artists": [
+        "The Incredible String Band"
+      ],
+      "album": "The 5000 Spirits Or The Layers Of The Onion",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b273b84cc2da568028ea90d5f9d2",
+      "durationMs": 291240
+    },
+    {
+      "id": "3pQOIlXtoxJpnmsEJV03PH",
+      "name": "Strange Isabella",
+      "artists": [
+        "Gillian Welch"
+      ],
+      "album": "Strange Isabella / Mighty Good Book",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b27334d8dbf884832f4b2c1d3669",
+      "durationMs": 230013
+    },
+    {
+      "id": "0nRR6eQMDYkIFmn8c9Rwga",
+      "name": "Black Slacks",
+      "artists": [
+        "Joe Bennett & The Sparkletones"
+      ],
+      "album": "1957-1959",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b27326f6f7730e437e9d1fd33a83",
+      "durationMs": 129026
+    },
+    {
+      "id": "09DzOP00m9OkJNSQzz8zaF",
+      "name": "Canyoneers",
+      "artists": [
+        "Jake Xerxes Fussell"
+      ],
+      "album": "What in the Natural World",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b273aac16f4aee3be3db8a2d7f8e",
+      "durationMs": 273769
+    },
+    {
+      "id": "0ZNu568pIJnEX2Oqkmh2nZ",
+      "name": "In My Room",
+      "artists": [
+        "The Beach Boys"
+      ],
+      "album": "Endless Summer",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b273116fbd1449c091ff694464f3",
+      "durationMs": 134840
+    },
+    {
+      "id": "12etrLPcBbZOk2Y8LoBiyL",
+      "name": "Some Misunderstanding",
+      "artists": [
+        "Gene Clark"
+      ],
+      "album": "No Other",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b2734bf5400ff65cbd688101ac2d",
+      "durationMs": 489493
+    },
+    {
+      "id": "1KueOLeUZpaNRK2InckxVT",
+      "name": "1952 Vincent Black Lightning",
+      "artists": [
+        "Richard Thompson"
+      ],
+      "album": "Rumor And Sigh",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b273d0a9155919bee566b5db0598",
+      "durationMs": 283493
+    },
+    {
+      "id": "0Ohmc278BhVDB2vE10jCnu",
+      "name": "That Silver Haired Daddy Of Mine",
+      "artists": [
+        "The Everly Brothers"
+      ],
+      "album": "Songs Our Daddy Taught Us",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b2739ec63b832a4799ce571d9d80",
+      "durationMs": 190040
+    },
+    {
+      "id": "4QTV3dLUyYu5vFPEFvA1jg",
+      "name": "Angie - 2015 Remaster",
+      "artists": [
+        "Bert Jansch"
+      ],
+      "album": "Bert Jansch",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b273f684196c1e80d384dc9c8c3a",
+      "durationMs": 189405
+    },
+    {
+      "id": "1a9EyBydOYhE7SGSodUIjP",
+      "name": "(I Don't Know Why) But I Do",
+      "artists": [
+        "Clarence \"Frogman\" Henry"
+      ],
+      "album": "Ain't Got No Home: The Best Of Clarence \"Frogman\" Henry (Reissue)",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b27327bdb074064403fafc9c97ea",
+      "durationMs": 141200
+    },
+    {
+      "id": "2TTXOjntCIepJNboJtpbbD",
+      "name": "Heute hier, morgen dort",
+      "artists": [
+        "Hannes Wader"
+      ],
+      "album": "7 Lieder",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b27392fde0aabb6744045a1ae8da",
+      "durationMs": 178400
+    },
+    {
+      "id": "1r8Wnh1b0tLzZQxDgeJ4i9",
+      "name": "Arthur McBride",
+      "artists": [
+        "Andy Irvine",
+        "Paul Brady"
+      ],
+      "album": "Andy Irvine & Paul Brady",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b27317d06ca28a8ff154adac53d6",
+      "durationMs": 425466
+    },
+    {
+      "id": "7Fy6XL8mlSQkQ0EGAMtkLN",
+      "name": "Say You Love Me",
+      "artists": [
+        "Sharon Shannon",
+        "Dessie O'Halloran"
+      ],
+      "album": "The Diamond Mountain Sessions",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b273404be6db29aac25937853868",
+      "durationMs": 271546
+    },
+    {
+      "id": "7xLa3AmELXxS4betMxsxZa",
+      "name": "Gentle Annie (arr. W.R. Baccus and T.L. Cornett)",
+      "artists": [
+        "T. L. Cornett",
+        "Stephen Foster",
+        "Chestnut Brass Company"
+      ],
+      "album": "Foster: Foster for Brass",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b27389a281c1b323d6f78ecbbb1b",
+      "durationMs": 148133
+    },
+    {
+      "id": "2oOomcT5VJ2VxMyk9WdidC",
+      "name": "Cryin Blues",
+      "artists": [
+        "Ked Killen"
+      ],
+      "album": "Western Ranch Oldie Pops",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b2735075df1285f2b09a020e4c60",
+      "durationMs": 165093
+    },
+    {
+      "id": "1N8hZSSzyi1rqCQab3Kxu4",
+      "name": "Give Me Strength",
+      "artists": [
+        "Neil Young"
+      ],
+      "album": "Hitchhiker",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b2731093c30301f1069a6b10f255",
+      "durationMs": 220333
+    },
+    {
+      "id": "4nmkhFuauBBOt9G6Aedygm",
+      "name": "Captain Kennedy",
+      "artists": [
+        "Neil Young"
+      ],
+      "album": "Hitchhiker",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b2731093c30301f1069a6b10f255",
+      "durationMs": 171720
+    },
+    {
+      "id": "68KkCTS0piHP8ohrhLONMW",
+      "name": "Blue Eyed Baby",
+      "artists": [
+        "Ed Askew"
+      ],
+      "album": "For the World",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b273e985608f27607088d80502c9",
+      "durationMs": 197349
+    },
+    {
+      "id": "1BqUPu4AIJDJTox0gphQE6",
+      "name": "Make You Feel My Love",
+      "artists": [
+        "Ane Brun"
+      ],
+      "album": "Leave Me Breathless",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b273f595b32dc04137255c584bae",
+      "durationMs": 167680
+    },
+    {
+      "id": "66HLCz8021x20bXxz9nGkG",
+      "name": "26 Miles (Santa Catalina)",
+      "artists": [
+        "The Four Preps"
+      ],
+      "album": "The Single Collection, Vol. 1",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b273d2f3383d37f9c00da348a468",
+      "durationMs": 146000
+    },
+    {
+      "id": "5lpw5NewnpIgO1yal6Vjl4",
+      "name": "Evening Star",
+      "artists": [
+        "Robert Fripp",
+        "Brian Eno"
+      ],
+      "album": "Evening Star",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b2730949fc83a0fbcb469b9b8bbc",
+      "durationMs": 470921
+    },
+    {
+      "id": "37IqW0b5mPLvTjQIyVmQNJ",
+      "name": "De Temps En Temps",
+      "artists": [
+        "Joséphine Baker"
+      ],
+      "album": "Voilá Paris!",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b273b8cc020bdfd7b876fbaf4b0f",
+      "durationMs": 196253
+    },
+    {
+      "id": "3thuVspq7oLlgDE7d7HTqz",
+      "name": "Sweet Virginia",
+      "artists": [
+        "The Rolling Stones"
+      ],
+      "album": "Exile On Main Street (Deluxe Version)",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b273ad5b5ed2169d072a44e98a31",
+      "durationMs": 266560
+    },
+    {
+      "id": "1E7ApSN0hYXE1QHdx4ogxf",
+      "name": "Indian Girl - Remastered 2009",
+      "artists": [
+        "The Rolling Stones"
+      ],
+      "album": "Emotional Rescue (2009 Re-Mastered)",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b273fd7f25e52b730ad9b838f3d8",
+      "durationMs": 263373
+    },
+    {
+      "id": "3TEJjYhB3EwtBCkwpfftzg",
+      "name": "Wandering Angus",
+      "artists": [
+        "Jolie Holland"
+      ],
+      "album": "Catalpa",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b27391bf23838459260e15c01dba",
+      "durationMs": 239840
+    },
+    {
+      "id": "488Lg37WIYUMws1EJrabd1",
+      "name": "Faded Coat Of Blue",
+      "artists": [
+        "Jolie Holland"
+      ],
+      "album": "Escondida",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b2732932d1b026614cad661d9a4e",
+      "durationMs": 227293
+    },
+    {
+      "id": "7mf6QN5axf6RaPKzibWliU",
+      "name": "On the Wall - Portastudio Demo",
+      "artists": [
+        "The Jesus and Mary Chain"
+      ],
+      "album": "Darklands (Expanded Version)",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b27391e4b9b42b10aef67c3b6edd",
+      "durationMs": 221518
+    },
+    {
+      "id": "06r8zVlCTtslETJ25oz6si",
+      "name": "Dream Baby Dream - Long Version",
+      "artists": [
+        "Suicide"
+      ],
+      "album": "Dream Baby Dream EP",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b2738400fa824e317377d7101b28",
+      "durationMs": 380332
+    },
+    {
+      "id": "2T0JAp7h2ONjZerseNfB5O",
+      "name": "Costa Rica",
+      "artists": [
+        "Walter Martin"
+      ],
+      "album": "We're All Young Together",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b273d233e1314387d68fbe37be9c",
+      "durationMs": 195373
+    },
+    {
+      "id": "0cLIsPAhOM0KLViTi49HZQ",
+      "name": "The Water Is Wide - Live at Boston Music Hall, Boston, MA - November 21, 1975 - Evening",
+      "artists": [
+        "Bob Dylan"
+      ],
+      "album": "The Bootleg Series, Vol. 5 - Bob Dylan Live 1975: The Rolling Thunder Revue",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b27347a648ccf826589d6204aa74",
+      "durationMs": 316240
+    },
+    {
+      "id": "5cY74ANcWZCJH9USwev2tg",
+      "name": "Could You Would You (feat. Van Morrison)",
+      "artists": [
+        "Them",
+        "Van Morrison"
+      ],
+      "album": "Them Again (feat. Van Morrison)",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b273eca243f1c19c2d42dd7d5d50",
+      "durationMs": 189386
+    },
+    {
+      "id": "3OfttbJAJNvkI4VwtZD2E7",
+      "name": "Here Comes the Night (feat. Van Morrison)",
+      "artists": [
+        "Them",
+        "Van Morrison"
+      ],
+      "album": "Complete Them (1964-1967) (feat. Van Morrison)",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b273533db4f9b9c1155c371339a5",
+      "durationMs": 167346
+    },
+    {
+      "id": "2pRxtlVOGHlcmMM1csPN4m",
+      "name": "San Franciscan Nights",
+      "artists": [
+        "Eric Burdon & the Animals"
+      ],
+      "album": "The Best Of Eric Burdon And The Animals (1966 - 1968)",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b2739aa31637e98593e337cc8aa3",
+      "durationMs": 200600
+    },
+    {
+      "id": "63ztz4aRughrpWDi4mhCQA",
+      "name": "Suzanne - Remasterisé en 2016",
+      "artists": [
+        "Françoise Hardy"
+      ],
+      "album": "Comment te dire adieu (Remasterisé en 2016)",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b273a3f0e9f20bfbdd1ab8752e39",
+      "durationMs": 186426
+    },
+    {
+      "id": "7rRGujA12UJcRUz7DxUDwQ",
+      "name": "The Third Man Theme",
+      "artists": [
+        "Anton Karas"
+      ],
+      "album": "The Third Man Theme And Other Viennese Favorites - Anton Karas, Zither",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b27397b91871a768aa70fdaa30d3",
+      "durationMs": 265360
+    },
+    {
+      "id": "7GgtarFx3ognXFQooZ3PyW",
+      "name": "Thanks A Lot",
+      "artists": [
+        "Ernest Tubb"
+      ],
+      "album": "Retrospective (Volume 2)",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b273a81172bcabe6cd6aec4cd3ad",
+      "durationMs": 154333
+    },
+    {
+      "id": "1deWgqhgAzI6dY35TbKKh7",
+      "name": "The Obvious Child",
+      "artists": [
+        "Paul Simon"
+      ],
+      "album": "The Rhythm Of The Saints",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b2733e58e72de9d125c263eb55a3",
+      "durationMs": 250226
+    },
+    {
+      "id": "5pNVGmFkq4bT98sRxdA7Xv",
+      "name": "All Around My Hat - 2009 Remaster",
+      "artists": [
+        "Steeleye Span"
+      ],
+      "album": "All Around My Hat (2009 Remaster)",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b2737826f8f71e3f06b8955e93ad",
+      "durationMs": 251746
+    },
+    {
+      "id": "2vXVfpRRCin0m7b26He4aw",
+      "name": "Summer Wind - 2008 Remastered",
+      "artists": [
+        "Frank Sinatra"
+      ],
+      "album": "Nothing But The Best (2008 Remastered)",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b273b81d66d1416afa139d12767b",
+      "durationMs": 175346
+    },
+    {
+      "id": "39CyGKIFqMzSuynOR8uilD",
+      "name": "Baltimore",
+      "artists": [
+        "Nina Simone"
+      ],
+      "album": "Baltimore",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b273a3e94aa06432d0fa06e54f76",
+      "durationMs": 278866
+    },
+    {
+      "id": "29WuGf5Y20mb3ueOc8035I",
+      "name": "Just Say I Love Him",
+      "artists": [
+        "Nina Simone"
+      ],
+      "album": "Nina's Choice",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b273162fd58a666bb58d0f284d64",
+      "durationMs": 397000
+    },
+    {
+      "id": "5ySM9MBNrMGshyP9EXudQV",
+      "name": "Pack Up Your Sorrows",
+      "artists": [
+        "Mimi And Richard Fariña"
+      ],
+      "album": "Celebrations For A Grey Day",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b273f1e49f0775461f81593a020f",
+      "durationMs": 182000
+    },
+    {
+      "id": "1B35DvO264Lizpd427v6ck",
+      "name": "Dandelion River Run - Instrumental",
+      "artists": [
+        "Mimi And Richard Fariña"
+      ],
+      "album": "The Complete Vanguard Recordings",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b27330e2785b90b58db2896fb656",
+      "durationMs": 105693
+    },
+    {
+      "id": "5tzm7nF42qNo8bKjAIQusl",
+      "name": "Hamish - Instrumental",
+      "artists": [
+        "Mimi And Richard Fariña"
+      ],
+      "album": "The Complete Vanguard Recordings",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b27330e2785b90b58db2896fb656",
+      "durationMs": 111409
+    },
+    {
+      "id": "4VWbPQUPvLes814r6T11Jz",
+      "name": "Les Champs-Elysées",
+      "artists": [
+        "Joe Dassin"
+      ],
+      "album": "Les Champs-Elysées",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b273159a5ce13b0c1657c87b96bc",
+      "durationMs": 157626
+    },
+    {
+      "id": "7MmPLM1cveoaY5eYjq9pdG",
+      "name": "L'été indien - Septemberwind",
+      "artists": [
+        "Joe Dassin"
+      ],
+      "album": "Seine Grössten Erfolge",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b2731df892f4a3a6cf031677e401",
+      "durationMs": 272666
+    },
+    {
+      "id": "44SPxt26EgxgqhoOCTE7Y2",
+      "name": "Sambolero [1]",
+      "artists": [
+        "Luiz Bonfá"
+      ],
+      "album": "Solo in Rio 1959",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b273fc68119636179eb966102594",
+      "durationMs": 173160
+    },
+    {
+      "id": "4sykZpNp5dE2kUb1L6FbwR",
+      "name": "(Do I Figure) In Your Life",
+      "artists": [
+        "Creepy John Thomas"
+      ],
+      "album": "Creepy John Thomas",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b2736453bbeaf2960d9ddbf178fe",
+      "durationMs": 166160
+    },
+    {
+      "id": "3rnZ076JCIiSFTGK1nlEIV",
+      "name": "Down by the Seaside - Remaster",
+      "artists": [
+        "Led Zeppelin"
+      ],
+      "album": "Physical Graffiti (Remaster)",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b2735273ac7ada6725bc36a2bcd0",
+      "durationMs": 315507
+    },
+    {
+      "id": "3xQbgu9nvQEqWSPLfNNvOf",
+      "name": "Bron-Yr-Aur - Remaster",
+      "artists": [
+        "Led Zeppelin"
+      ],
+      "album": "Physical Graffiti (Remaster)",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b2735273ac7ada6725bc36a2bcd0",
+      "durationMs": 126560
+    },
+    {
+      "id": "55GvRwJqX0XP3ANQB7g6t5",
+      "name": "The Half-Remarkable Question - 2010 Remaster",
+      "artists": [
+        "The Incredible String Band"
+      ],
+      "album": "Wee Tam",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b27322e50ba8ccbe18d742851fcf",
+      "durationMs": 303146
+    },
+    {
+      "id": "64DkUADFBHKvEjEbh0cXcl",
+      "name": "May I? - 2003 Remaster",
+      "artists": [
+        "Kevin Ayers"
+      ],
+      "album": "Shooting At The Moon",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b273c33116424cc15ac7ed235285",
+      "durationMs": 241012
+    },
+    {
+      "id": "2e4x6G15fRvN32BR3u00Ef",
+      "name": "Ask Me No Questions",
+      "artists": [
+        "Bridget St John"
+      ],
+      "album": "A Pocketful of Starlight: The Best of Bridget St. John",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b273a269ffae4858afd4884c906f",
+      "durationMs": 468160
+    },
+    {
+      "id": "42F2ZdDTLsqHQ9KdSrgOl7",
+      "name": "Swift as the Wind - 2010 Remaster",
+      "artists": [
+        "The Incredible String Band"
+      ],
+      "album": "The Hangman's Beautiful Daughter",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b273aca71020580684271947323a",
+      "durationMs": 288213
+    },
+    {
+      "id": "7qbLE7ssJcnWD6EO7My847",
+      "name": "Ol' 55",
+      "artists": [
+        "Tom Waits"
+      ],
+      "album": "Closing Time (Remastered)",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b2739c853aae7a8aa1db84a52dd8",
+      "durationMs": 236480
+    },
+    {
+      "id": "7h5crXBSY5SSpXRIlklv74",
+      "name": "The Bare Necessities",
+      "artists": [
+        "Phil Harris",
+        "Bruce Reitherman"
+      ],
+      "album": "The Jungle Book",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b273d897c1143b832479966b407d",
+      "durationMs": 291466
+    },
+    {
+      "id": "48g4abR69tmJMGZsLgBqxe",
+      "name": "The Greenland Whale Fisheries",
+      "artists": [
+        "The Dubliners"
+      ],
+      "album": "At Home With",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b273a242338ee1759c81cd14677c",
+      "durationMs": 188880
+    },
+    {
+      "id": "4uOKFydzAejjSFqYbv1XPt",
+      "name": "Red Red Wine",
+      "artists": [
+        "UB40"
+      ],
+      "album": "The Very Best Of",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b273f1dd69d7399290cc25324706",
+      "durationMs": 183733
+    },
+    {
+      "id": "1zU0kAJdEPyRs4x5gkQQER",
+      "name": "Up The Junction",
+      "artists": [
+        "Squeeze"
+      ],
+      "album": "Cool For Cats",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b273078b9e4f389abc8563605537",
+      "durationMs": 191320
+    },
+    {
+      "id": "19kAUW6NMzgDHKT19s7782",
+      "name": "Lady Jane - Stereo Version",
+      "artists": [
+        "The Rolling Stones"
+      ],
+      "album": "Aftermath",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b273bad7062c3fd2f2d037989694",
+      "durationMs": 188080
+    },
+    {
+      "id": "3KzgdYUlqV6TOG7JCmx2Wg",
+      "name": "Beyond the Sea",
+      "artists": [
+        "Bobby Darin"
+      ],
+      "album": "That's All",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b27361c1a3f8c891f3e99fe4b678",
+      "durationMs": 172480
+    },
+    {
+      "id": "05oMNN5Rbv6rVqyFFG9uTl",
+      "name": "Baby What You Want Me To Do",
+      "artists": [
+        "Jimmy Reed"
+      ],
+      "album": "The Very Best of Jimmy Reed",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b27319dd0643b4b58c01f46012eb",
+      "durationMs": 144426
+    },
+    {
+      "id": "3QINZky0hNv7NAGOIN0nto",
+      "name": "Ghost Of A Dog",
+      "artists": [
+        "Edie Brickell & New Bohemians"
+      ],
+      "album": "Ghost Of A Dog",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b27323bf87a91c8d4ff70cd8d60b",
+      "durationMs": 94306
+    },
+    {
+      "id": "75EYmx098T2EamJlUtgOEv",
+      "name": "Little Girl In Bloom",
+      "artists": [
+        "Thin Lizzy"
+      ],
+      "album": "Vagabonds Of The Western World",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b273d4d20445241a8e71b03e7faa",
+      "durationMs": 317200
+    },
+    {
+      "id": "6oghWCpuTrEyfUrlVAZouA",
+      "name": "Off To Sea Once More",
+      "artists": [
+        "Jerry Garcia",
+        "David Grisman"
+      ],
+      "album": "Shady Grove",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b27332996cad2668ccb93d395123",
+      "durationMs": 347960
+    },
+    {
+      "id": "37pKTyMwalomKCZjxTc2QZ",
+      "name": "Cherry-coloured Funk",
+      "artists": [
+        "Cocteau Twins"
+      ],
+      "album": "Heaven or Las Vegas",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b273fe6211303e796f3d5b7a0e02",
+      "durationMs": 192466
+    },
+    {
+      "id": "7I5TgzRBPcnUafTJaZFbfy",
+      "name": "Carolyn's Fingers",
+      "artists": [
+        "Cocteau Twins"
+      ],
+      "album": "Blue Bell Knoll",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b2734d2fbff666bf6a9997787214",
+      "durationMs": 186306
+    },
+    {
+      "id": "28ToQqj0nuWMDPvGhCTL0I",
+      "name": "Passing Through - Live in London, 1972",
+      "artists": [
+        "Leonard Cohen"
+      ],
+      "album": "Live Songs",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b2731714a64211fcf2b8085c31cc",
+      "durationMs": 245493
+    },
+    {
+      "id": "5vJ87n742bciKZS4CRSAVI",
+      "name": "Loving Cup",
+      "artists": [
+        "The Rolling Stones"
+      ],
+      "album": "Country",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b273b26f47148b58e574078d1d05",
+      "durationMs": 264266
+    },
+    {
+      "id": "70gbuMqwNBE2Y5rkQJE9By",
+      "name": "Going to California - Remaster",
+      "artists": [
+        "Led Zeppelin"
+      ],
+      "album": "Led Zeppelin IV (Deluxe Edition)",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b273c8a11e48c91a982d086afc69",
+      "durationMs": 212160
+    },
+    {
+      "id": "1Jmqubf9kGkWeYQXQKImL5",
+      "name": "People Are Strange",
+      "artists": [
+        "The Doors"
+      ],
+      "album": "Strange Days",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b273bf2970ff212e11093844fbea",
+      "durationMs": 130173
+    },
+    {
+      "id": "4VJrTc5QPr13zgkwxaTjjN",
+      "name": "Little Boxes",
+      "artists": [
+        "Pete Seeger"
+      ],
+      "album": "Headlines and Footnotes: A Collection of Topical Songs",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b273923085005648d417752508da",
+      "durationMs": 114773
+    },
+    {
+      "id": "33DmJG3G95JotyqzysQnHh",
+      "name": "Death of the Last Stripper",
+      "artists": [
+        "Terry Allen",
+        "The Panhandle Mystery Band"
+      ],
+      "album": "Just Like Moby Dick",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b273f53f191d55328f97787169cf",
+      "durationMs": 199737
+    },
+    {
+      "id": "0GRBFjza23Im7Xb16c9AaK",
+      "name": "No Quarter - Remaster",
+      "artists": [
+        "Led Zeppelin"
+      ],
+      "album": "Houses of the Holy (Remaster)",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b2731aa47e71c4edfeaddb65cd54",
+      "durationMs": 422517
+    },
+    {
+      "id": "2Cid2YVl8VKip1q81uQ5KG",
+      "name": "Sail Away - 2016 Remaster",
+      "artists": [
+        "Neil Young",
+        "Crazy Horse"
+      ],
+      "album": "Rust Never Sleeps",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b273db0caaa2b01471d6068053a8",
+      "durationMs": 227117
+    },
+    {
+      "id": "2gXudOFrHDzj7D2JqbcFWm",
+      "name": "Enjoy Yourself",
+      "artists": [
+        "Prince Buster"
+      ],
+      "album": "Tutti Frutti",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b27330dc2521947371b85779ed0c",
+      "durationMs": 185088
+    },
+    {
+      "id": "1L4RtuEiAiwdX5taX4meLI",
+      "name": "Corrina, Corrina",
+      "artists": [
+        "Bob Dylan"
+      ],
+      "album": "The Freewheelin' Bob Dylan",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b273c7f7596cd80cbd6436086f80",
+      "durationMs": 164031
+    },
+    {
+      "id": "5eVjE8FDSDXQLSbTZSA5Qv",
+      "name": "Buckets of Rain",
+      "artists": [
+        "Bob Dylan"
+      ],
+      "album": "Blood On The Tracks",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b2733b5e52dc6433b80b060ce1df",
+      "durationMs": 202805
+    },
+    {
+      "id": "1AJ5F0FMTC3yFU3ocjy1gE",
+      "name": "Surfer Girl - Remastered 2001",
+      "artists": [
+        "The Beach Boys"
+      ],
+      "album": "Surfer Girl (Remastered)",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b2733149dcf7671f99b4b52f8b91",
+      "durationMs": 148533
+    },
+    {
+      "id": "6huvhTE5Z5gXnduG3G3nHh",
+      "name": "Catch A Wave - Stereo/Remastered 2001",
+      "artists": [
+        "The Beach Boys"
+      ],
+      "album": "Surfer Girl (Remastered)",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b2733149dcf7671f99b4b52f8b91",
+      "durationMs": 130200
+    },
+    {
+      "id": "3jV9ZVXnR3qLew48HJIL3x",
+      "name": "The Surfer Moon - Remastered 2001",
+      "artists": [
+        "The Beach Boys"
+      ],
+      "album": "Surfer Girl (Remastered)",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b2733149dcf7671f99b4b52f8b91",
+      "durationMs": 134306
+    },
+    {
+      "id": "48HK32EXm2Lc6uYkoxDUkb",
+      "name": "South Bay Surfer - Remastered 2001",
+      "artists": [
+        "The Beach Boys"
+      ],
+      "album": "Surfer Girl (Remastered)",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b2733149dcf7671f99b4b52f8b91",
+      "durationMs": 108251
+    },
+    {
+      "id": "7BV8FgvBw1W0JeT2u4d47b",
+      "name": "Rocking Surfer - Remastered 2001",
+      "artists": [
+        "The Beach Boys"
+      ],
+      "album": "Surfer Girl (Remastered)",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b2733149dcf7671f99b4b52f8b91",
+      "durationMs": 122773
+    },
+    {
+      "id": "75WMOzv7195ziyx0qEw1yE",
+      "name": "Little Deuce Coupe - Remastered 2001",
+      "artists": [
+        "The Beach Boys"
+      ],
+      "album": "Surfer Girl (Remastered)",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b2733149dcf7671f99b4b52f8b91",
+      "durationMs": 100933
+    },
+    {
+      "id": "62fX8EW16l8St2yL8rMer9",
+      "name": "In My Room - Remastered",
+      "artists": [
+        "The Beach Boys"
+      ],
+      "album": "Surfer Girl (Remastered)",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b2733149dcf7671f99b4b52f8b91",
+      "durationMs": 134133
+    },
+    {
+      "id": "2coG8jl7JVo7hg0XNAay4a",
+      "name": "Hawaii - Remastered 2001",
+      "artists": [
+        "The Beach Boys"
+      ],
+      "album": "Surfer Girl (Remastered)",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b2733149dcf7671f99b4b52f8b91",
+      "durationMs": 122000
+    },
+    {
+      "id": "09mXSz3jKyuvPhrMYlnAu8",
+      "name": "Surfers Rule - Remastered 2001",
+      "artists": [
+        "The Beach Boys"
+      ],
+      "album": "Surfer Girl (Remastered)",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b2733149dcf7671f99b4b52f8b91",
+      "durationMs": 116333
+    },
+    {
+      "id": "6frK58c3nMxJvRHEhDxSZb",
+      "name": "Our Car Club - Remastered 2001",
+      "artists": [
+        "The Beach Boys"
+      ],
+      "album": "Surfer Girl (Remastered)",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b2733149dcf7671f99b4b52f8b91",
+      "durationMs": 144800
+    },
+    {
+      "id": "7ncP01goIb9GbhjZaVahdI",
+      "name": "Your Summer Dream - Remastered 2001",
+      "artists": [
+        "The Beach Boys"
+      ],
+      "album": "Surfer Girl (Remastered)",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b2733149dcf7671f99b4b52f8b91",
+      "durationMs": 149426
+    },
+    {
+      "id": "1K2sDeK6RYnC1B1myRnszU",
+      "name": "Boogie Woodie - Remastered 2001",
+      "artists": [
+        "The Beach Boys"
+      ],
+      "album": "Surfer Girl (Remastered)",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b2733149dcf7671f99b4b52f8b91",
+      "durationMs": 120373
+    },
+    {
+      "id": "2NKZe36oAGEpBx26OoBFLj",
+      "name": "Stumblin' In",
+      "artists": [
+        "Suzi Quatro",
+        "Chris Norman"
+      ],
+      "album": "The Very Best of Suzi Quatro",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b273827cc804347f86bce5cdcb5a",
+      "durationMs": 239240
+    },
+    {
+      "id": "3jd3nPQtwKS3HY6A8XpXx5",
+      "name": "I Want To See The Bright Lights Tonight",
+      "artists": [
+        "Richard & Linda Thompson"
+      ],
+      "album": "I Want To See The Bright Lights Tonight",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b273da3702af5991136abca122ef",
+      "durationMs": 189586
+    },
+    {
+      "id": "6pc3Mj4hyVmIyerewMr8ry",
+      "name": "Afro Blue - Remastered 1959",
+      "artists": [
+        "Abbey Lincoln"
+      ],
+      "album": "Abbey Is Blue",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b273e7ba174a380a1b51c9901d47",
+      "durationMs": 196600
+    },
+    {
+      "id": "3fDuShfPkF39XzzJcICTVL",
+      "name": "Angels' Share",
+      "artists": [
+        "Vetiver"
+      ],
+      "album": "Vetiver",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b273221488700ce99f86021ae887",
+      "durationMs": 261146
+    },
+    {
+      "id": "6QHYEZlm9wyfXfEM1vSu1P",
+      "name": "Boots of Spanish Leather",
+      "artists": [
+        "Bob Dylan"
+      ],
+      "album": "The Times They Are A-Changin'",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b273b75cedd9435250e77b60bfbe",
+      "durationMs": 280305
+    },
+    {
+      "id": "3x8oBw97sf8BdnzF8gg6kR",
+      "name": "Powderfinger",
+      "artists": [
+        "Cowboy Junkies"
+      ],
+      "album": "The Caution Horses",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b27361c871094f1d361482a5deb9",
+      "durationMs": 345560
+    },
+    {
+      "id": "7gFmQ7rZTWXUhJ2ESdcqXc",
+      "name": "Boy Howdy, Hot Dog!",
+      "artists": [
+        "Willi Carlisle"
+      ],
+      "album": "To Tell You the Truth",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b273a58a9ca93b4a5cf1f2d843e7",
+      "durationMs": 198626
+    },
+    {
+      "id": "0aubwlwHlqy4aQspLOOcez",
+      "name": "With the Lights Down",
+      "artists": [
+        "Ocie Elliott"
+      ],
+      "album": "With the Lights Down",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b2735a22684b22892359eb225549",
+      "durationMs": 237980
+    },
+    {
+      "id": "28UWzdVYFe36w0GwDJlIwJ",
+      "name": "Crying Laughing Loving Lying (From \"The Holdovers\")",
+      "artists": [
+        "Labi Siffre"
+      ],
+      "album": "Crying Laughing Loving Lying",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b273ea5cea785aab2932281b90a5",
+      "durationMs": 183200
+    },
+    {
+      "id": "5E3BVY66TEDexFutOO5GeS",
+      "name": "I'm Looking Through You - Remastered 2009",
+      "artists": [
+        "The Beatles"
+      ],
+      "album": "Rubber Soul (Remastered 2009)",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b273ed801e58a9ababdea6ac7ce4",
+      "durationMs": 146386
+    },
+    {
+      "id": "40d2EcaOOCUjDzzo2YvUWn",
+      "name": "Long, Long, Long - Remastered 2009",
+      "artists": [
+        "The Beatles"
+      ],
+      "album": "The Beatles (Remastered 2009)",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b2734ce8b4e42588bf18182a1ad2",
+      "durationMs": 186306
+    },
+    {
+      "id": "6pPOkr2OxhQ6htrzOiDmq9",
+      "name": "Mr Moonlight - Remastered 2009",
+      "artists": [
+        "The Beatles"
+      ],
+      "album": "Beatles For Sale (Remastered 2009)",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b27355612ece447bec5d62c68375",
+      "durationMs": 158626
+    },
+    {
+      "id": "2CLeotsLhEUu0qkj56vbUj",
+      "name": "Il est cinq heures, Paris s'éveille",
+      "artists": [
+        "Jacques Dutronc"
+      ],
+      "album": "Il est cinq heures",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b2734af2aea504a792071772f349",
+      "durationMs": 175333
+    },
+    {
+      "id": "6UrgPc2f78pgDrdodMJA42",
+      "name": "Yer Blues - Remastered 2018",
+      "artists": [
+        "The Dirty Mac"
+      ],
+      "album": "The Rolling Stones Rock And Roll Circus (Expanded)",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b273cf06d7fb4f5b592525e91b94",
+      "durationMs": 267253
+    },
+    {
+      "id": "5VWm9OgwSJYcfE8lj2j2TM",
+      "name": "Homesickness",
+      "artists": [
+        "Emahoy Tsege Mariam Gebru"
+      ],
+      "album": "Ethiopiques, vol. 21: Emahoy (Piano Solo)",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b27353d13c60cbf8496025e414e8",
+      "durationMs": 231880
+    },
+    {
+      "id": "3wxdOzW1Yf0mlcC8h2RG9f",
+      "name": "Goodnight Irene",
+      "artists": [
+        "Lead Belly"
+      ],
+      "album": "The Best of Leadbelly",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b273ac04a43f63daa76969e027ea",
+      "durationMs": 153948
+    },
+    {
+      "id": "0QpgXknYVO9nf0zRDZXAgY",
+      "name": "Find Her in the Grass",
+      "artists": [
+        "Iona Zajac"
+      ],
+      "album": "Find Her in the Grass",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b273cf00a437914f74942eb29b7b",
+      "durationMs": 207742
+    },
+    {
+      "id": "2JIVtls9Jf9nAosUbFzbyw",
+      "name": "Tonight",
+      "artists": [
+        "Sibylle Baier"
+      ],
+      "album": "Colour Green",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b27300b9e955d2b2a0be08152a8c",
+      "durationMs": 146626
+    },
+    {
+      "id": "2ucFCqazVVhPKHDoaR73t8",
+      "name": "I Lost Something in the Hills",
+      "artists": [
+        "Sibylle Baier"
+      ],
+      "album": "Colour Green",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b27300b9e955d2b2a0be08152a8c",
+      "durationMs": 208106
+    },
+    {
+      "id": "1buRClsYPnS4HRRz4jRMmy",
+      "name": "The End",
+      "artists": [
+        "Sibylle Baier"
+      ],
+      "album": "Colour Green",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b27300b9e955d2b2a0be08152a8c",
+      "durationMs": 147666
+    },
+    {
+      "id": "3olbsAqIFEezvL7xwsKIu9",
+      "name": "Softly",
+      "artists": [
+        "Sibylle Baier"
+      ],
+      "album": "Colour Green",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b27300b9e955d2b2a0be08152a8c",
+      "durationMs": 174733
+    },
+    {
+      "id": "4LzQNP2DiVMvQtRobn5iX1",
+      "name": "Remember the Day",
+      "artists": [
+        "Sibylle Baier"
+      ],
+      "album": "Colour Green",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b27300b9e955d2b2a0be08152a8c",
+      "durationMs": 103680
+    },
+    {
+      "id": "00epdG9ONPL8KkErbmKW8o",
+      "name": "Forget About",
+      "artists": [
+        "Sibylle Baier"
+      ],
+      "album": "Colour Green",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b27300b9e955d2b2a0be08152a8c",
+      "durationMs": 151413
+    },
+    {
+      "id": "6vMhJgRB4jTrabGd5R0xwj",
+      "name": "William",
+      "artists": [
+        "Sibylle Baier"
+      ],
+      "album": "Colour Green",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b27300b9e955d2b2a0be08152a8c",
+      "durationMs": 140946
+    },
+    {
+      "id": "61EOCM7gO9689jcDPm8CJj",
+      "name": "Says Elliott",
+      "artists": [
+        "Sibylle Baier"
+      ],
+      "album": "Colour Green",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b27300b9e955d2b2a0be08152a8c",
+      "durationMs": 145800
+    },
+    {
+      "id": "2m8r2V0pUmXBeGo1jaw28G",
+      "name": "Colour Green",
+      "artists": [
+        "Sibylle Baier"
+      ],
+      "album": "Colour Green",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b27300b9e955d2b2a0be08152a8c",
+      "durationMs": 145333
+    },
+    {
+      "id": "1egV8XOx6FhNTqLi6EKHIV",
+      "name": "Driving",
+      "artists": [
+        "Sibylle Baier"
+      ],
+      "album": "Colour Green",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b27300b9e955d2b2a0be08152a8c",
+      "durationMs": 150946
+    },
+    {
+      "id": "1Iicl8g9Few8LZcKPGWrzZ",
+      "name": "Girl",
+      "artists": [
+        "Sibylle Baier"
+      ],
+      "album": "Colour Green",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b27300b9e955d2b2a0be08152a8c",
+      "durationMs": 103680
+    },
+    {
+      "id": "3DpGkTydxKfJ8vcWobZ7yi",
+      "name": "Wim",
+      "artists": [
+        "Sibylle Baier"
+      ],
+      "album": "Colour Green",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b27300b9e955d2b2a0be08152a8c",
+      "durationMs": 121466
+    },
+    {
+      "id": "7J2gELUzPrI1P1FZTqwK3E",
+      "name": "Forgett",
+      "artists": [
+        "Sibylle Baier"
+      ],
+      "album": "Colour Green",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b27300b9e955d2b2a0be08152a8c",
+      "durationMs": 130826
+    },
+    {
+      "id": "4n9CEd6rvubTtvmc4DUY5f",
+      "name": "Give Me a Smile",
+      "artists": [
+        "Sibylle Baier"
+      ],
+      "album": "Colour Green",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b27300b9e955d2b2a0be08152a8c",
+      "durationMs": 114240
+    },
+    {
+      "id": "2fF5xy7as55kTEz6Zst84e",
+      "name": "The Burning of Auchindoun",
+      "artists": [
+        "Iona Zajac",
+        "Daragh Lynch"
+      ],
+      "album": "The Burning of Auchindoun",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b2738a1aaaa0e8d4209d575a3255",
+      "durationMs": 398120
+    },
+    {
+      "id": "2O2VRYgOK57P8Y97Jxlz7u",
+      "name": "Red Corn Poppies",
+      "artists": [
+        "Iona Zajac"
+      ],
+      "album": "Red Corn Poppies",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b2734d759dc9c1a95352206a588d",
+      "durationMs": 162329
+    },
+    {
+      "id": "6nN8jAqd5rvUFlvf3aNSPP",
+      "name": "Canyoneers",
+      "artists": [
+        "Jake Xerxes Fussell"
+      ],
+      "album": "What in the Natural World",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b27318475008f7bd992b90b50e9d",
+      "durationMs": 273769
+    },
+    {
+      "id": "0e7Ad0iVKsuzU3K7LU5v08",
+      "name": "Coucou",
+      "artists": [
+        "Django Reinhardt",
+        "Quintette du Hot Club de France"
+      ],
+      "album": "War Clouds 1940",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b273fff98ce48d0675baa9595f65",
+      "durationMs": 163226
+    },
+    {
+      "id": "0sipGTHxtDrsTH1D9FAujS",
+      "name": "Theme From \"The Endless Summer\"",
+      "artists": [
+        "The Sandals"
+      ],
+      "album": "The Original Soundtrack Music From Bruce Brown's The Endless Summer",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b273bf939a3efd7687cac64b1d96",
+      "durationMs": 170533
+    },
+    {
+      "id": "4L6ZmbSmjH5swqGWrelrrN",
+      "name": "Racing in the Street",
+      "artists": [
+        "Bruce Springsteen"
+      ],
+      "album": "Darkness On the Edge of Town",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b27394971620d6c7f0805855ae6f",
+      "durationMs": 416453
+    },
+    {
+      "id": "5qq7ymWCdYBIb2daKdNZ4O",
+      "name": "IRA Hayes",
+      "artists": [
+        "Townes Van Zandt"
+      ],
+      "album": "Roadsongs",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b273f0f1716bd7dae1ef3d23bd67",
+      "durationMs": 225840
+    },
+    {
+      "id": "6QLh3oOA1AKocLHFH6j7qA",
+      "name": "Dead Flowers",
+      "artists": [
+        "Townes Van Zandt"
+      ],
+      "album": "Roadsongs",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b273f0f1716bd7dae1ef3d23bd67",
+      "durationMs": 287293
+    },
+    {
+      "id": "4KwrboqccvZjfvWPDCkxF5",
+      "name": "Fraulein",
+      "artists": [
+        "Townes Van Zandt"
+      ],
+      "album": "Roadsongs",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b273f0f1716bd7dae1ef3d23bd67",
+      "durationMs": 190200
+    },
+    {
+      "id": "7a3yQdeZT1vyzxfXd1DDDa",
+      "name": "Indian Cowboy",
+      "artists": [
+        "Townes Van Zandt"
+      ],
+      "album": "Roadsongs",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b273f0f1716bd7dae1ef3d23bd67",
+      "durationMs": 162533
+    },
+    {
+      "id": "14bZukmTyty0YuHfHwXaJv",
+      "name": "Racing in the Streets",
+      "artists": [
+        "Townes Van Zandt"
+      ],
+      "album": "Roadsongs",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b273f0f1716bd7dae1ef3d23bd67",
+      "durationMs": 182666
+    },
+    {
+      "id": "0YD4QKHYtctCznnyNqmVaQ",
+      "name": "Cocaine Blues",
+      "artists": [
+        "Townes Van Zandt"
+      ],
+      "album": "Roadsongs",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b273f0f1716bd7dae1ef3d23bd67",
+      "durationMs": 243200
+    },
+    {
+      "id": "7icAxA2OdUnNH85m1MlL0B",
+      "name": "When I Was Young",
+      "artists": [
+        "Eric Burdon & the Animals"
+      ],
+      "album": "The Best Of Eric Burdon And The Animals (1966 - 1968)",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b2739aa31637e98593e337cc8aa3",
+      "durationMs": 181893
+    },
+    {
+      "id": "5Ldn7wkMzGkaqYxIBv3XtX",
+      "name": "Here Comes the Night (feat. Van Morrison)",
+      "artists": [
+        "Them",
+        "Van Morrison"
+      ],
+      "album": "The Essential Van Morrison",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b2738f09dd4d56cde1a2cda18604",
+      "durationMs": 165080
+    },
+    {
+      "id": "1BiOEKWhcOVUCLnIKFOWUa",
+      "name": "King of the Surf",
+      "artists": [
+        "The Islanders"
+      ],
+      "album": "King of the Surf b/w When I'm with You",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b27352e1fdee876b45be766a777c",
+      "durationMs": 170493
+    },
+    {
+      "id": "1gDv2JuB5yqVWCnPowAUOP",
+      "name": "Oh My Love (feat. Katyna Ranieri)",
+      "artists": [
+        "Riz Ortolani",
+        "Katyna Ranieri"
+      ],
+      "album": "Drive (Original Motion Picture Soundtrack)",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b2732c8ba8e2fbf531bbb9cd1a48",
+      "durationMs": 170426
+    },
+    {
+      "id": "2wnsBaxrmkthIFAm6vqCuX",
+      "name": "So Lonely",
+      "artists": [
+        "The Police"
+      ],
+      "album": "Outlandos D'Amour (Remastered 2003)",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b2732043dd3544a339547d04b436",
+      "durationMs": 289586
+    },
+    {
+      "id": "3w7hnMNX4zVZeBJ6LisTjT",
+      "name": "Moonlight Mile - 2009 Mix",
+      "artists": [
+        "The Rolling Stones"
+      ],
+      "album": "Sticky Fingers (Remastered)",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b273a1d9c9969f2a7ed27e449a3c",
+      "durationMs": 357200
+    },
+    {
+      "id": "38ME3BsVXBCBy9TjQ2jx6X",
+      "name": "Cascade Street",
+      "artists": [
+        "Yann Tiersen"
+      ],
+      "album": "Cascade Street",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b273c2d418a5d9c48111f43277cc",
+      "durationMs": 242933
+    },
+    {
+      "id": "0WON7ccM42foBwZikHsf7v",
+      "name": "Soukora (with Ry Cooder)",
+      "artists": [
+        "Ali Farka Touré",
+        "Ry Cooder"
+      ],
+      "album": "Talking Timbuktu (with Ry Cooder)",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b2734209569110ce50ca88e1dc46",
+      "durationMs": 362546
+    },
+    {
+      "id": "4ywWJqYKOwaVVh9xXARWUS",
+      "name": "Tangerine - Remaster",
+      "artists": [
+        "Led Zeppelin"
+      ],
+      "album": "Led Zeppelin III (Remaster)",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b27390a50cfe99a4c19ff3cbfbdb",
+      "durationMs": 191827
+    },
+    {
+      "id": "0Fb7qtaswS3Jx3ol9Fv4gc",
+      "name": "The Blackfly Song",
+      "artists": [
+        "Wade Hemsworth"
+      ],
+      "album": "Folk Songs of the Canadian North Woods",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b27355402e171721f9b392263c55",
+      "durationMs": 179360
+    },
+    {
+      "id": "3ZVJCFbN6wDtLIUyLNRXPP",
+      "name": "The Shining Birch Tree",
+      "artists": [
+        "Wade Hemsworth"
+      ],
+      "album": "Folk Songs of the Canadian North Woods",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b27355402e171721f9b392263c55",
+      "durationMs": 163640
+    },
+    {
+      "id": "2wRZDqmzEBg4LEvOcrdmlx",
+      "name": "V'la l'Bon Vent (Voila le Bon Vent)",
+      "artists": [
+        "Wade Hemsworth"
+      ],
+      "album": "Folk Songs of the Canadian North Woods",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b27355402e171721f9b392263c55",
+      "durationMs": 145400
+    },
+    {
+      "id": "4ORRfd00wFgxDFIJtJ3Frb",
+      "name": "That's How I Got To Memphis",
+      "artists": [
+        "Karl Blau"
+      ],
+      "album": "Introducing Karl Blau",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b2734e09415c801ac795052a2085",
+      "durationMs": 243200
+    },
+    {
+      "id": "2TTAPkrGQQOZkaUTUlt21Q",
+      "name": "Strange",
+      "artists": [
+        "Galaxie 500"
+      ],
+      "album": "On Fire",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b2736610d5c08e5b809ffb19b6d9",
+      "durationMs": 199466
+    },
+    {
+      "id": "1GLmaPfulP0BrfijohQpN5",
+      "name": "Don't Worry Baby - Remastered 2001",
+      "artists": [
+        "The Beach Boys"
+      ],
+      "album": "Shut Down, Vol. 2 (Remastered)",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b273e9303d395184aab6ad4f0ea1",
+      "durationMs": 169933
+    },
+    {
+      "id": "75UMtPC77vqKRwfSuYuNPO",
+      "name": "San Lucas",
+      "artists": [
+        "Kevin Kaarl"
+      ],
+      "album": "San Lucas",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b2733e4b5368bf7ad20f19cc4812",
+      "durationMs": 247196
+    },
+    {
+      "id": "71OzN2JM6BoQD3JO9hiJFi",
+      "name": "Sweet Jane",
+      "artists": [
+        "Cowboy Junkies"
+      ],
+      "album": "The Trinity Session",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b273165a76fbc86625ca95976381",
+      "durationMs": 214973
+    },
+    {
+      "id": "1qXNF6oNu9x2chWkTge0uB",
+      "name": "If You Were The Woman And I Was The Man",
+      "artists": [
+        "Cowboy Junkies",
+        "John Prine"
+      ],
+      "album": "Black Eyed Man",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b273883e0be36df8e3956133f4cb",
+      "durationMs": 194640
+    },
+    {
+      "id": "2elAyF0DLb10MWj76pU6pP",
+      "name": "As The World Falls Down",
+      "artists": [
+        "David Bowie"
+      ],
+      "album": "Labyrinth (From The Original Soundtrack Of The Jim Henson Film)",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b273fc601f803b3fdd0b10fdd190",
+      "durationMs": 290963
+    },
+    {
+      "id": "04cg4N12Hs5tKwgB04v9fr",
+      "name": "Waiting for the Miracle",
+      "artists": [
+        "Leonard Cohen"
+      ],
+      "album": "The Essential Leonard Cohen",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b2731b826b4330e01a518b408a01",
+      "durationMs": 462493
+    },
+    {
+      "id": "1mIZi4MiV5uZKLOlXYaKnn",
+      "name": "My Lovely Elizabeth",
+      "artists": [
+        "S.E. Rogie"
+      ],
+      "album": "Rhythms of Africa",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b273ddc6501975a6f2d4f33e6b7c",
+      "durationMs": 181520
+    },
+    {
+      "id": "1Hm2i2qBnijkK7arxMBMTp",
+      "name": "I Wish I Was a Cowboy",
+      "artists": [
+        "S.E. Rogie"
+      ],
+      "album": "Rhythms of Africa",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b273ddc6501975a6f2d4f33e6b7c",
+      "durationMs": 196120
+    },
+    {
+      "id": "7xRemq7GLu0Tbqe9OckG87",
+      "name": "The Man in Me",
+      "artists": [
+        "Bob Dylan"
+      ],
+      "album": "New Morning",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b27300395da7ce063ed4b1d202bd",
+      "durationMs": 191683
+    },
+    {
+      "id": "1WJKoGIVHwYcgMcd1UJGl3",
+      "name": "Baby Where You Are",
+      "artists": [
+        "Ted Lucas"
+      ],
+      "album": "Ted Lucas",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b2734d7ebbd38408cbf54b3df4f6",
+      "durationMs": 152787
+    },
+    {
+      "id": "4O0sGJdqpHMaWz7KoVd7tb",
+      "name": "Diamonds And Rust",
+      "artists": [
+        "Joan Baez"
+      ],
+      "album": "Diamonds & Rust",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b273d0155c007db947331b4666a1",
+      "durationMs": 286106
+    },
+    {
+      "id": "6eEchTSWRTQtAzzeEPtOpr",
+      "name": "You And I - Moon And Stars / Acoustic",
+      "artists": [
+        "Valerie June"
+      ],
+      "album": "The Moon And Stars: Prescriptions For Dreamers (Deluxe Edition)",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b2732968482d4e6a00a09e689901",
+      "durationMs": 200000
+    },
+    {
+      "id": "5fadYf8F0lVkJc92u5ZpwB",
+      "name": "Mother's Love",
+      "artists": [
+        "The Vernon Spring"
+      ],
+      "album": "A Plane Over Woods",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b273a3970e9c13c01530435a996c",
+      "durationMs": 221253
+    },
+    {
+      "id": "1HyRsq9UzKEPv2Dm1Cwpe4",
+      "name": "Janine - 2015 Remaster",
+      "artists": [
+        "David Bowie"
+      ],
+      "album": "David Bowie (aka Space Oddity) [2015 Remaster]",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b2733395f3e809dfbc2b1101d464",
+      "durationMs": 205826
+    },
+    {
+      "id": "21FFj5GqlujABc0H06uN8j",
+      "name": "Sorrow - 2015 Remaster",
+      "artists": [
+        "David Bowie"
+      ],
+      "album": "Pinups (2015 Remaster)",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b2733f91d314b2b4be4f88dafe83",
+      "durationMs": 173453
+    },
+    {
+      "id": "5M1gX3DQvgc7GI6dBWX9FL",
+      "name": "Early Morning Rain",
+      "artists": [
+        "Gordon Lightfoot"
+      ],
+      "album": "Gord's Gold",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b27316659de824475701b97f6ae9",
+      "durationMs": 198066
+    },
+    {
+      "id": "24NvptbNKGs6sPy1Vh1O0v",
+      "name": "What They Say",
+      "artists": [
+        "Chris Smither"
+      ],
+      "album": "Hundred Dollar Valentine",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b27349e42f9b56fd4809df7f5748",
+      "durationMs": 166240
+    },
+    {
+      "id": "0RaoIschddP9GQHu36vODG",
+      "name": "A Hundred Years from Today",
+      "artists": [
+        "Jack Teagarden And His Orchestra"
+      ],
+      "album": "Jack Teagarden (Doxy Collection)",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b27370b7ded51a1c23e335d6747a",
+      "durationMs": 187666
+    },
+    {
+      "id": "0emd9tHSVP4dK6UG4pcOFD",
+      "name": "Something In The Air",
+      "artists": [
+        "Thunderclap Newman"
+      ],
+      "album": "Hollywood Dream (Expanded Edition)",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b2732aa39070340f902ce294caec",
+      "durationMs": 234360
+    },
+    {
+      "id": "0EQkkOd9AWf9ucupil31bA",
+      "name": "Havana Burning",
+      "artists": [
+        "Dan Reeder"
+      ],
+      "album": "Dan Reeder",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b273e0e2928c98d8e1183faabd10",
+      "durationMs": 159653
+    },
+    {
+      "id": "0Qto8euWAEBktSLR29mdDm",
+      "name": "Leave The Light On",
+      "artists": [
+        "Chris Smither"
+      ],
+      "album": "Leave The Light On",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b273e16a2fe09cd7c3bf5c76865a",
+      "durationMs": 227920
+    },
+    {
+      "id": "73uAQw29X3mrO1taWZaOvm",
+      "name": "Journey Through the Past",
+      "artists": [
+        "Neil Young"
+      ],
+      "album": "Inherent Vice (Original Motion Picture Soundtrack)",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b273b089402ed16680010d0131d4",
+      "durationMs": 141906
+    },
+    {
+      "id": "6jhx1qxNoNNXRUxwQdUF7c",
+      "name": "Sometimes",
+      "artists": [
+        "Luke Bell"
+      ],
+      "album": "Luke Bell",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b273a72593c71ba19a472cd2e281",
+      "durationMs": 247613
+    },
+    {
+      "id": "7gYWCaKeuAJKhGiauRrFsj",
+      "name": "Small Axe",
+      "artists": [
+        "Bob Marley & The Wailers"
+      ],
+      "album": "I Am The Upsetter - The Story Of The Lee \"Scratch\" Perry Golden Years",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b2737eeeffd5ced50fe6a3f1f215",
+      "durationMs": 234080
+    },
+    {
+      "id": "66YbSKWf4gNjbcoA9Ml221",
+      "name": "A Whiter Shade of Pale",
+      "artists": [
+        "Dan Reeder"
+      ],
+      "album": "Sweetheart",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b27364f245e78db83daa26a7dd09",
+      "durationMs": 216520
+    },
+    {
+      "id": "0gWvVB4bGvADocoPMEDy3K",
+      "name": "The Crystal Ship",
+      "artists": [
+        "The Doors"
+      ],
+      "album": "The Doors",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b27300d037dd3dfb578da4692088",
+      "durationMs": 152000
+    },
+    {
+      "id": "314rgASNh722JZAnITZOeQ",
+      "name": "A Real Hero (feat. Electric Youth)",
+      "artists": [
+        "College",
+        "Electric Youth"
+      ],
+      "album": "Drive (Original Motion Picture Soundtrack)",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b2732c8ba8e2fbf531bbb9cd1a48",
+      "durationMs": 267720
+    },
+    {
+      "id": "1bo6xzrCrK7ocEirC5rrZk",
+      "name": "Soul Love - 2012 Remaster",
+      "artists": [
+        "David Bowie"
+      ],
+      "album": "The Rise and Fall of Ziggy Stardust and the Spiders from Mars (2012 Remaster)",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b273c41f4e1133b0e6c5fcf58680",
+      "durationMs": 214198
+    },
+    {
+      "id": "1BYnrHIpsahmWKCeG22m6i",
+      "name": "The Grey Funnel Line",
+      "artists": [
+        "Maddy Prior",
+        "June Tabor"
+      ],
+      "album": "Silly Sisters",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b2735a5c0ae893f6a1f76fb3a6ae",
+      "durationMs": 185200
+    },
+    {
+      "id": "5b2Zf1kc0M7KNfCnBV4vWO",
+      "name": "Come Wander with Me",
+      "artists": [
+        "Jeff Alexander"
+      ],
+      "album": "Late Night Tales: Air",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b2735e7808172c74ff40a8f08349",
+      "durationMs": 174805
+    },
+    {
+      "id": "5hy5qxuY4KcVxIPE3EHFOr",
+      "name": "Dirty Old Town",
+      "artists": [
+        "Ewan MacColl"
+      ],
+      "album": "Black and White",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b2733e606346adba9bd683d45f21",
+      "durationMs": 173240
+    },
+    {
+      "id": "5DZrcR1EqQGMEUyQRtDSfe",
+      "name": "The Greenland Whale Fishery",
+      "artists": [
+        "The Watersons"
+      ],
+      "album": "Early Days",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b27391c31556c1971573d156128f",
+      "durationMs": 156266
+    },
+    {
+      "id": "1l3clNL2lxT2aXmnRuvkDb",
+      "name": "The Thirty-Foot Trailer",
+      "artists": [
+        "The Watersons"
+      ],
+      "album": "Early Days",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b27391c31556c1971573d156128f",
+      "durationMs": 212933
+    },
+    {
+      "id": "20TTcvoIoyFKZJTT730ZVw",
+      "name": "The Wild Rover - Live",
+      "artists": [
+        "The Dubliners"
+      ],
+      "album": "The Dubliners (Bonus Track Edition)",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b2736b15436b6cf1e6cff408f36b",
+      "durationMs": 193493
+    },
+    {
+      "id": "1ZrWEHFQtm5AgDwD6HcHM6",
+      "name": "The Ragman's Ball",
+      "artists": [
+        "The Dubliners"
+      ],
+      "album": "The Dubliners (Bonus Track Edition)",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b2736b15436b6cf1e6cff408f36b",
+      "durationMs": 128386
+    },
+    {
+      "id": "0d8lrBUoLp62u7AmCfntSz",
+      "name": "Preab San Ol",
+      "artists": [
+        "The Dubliners"
+      ],
+      "album": "The Dubliners (Bonus Track Edition)",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b2736b15436b6cf1e6cff408f36b",
+      "durationMs": 134573
+    },
+    {
+      "id": "2FwttgzG7DInVW8hm4FJzc",
+      "name": "The High Reel - Live",
+      "artists": [
+        "The Dubliners"
+      ],
+      "album": "The Dubliners (Bonus Track Edition)",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b2736b15436b6cf1e6cff408f36b",
+      "durationMs": 178653
+    },
+    {
+      "id": "77Ax6g0IDnaJWcY3mNR7Su",
+      "name": "The Holy Ground",
+      "artists": [
+        "The Dubliners"
+      ],
+      "album": "The Dubliners (Bonus Track Edition)",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b2736b15436b6cf1e6cff408f36b",
+      "durationMs": 135440
+    },
+    {
+      "id": "2jZPIF2UPayM9eOB7X3CIu",
+      "name": "Tramps and Hawkers - Live",
+      "artists": [
+        "The Dubliners"
+      ],
+      "album": "The Dubliners (Bonus Track Edition)",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b2736b15436b6cf1e6cff408f36b",
+      "durationMs": 186133
+    },
+    {
+      "id": "6r9oatHmlHC9tbO4diw8HZ",
+      "name": "Home Boys Home",
+      "artists": [
+        "The Dubliners"
+      ],
+      "album": "The Dubliners (Bonus Track Edition)",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b2736b15436b6cf1e6cff408f36b",
+      "durationMs": 197120
+    },
+    {
+      "id": "6Mer1LOfJDd7vUbeWXODrq",
+      "name": "The Rocky Road to Dublin - Live",
+      "artists": [
+        "The Dubliners"
+      ],
+      "album": "The Dubliners (Bonus Track Edition)",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b2736b15436b6cf1e6cff408f36b",
+      "durationMs": 154986
+    },
+    {
+      "id": "7HBQbMkAml7szLzMLvA29h",
+      "name": "Banks of the Roses - Live",
+      "artists": [
+        "The Dubliners"
+      ],
+      "album": "The Dubliners (Bonus Track Edition)",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b2736b15436b6cf1e6cff408f36b",
+      "durationMs": 132826
+    },
+    {
+      "id": "5khRYgMLzpAqtwpMzrYesg",
+      "name": "I'll Tell My Ma",
+      "artists": [
+        "The Dubliners"
+      ],
+      "album": "The Dubliners (Bonus Track Edition)",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b2736b15436b6cf1e6cff408f36b",
+      "durationMs": 126480
+    },
+    {
+      "id": "4TCiID5JdrBxFmJ6q7pzby",
+      "name": "Swallow's Tail",
+      "artists": [
+        "The Dubliners",
+        "Luke Kelly"
+      ],
+      "album": "The Dubliners (Bonus Track Edition)",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b2736b15436b6cf1e6cff408f36b",
+      "durationMs": 169480
+    },
+    {
+      "id": "1DEBoBsLh2JPey6QgiImxc",
+      "name": "Love Is Pleasing - Live",
+      "artists": [
+        "The Dubliners",
+        "Luke Kelly"
+      ],
+      "album": "The Dubliners (Bonus Track Edition)",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b2736b15436b6cf1e6cff408f36b",
+      "durationMs": 134226
+    },
+    {
+      "id": "20WjnnPSPnoDSzg1LaCI2h",
+      "name": "Jar of Porter - Live",
+      "artists": [
+        "The Dubliners"
+      ],
+      "album": "The Dubliners (Bonus Track Edition)",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b2736b15436b6cf1e6cff408f36b",
+      "durationMs": 107920
+    },
+    {
+      "id": "4Mqopa7e6hoIuBwo2wfnK5",
+      "name": "The Nightingale - Live",
+      "artists": [
+        "The Dubliners",
+        "Luke Kelly"
+      ],
+      "album": "The Dubliners (Bonus Track Edition)",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b2736b15436b6cf1e6cff408f36b",
+      "durationMs": 214146
+    },
+    {
+      "id": "1MvMZ4BAXd2FjeYGxgt8pr",
+      "name": "Rare Old Mountain Dew",
+      "artists": [
+        "The Dubliners"
+      ],
+      "album": "The Dubliners (Bonus Track Edition)",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b2736b15436b6cf1e6cff408f36b",
+      "durationMs": 90840
+    },
+    {
+      "id": "6L4SM8QaP9BVb32gqbgaWi",
+      "name": "McAlpine's Fusiliers Behan",
+      "artists": [
+        "The Dubliners"
+      ],
+      "album": "The Dubliners (Bonus Track Edition)",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b2736b15436b6cf1e6cff408f36b",
+      "durationMs": 194413
+    },
+    {
+      "id": "1pdwjLcIHjUx4CM70xl15J",
+      "name": "Willie Gannon - Live",
+      "artists": [
+        "The Dubliners"
+      ],
+      "album": "The Dubliners (Bonus Track Edition)",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b2736b15436b6cf1e6cff408f36b",
+      "durationMs": 99120
+    },
+    {
+      "id": "6n7u0bVArdqIWfvhmMzEVU",
+      "name": "Mrs McGrath",
+      "artists": [
+        "The Dubliners"
+      ],
+      "album": "The Dubliners (Bonus Track Edition)",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b2736b15436b6cf1e6cff408f36b",
+      "durationMs": 184226
+    },
+    {
+      "id": "34iQEgTDnuQcr1krTnNYfW",
+      "name": "I Wish (Till Apples Grow On an Ivy Tree)",
+      "artists": [
+        "The Dubliners"
+      ],
+      "album": "The Dubliners (Bonus Track Edition)",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b2736b15436b6cf1e6cff408f36b",
+      "durationMs": 129800
+    },
+    {
+      "id": "1oEkD9W4aYdVPrVazTeKkD",
+      "name": "Roddy McCorley",
+      "artists": [
+        "The Dubliners"
+      ],
+      "album": "The Dubliners (Bonus Track Edition)",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b2736b15436b6cf1e6cff408f36b",
+      "durationMs": 165080
+    },
+    {
+      "id": "0dA46fBXIL2jTiZJYGqjoP",
+      "name": "Chief O'Neill's / Cork Hornpipe",
+      "artists": [
+        "The Dubliners"
+      ],
+      "album": "The Dubliners (Bonus Track Edition)",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b2736b15436b6cf1e6cff408f36b",
+      "durationMs": 174573
+    },
+    {
+      "id": "48NogLTx4cS34Y1IfauniI",
+      "name": "Instrumental",
+      "artists": [
+        "The Dubliners"
+      ],
+      "album": "The Dubliners (Bonus Track Edition)",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b2736b15436b6cf1e6cff408f36b",
+      "durationMs": 67226
+    },
+    {
+      "id": "3VHW4QaZCqCu6WRWtGKmNc",
+      "name": "The Wild Rover - Take 1",
+      "artists": [
+        "The Dubliners"
+      ],
+      "album": "The Dubliners (Bonus Track Edition)",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b2736b15436b6cf1e6cff408f36b",
+      "durationMs": 213773
+    },
+    {
+      "id": "6bqMkL2Rm3j3HOgtcWPNym",
+      "name": "The Wild Rover - Take 2",
+      "artists": [
+        "The Dubliners"
+      ],
+      "album": "The Dubliners (Bonus Track Edition)",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b2736b15436b6cf1e6cff408f36b",
+      "durationMs": 211946
+    },
+    {
+      "id": "1WXEDGr0hrCAEf2gND7BnV",
+      "name": "Cúnla",
+      "artists": [
+        "The Dubliners"
+      ],
+      "album": "At Home With",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b273a242338ee1759c81cd14677c",
+      "durationMs": 126760
+    },
+    {
+      "id": "2hdeaGl9nT3UoQIgSqctHj",
+      "name": "Indian Summer",
+      "artists": [
+        "The Doors"
+      ],
+      "album": "Morrison Hotel",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b2735a395a75b03347163aa8dab9",
+      "durationMs": 154066
+    },
+    {
+      "id": "6cA1usDL8nTHeSgFewQat3",
+      "name": "After Hours",
+      "artists": [
+        "The Velvet Underground"
+      ],
+      "album": "The Velvet Underground (45th Anniversary)",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b2739a2c40b6a1af4a92aac991c5",
+      "durationMs": 127453
+    },
+    {
+      "id": "1iJiJfFkhwpSh1m8qTgZ5A",
+      "name": "I'm Sticking With You",
+      "artists": [
+        "The Velvet Underground"
+      ],
+      "album": "VU",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b273d360f68678a38898f21f2944",
+      "durationMs": 146173
+    },
+    {
+      "id": "1vP2JEXRsGrFbwOZ0foOQ5",
+      "name": "Sound and Vision - 2017 Remaster",
+      "artists": [
+        "David Bowie"
+      ],
+      "album": "Low (2017 Remaster)",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b273481e219b2d0a0218681ad612",
+      "durationMs": 184381
+    },
+    {
+      "id": "7Jh1bpe76CNTCgdgAdBw4Z",
+      "name": "\"Heroes\" - 2017 Remaster",
+      "artists": [
+        "David Bowie"
+      ],
+      "album": "\"Heroes\" (2017 Remaster)",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b273204f41d52743c6a9efd62985",
+      "durationMs": 371413
+    },
+    {
+      "id": "5KWV7S3osWbeOMPHCeWVyK",
+      "name": "Bambi",
+      "artists": [
+        "Jidenna"
+      ],
+      "album": "The Chief",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b273d3726e5f60e3e6b3de1d6b03",
+      "durationMs": 250002
+    },
+    {
+      "id": "0qH487xSz8Z6Xk4kyOQkbG",
+      "name": "Dirty Old Town",
+      "artists": [
+        "The Pogues"
+      ],
+      "album": "Rum Sodomy & The Lash (Expanded Edition)",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b2738dcbee93733dd5393e629653",
+      "durationMs": 225426
+    },
+    {
+      "id": "26WJMsesrV9FuKNgZ25zW7",
+      "name": "I'm a Man You Don't Meet Every Day",
+      "artists": [
+        "The Pogues"
+      ],
+      "album": "Rum Sodomy & The Lash (Expanded Edition)",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b2738dcbee93733dd5393e629653",
+      "durationMs": 175000
+    },
+    {
+      "id": "32soEc9h0wDy1BEjV5egeh",
+      "name": "A Pair of Brown Eyes",
+      "artists": [
+        "The Pogues"
+      ],
+      "album": "Rum Sodomy & The Lash (Expanded Edition)",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b2738dcbee93733dd5393e629653",
+      "durationMs": 301213
+    },
+    {
+      "id": "1O2SlAUcjIoFFt9vpI3P1i",
+      "name": "And The Band Played Waltzing Matilda",
+      "artists": [
+        "The Pogues"
+      ],
+      "album": "Rum Sodomy & The Lash (Expanded Edition)",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b2738dcbee93733dd5393e629653",
+      "durationMs": 490480
+    },
+    {
+      "id": "2bW5vzeC29l3lgo6TxFfGC",
+      "name": "The Leaving of Liverpool - Live",
+      "artists": [
+        "The Dubliners"
+      ],
+      "album": "In Concert (Bonus Track Edition)",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b273c94b55df2d8c9cb4732c45a2",
+      "durationMs": 298866
+    },
+    {
+      "id": "4Ds4Sd4LmJkA2j66lkM8BB",
+      "name": "M'mu Akolon",
+      "artists": [
+        "Momo Wandel Soumah"
+      ],
+      "album": "Matchowé (Guinea)",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b273423e7db26c7d4356b92c94e2",
+      "durationMs": 216506
+    },
+    {
+      "id": "0pQskrTITgmCMyr85tb9qq",
+      "name": "Starman - 2012 Remaster",
+      "artists": [
+        "David Bowie"
+      ],
+      "album": "The Rise and Fall of Ziggy Stardust and the Spiders from Mars (2012 Remaster)",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b273c41f4e1133b0e6c5fcf58680",
+      "durationMs": 254293
+    },
+    {
+      "id": "1Sony5h69UEmB6fxQVbhqJ",
+      "name": "Cosmic Doo Doo",
+      "artists": [
+        "Blaze Foley"
+      ],
+      "album": "Duct Tape Messiah",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b2732704c9ddf54fa0dd36a816a0",
+      "durationMs": 86415
+    },
+    {
+      "id": "6PIEE443qM0IS279RdW24q",
+      "name": "The Big Rock Candy Mountain",
+      "artists": [
+        "Harry McClintock"
+      ],
+      "album": "Bona Fide Bluegrass and Mountain Music",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b273ed9bf536c99084e1f7cdd1ac",
+      "durationMs": 135146
+    },
+    {
+      "id": "2EdcEOJf2V8xMOTO7q2gCN",
+      "name": "Love and Death",
+      "artists": [
+        "Ebo Taylor"
+      ],
+      "album": "Love & Death",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b273644a2026e6721e7ff3efcb27",
+      "durationMs": 415090
+    },
+    {
+      "id": "6Ted7KB5tLxmuxHMTOjzj9",
+      "name": "Will You Promise",
+      "artists": [
+        "Ebo Taylor"
+      ],
+      "album": "My Love and Music",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b27342874a761b229aa87d4b8493",
+      "durationMs": 226480
+    },
+    {
+      "id": "2d9KBVxb6bUfVCjjv1JAVe",
+      "name": "The Big Ship - 2004 Remaster",
+      "artists": [
+        "Brian Eno"
+      ],
+      "album": "Another Green World (2004 Remaster)",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b27384d9788915697efd5cbf56f4",
+      "durationMs": 181933
+    },
+    {
+      "id": "6lXrcWWjAkQF4Qwiw5uqFI",
+      "name": "Intentional Injury - From The HBO Series True Detective",
+      "artists": [
+        "Bonnie Prince Billy"
+      ],
+      "album": "Intentional Injury (From The HBO Series True Detective)",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b2736f7078a795b96707b37f15dc",
+      "durationMs": 144960
+    },
+    {
+      "id": "3qq8XPwF2DoBhENRgLQ7ET",
+      "name": "Becalmed - 2004 Remaster",
+      "artists": [
+        "Brian Eno"
+      ],
+      "album": "Another Green World (2004 Remaster)",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b27384d9788915697efd5cbf56f4",
+      "durationMs": 236760
+    },
+    {
+      "id": "253RjAd44sO3hiHeauEpWQ",
+      "name": "Racing in the Streets - 2008 Remaster",
+      "artists": [
+        "Emmylou Harris"
+      ],
+      "album": "Last Date",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b2738db7a44feccc056cea715927",
+      "durationMs": 324626
+    },
+    {
+      "id": "5wdS0y74fuaMXZmWcAdY39",
+      "name": "My Own Peculiar Way",
+      "artists": [
+        "Willie Nelson"
+      ],
+      "album": "Teatro",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b2735866e01296fe9929e65716f2",
+      "durationMs": 217626
+    },
+    {
+      "id": "7fQQ8yjbrYbXg2nc5Yi5Bd",
+      "name": "I've Just Destroyed The World",
+      "artists": [
+        "Willie Nelson"
+      ],
+      "album": "Teatro",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b2735866e01296fe9929e65716f2",
+      "durationMs": 172573
+    },
+    {
+      "id": "6dSXiF0MDTgnxGgWci1fjP",
+      "name": "Somebody Pick Up My Pieces",
+      "artists": [
+        "Willie Nelson"
+      ],
+      "album": "Teatro",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b2735866e01296fe9929e65716f2",
+      "durationMs": 279293
+    },
+    {
+      "id": "1EuFHPoVGfyfEZBaYExK7v",
+      "name": "Bird's Lament",
+      "artists": [
+        "Moondog"
+      ],
+      "album": "Sax Pax For A Sax",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b2732bb0edcaa67a7d185fde7547",
+      "durationMs": 123893
+    },
+    {
+      "id": "5Cfz0DCrcFpISyvDHBWy9f",
+      "name": "Les rues de Paris",
+      "artists": [
+        "Nicolas Godin"
+      ],
+      "album": "Au service de la France",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b273796e4e8e2f8065f52b6c1658",
+      "durationMs": 149200
+    },
+    {
+      "id": "5NmBhMK9Pfu1XNAyzmxIro",
+      "name": "That's How I Got To Memphis",
+      "artists": [
+        "Tom T. Hall"
+      ],
+      "album": "Tom T. Hall - Storyteller, Poet, Philosopher",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b273629b2ffb2039193f3628066b",
+      "durationMs": 182466
+    },
+    {
+      "id": "3oJtUnnt5uYPtzulIbLw3D",
+      "name": "Dead Flowers - 2009 Mix",
+      "artists": [
+        "The Rolling Stones"
+      ],
+      "album": "Sticky Fingers (Remastered)",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b273a1d9c9969f2a7ed27e449a3c",
+      "durationMs": 244533
+    },
+    {
+      "id": "3EgkF1mUzKXiyjzxtuTjp9",
+      "name": "Tonight Will Be Fine",
+      "artists": [
+        "Leonard Cohen"
+      ],
+      "album": "Songs From A Room",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b273cac88c4622e68b54f4420d93",
+      "durationMs": 229758
+    },
+    {
+      "id": "0djZ2ndRfAL69WYNra5jRC",
+      "name": "April Come She Will",
+      "artists": [
+        "Simon & Garfunkel"
+      ],
+      "album": "Sounds Of Silence",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b2734b139bf6224f8f7eae9b4b0e",
+      "durationMs": 112815
+    },
+    {
+      "id": "2DL6pZw0UBIMaPfdYbNWtd",
+      "name": "Sittin' On A Fence",
+      "artists": [
+        "The Rolling Stones"
+      ],
+      "album": "Flowers",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b2733309a4e7a53755387b394955",
+      "durationMs": 182853
+    },
+    {
+      "id": "3Y0uMqSomjX4JVaKwcdlp2",
+      "name": "Broken English",
+      "artists": [
+        "Marianne Faithfull"
+      ],
+      "album": "Broken English",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b2736c145bd32fe48459304dd1fc",
+      "durationMs": 275400
+    },
+    {
+      "id": "2soxUQx6rPfOk0kHNePbhq",
+      "name": "You Can't Put Your Arms Round a Memory",
+      "artists": [
+        "Johnny Thunders"
+      ],
+      "album": "So Alone",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b2737b41c9e0398c8b3c1a8acf6a",
+      "durationMs": 226079
+    },
+    {
+      "id": "11607FzqoipskTsXrwEHnJ",
+      "name": "Sunday Morning",
+      "artists": [
+        "The Velvet Underground",
+        "Nico"
+      ],
+      "album": "The Velvet Underground & Nico 45th Anniversary",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b27398260c528e6eec9dd431c1d7",
+      "durationMs": 175893
+    },
+    {
+      "id": "43IUZhThxeGzIDL7WHTF4N",
+      "name": "Simba",
+      "artists": [
+        "Les Baxter"
+      ],
+      "album": "Inherent Vice (Original Motion Picture Soundtrack)",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b273b089402ed16680010d0131d4",
+      "durationMs": 161680
+    },
+    {
+      "id": "1mL6q0gbifm2dBTvMBx4px",
+      "name": "All Tomorrow's Parties",
+      "artists": [
+        "The Velvet Underground",
+        "Nico"
+      ],
+      "album": "The Velvet Underground & Nico 45th Anniversary",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b27398260c528e6eec9dd431c1d7",
+      "durationMs": 359680
+    },
+    {
+      "id": "0x93lniPaZTMpURTdK5SNJ",
+      "name": "Lydia, The Tatooed Lady And Piano",
+      "artists": [
+        "Marx Brothers"
+      ],
+      "album": "The Vintage Radio Shows Vol. 2",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b273c55dabb509b313c928114862",
+      "durationMs": 204266
+    },
+    {
+      "id": "4WEtALOs7h8gw4BxenwDKc",
+      "name": "Lydia the Tattooed Lady",
+      "artists": [
+        "Bobby Short"
+      ],
+      "album": "Sing Me A Swing Song",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b273d0d94a460c79a6dad375aded",
+      "durationMs": 174640
+    },
+    {
+      "id": "22aRQ1fGmxU116u61dS0lU",
+      "name": "Rue Saint-Vincent (Rose blanche)",
+      "artists": [
+        "Yves Montand"
+      ],
+      "album": "Rushmore",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b2735225ef7de363ce2851d71b34",
+      "durationMs": 201573
+    },
+    {
+      "id": "14rZjW3RioG7WesZhYESso",
+      "name": "Comptine d'un autre été, l'après-midi",
+      "artists": [
+        "Yann Tiersen"
+      ],
+      "album": "Le Fabuleux destin d'Amélie Poulain (Bande originale du film)",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b2731b7844a8c73c4d48f0bca1de",
+      "durationMs": 140733
+    },
+    {
+      "id": "4rVrHxLGV2iSN4nJtI9hKh",
+      "name": "Mah Na Mah Na",
+      "artists": [
+        "Mahna Mahna and The Two Snowths"
+      ],
+      "album": "The Muppets (Original Motion Picture Soundtrack)",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b27349975a26b5562064db3a552b",
+      "durationMs": 124573
+    },
+    {
+      "id": "45ftg8gaAKdxVKL3MHJfRF",
+      "name": "Privateering",
+      "artists": [
+        "Mark Knopfler"
+      ],
+      "album": "Privateering (Deluxe Version)",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b273211b7c4dd517308a5715bd35",
+      "durationMs": 378866
+    },
+    {
+      "id": "55ofJJsCcK7c9XeMNbv0ir",
+      "name": "Sweet Violets",
+      "artists": [
+        "Harry McClintock"
+      ],
+      "album": "Haywire Mac McClintock",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b273ed6ad0f2b0d47b6b5fe7cd7e",
+      "durationMs": 82893
+    },
+    {
+      "id": "78JZdV25TgDZLh1FRpnnX1",
+      "name": "Steel Rail Blues",
+      "artists": [
+        "Gordon Lightfoot"
+      ],
+      "album": "Lightfoot",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b2739ee7064ba20ef4973bafc03b",
+      "durationMs": 173306
+    },
+    {
+      "id": "3usG4rJ0AHpbqbEQvtQ2G6",
+      "name": "The Jam at Gerry's Rocks",
+      "artists": [
+        "Wade Hemsworth"
+      ],
+      "album": "Folk Songs of the Canadian North Woods",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b27355402e171721f9b392263c55",
+      "durationMs": 211066
+    },
+    {
+      "id": "2KBtDu0JslEPtM9ax69q1G",
+      "name": "The Bride's Lament",
+      "artists": [
+        "Wade Hemsworth"
+      ],
+      "album": "Folk Songs of the Canadian North Woods",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b27355402e171721f9b392263c55",
+      "durationMs": 121040
+    },
+    {
+      "id": "3SJ7TCl4o5D47Av3bYCwM1",
+      "name": "It Suits Me Well",
+      "artists": [
+        "Sandy Denny"
+      ],
+      "album": "Sandy",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b273613c2f239761a131701eddbe",
+      "durationMs": 305280
+    },
+    {
+      "id": "3SUu62D6D3Z1sALddlrrCF",
+      "name": "Boxful of Treasures - Home Recording 1967",
+      "artists": [
+        "Sandy Denny"
+      ],
+      "album": "Early Home Recordings",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b2735242c06f53434fdcd3aa3e3e",
+      "durationMs": 103653
+    },
+    {
+      "id": "2rslQV48gNv3r9pPrQFPW1",
+      "name": "Visions of Johanna",
+      "artists": [
+        "Bob Dylan"
+      ],
+      "album": "Blonde On Blonde",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b2738ca88d5178d1ac6f679f144f",
+      "durationMs": 454005
+    },
+    {
+      "id": "1zfPa2V8X1IcaSfrdxEgTM",
+      "name": "Quiet Joys Of Brotherhood",
+      "artists": [
+        "Sandy Denny"
+      ],
+      "album": "Sandy",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b273613c2f239761a131701eddbe",
+      "durationMs": 265840
+    },
+    {
+      "id": "6KCjY5kHvgWaWcAV6BBzxO",
+      "name": "The Battle of Evermore - Remaster",
+      "artists": [
+        "Led Zeppelin"
+      ],
+      "album": "Led Zeppelin IV (Remaster)",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b2734509204d0860cc0cc67e83dc",
+      "durationMs": 351677
+    },
+    {
+      "id": "1YVc2NJBwOtAebQiSUbt5T",
+      "name": "Going to California - Remaster",
+      "artists": [
+        "Led Zeppelin"
+      ],
+      "album": "Led Zeppelin IV (Remaster)",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b2734509204d0860cc0cc67e83dc",
+      "durationMs": 212160
+    },
+    {
+      "id": "6aJpPH5jhRicPvPkoHkcuF",
+      "name": "In the Light - Remaster",
+      "artists": [
+        "Led Zeppelin"
+      ],
+      "album": "Physical Graffiti (Remaster)",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b2735273ac7ada6725bc36a2bcd0",
+      "durationMs": 527947
+    },
+    {
+      "id": "1l04CzFskMiq7c30lZvr7i",
+      "name": "Punk Rock Girl",
+      "artists": [
+        "The Dead Milkmen"
+      ],
+      "album": "Beelzebubba",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b273ae337e7f0718c9c7bc868afb",
+      "durationMs": 158333
+    },
+    {
+      "id": "3yizjcTNKg1lhBOr6wTeOB",
+      "name": "Jeep's Blues",
+      "artists": [
+        "Duke Ellington"
+      ],
+      "album": "The Duke: The Columbia Years (1927-1962)",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b273378d42d11fe9ee3e17557380",
+      "durationMs": 279026
+    },
+    {
+      "id": "0zb2kpEQMnqJPiLACKMiFM",
+      "name": "Slip Slidin' Away",
+      "artists": [
+        "Paul Simon"
+      ],
+      "album": "The Essential Paul Simon",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b273a561ebb45326bae60310f10f",
+      "durationMs": 285045
+    },
+    {
+      "id": "732KDQdZHJIXbOxqg1pgVM",
+      "name": "The Baby Tree",
+      "artists": [
+        "Paul Kantner/Jefferson Starship"
+      ],
+      "album": "Blows Against The Empire",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b273ba9920642830348912a86cf8",
+      "durationMs": 104760
+    },
+    {
+      "id": "7wRijQK8vRmGLK0RYW7Vr1",
+      "name": "Quietly Yours",
+      "artists": [
+        "Birdy"
+      ],
+      "album": "Persuasion (Soundtrack from the Netflix Film)",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b273d62ae1ab3d346b3c2f093fb1",
+      "durationMs": 234156
+    },
+    {
+      "id": "2x0uR1ZKQ8sdf2DntvHUwv",
+      "name": "Through the Storm",
+      "artists": [
+        "Charles Bradley",
+        "Menahan Street Band"
+      ],
+      "album": "Victim of Love",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b27364558c100755ffd78cb4f9d0",
+      "durationMs": 280556
+    },
+    {
+      "id": "47DKI4RxI8ZW0sBqDenMhO",
+      "name": "Woman",
+      "artists": [
+        "Mumford & Sons"
+      ],
+      "album": "Delta",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b273848f9921a4abfd0da1618b3a",
+      "durationMs": 274552
+    },
+    {
+      "id": "4o92jEL52ww0OAPYgWWwW5",
+      "name": "In This Heart",
+      "artists": [
+        "Sinéad O'Connor"
+      ],
+      "album": "Universal Mother",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b2730252dd87b4ff317f775ced89",
+      "durationMs": 190960
+    },
+    {
+      "id": "1RB8jMVr0eSo6ExOOvXavV",
+      "name": "All I Need To Hear",
+      "artists": [
+        "The 1975"
+      ],
+      "album": "Being Funny In A Foreign Language",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b2731f44db452a68e229650a302c",
+      "durationMs": 210447
+    },
+    {
+      "id": "1iUpSRmgnbTRqU0Pb217qI",
+      "name": "Seabird",
+      "artists": [
+        "Alessi Brothers"
+      ],
+      "album": "Alessi",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b2739ac897f7feb71470bc9a7222",
+      "durationMs": 188866
+    },
+    {
+      "id": "16h5Zv3KM8SxSP3eO538Lf",
+      "name": "Tiniest Seed",
+      "artists": [
+        "Angel Olsen"
+      ],
+      "album": "Half Way Home",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b2732b31a8009e031499df70195e",
+      "durationMs": 209312
+    },
+    {
+      "id": "1jKIIkim0GYfx3GnSaUTHN",
+      "name": "Blue Island",
+      "artists": [
+        "Luiz Henrique",
+        "Walter Wanderley"
+      ],
+      "album": "Popcorn",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b273eab18d285ea72d3ff3986dff",
+      "durationMs": 229293
+    },
+    {
+      "id": "5eF2u1ASOrsX2TGy9F7ovm",
+      "name": "Crystal - 2023 Remaster",
+      "artists": [
+        "Stevie Nicks"
+      ],
+      "album": "Complete Studio Albums & Rarities",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b2735a640236b018d1cef1e01211",
+      "durationMs": 353986
+    },
+    {
+      "id": "6fMfjNKLq3rfNIUmpaUSnB",
+      "name": "I'm So Depressed",
+      "artists": [
+        "Abner Jay"
+      ],
+      "album": "True Story Of...",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b27332c2635d85d7593cab592c09",
+      "durationMs": 203389
+    },
+    {
+      "id": "7cXdOLsIM9xMa5gYjV5i93",
+      "name": "Cripple Creek",
+      "artists": [
+        "Alexander 'Skip' Spence"
+      ],
+      "album": "Oar",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b273ff39e1c459aa3900ccb9de21",
+      "durationMs": 133240
+    },
+    {
+      "id": "0UarZjItL27xT9Dwh5aYeF",
+      "name": "A Pair Of Brown Eyes",
+      "artists": [
+        "Cat Power"
+      ],
+      "album": "Covers",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b27347c5b920c5b7c6ebef4e577f",
+      "durationMs": 222040
+    },
+    {
+      "id": "25bHuzMBRDkdqfCaO5SMTG",
+      "name": "Clean Elvis",
+      "artists": [
+        "Dan Reeder"
+      ],
+      "album": "Dan Reeder",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b273e0e2928c98d8e1183faabd10",
+      "durationMs": 164680
+    },
+    {
+      "id": "2ctZYiYA12XxsGZ2A49fAQ",
+      "name": "Rock And Bird",
+      "artists": [
+        "Cowboy Junkies"
+      ],
+      "album": "The Caution Horses",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b27361c871094f1d361482a5deb9",
+      "durationMs": 208226
+    },
+    {
+      "id": "4NpYrBb5iuDqW1S5qrU3b6",
+      "name": "Feelin' Good Again",
+      "artists": [
+        "Robert Earl Keen"
+      ],
+      "album": "Walking Distance",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b2737c0a7e89fcb45b7cb47a53d4",
+      "durationMs": 196866
+    },
+    {
+      "id": "5ckwOX7SVzt9OISbGkD299",
+      "name": "Song to the Siren - Take 7",
+      "artists": [
+        "Tim Buckley"
+      ],
+      "album": "Works In Progress",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b273aaa45b3a0dc3722280d178b3",
+      "durationMs": 208278
+    },
+    {
+      "id": "59rtdiuUmbZia1Tnxozt9D",
+      "name": "She Said She Said",
+      "artists": [
+        "Chris Smither"
+      ],
+      "album": "Call Me Lucky",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b273320e42d7028d8598def4fee5",
+      "durationMs": 174333
+    },
+    {
+      "id": "6hIN2CWE4FrVqHBa0rrrOT",
+      "name": "Echo Sax No.4",
+      "artists": [
+        "Caleb Arredondo"
+      ],
+      "album": "Echo Sax",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b273908f1aa1dbf47ab6f1374332",
+      "durationMs": 101034
+    },
+    {
+      "id": "3i5qZGLlcdqjDgqDtY1X2P",
+      "name": "In the Dark Places",
+      "artists": [
+        "PJ Harvey"
+      ],
+      "album": "Let England Shake",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b27342cb9f1394ea3f9d68059871",
+      "durationMs": 179546
+    },
+    {
+      "id": "6V486jCRSNHh0tBAMSLwI0",
+      "name": "Who Knows Where the Time Goes - Live",
+      "artists": [
+        "Nina Simone"
+      ],
+      "album": "Just Like A Woman: Nina Simone Sings Classic Songs Of The '60s",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b2732b850490d43845550d2c8a7c",
+      "durationMs": 298773
+    },
+    {
+      "id": "4wypH002dgDjHKqa9jfDOJ",
+      "name": "Modesto",
+      "artists": [
+        "Beck"
+      ],
+      "album": "Stereopathetic Soulmanure",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b273df8956fcfc49805973d38f8c",
+      "durationMs": 206973
+    },
+    {
+      "id": "0ch68kEHg9xygdqYsHXmEO",
+      "name": "Roll Another Number (For the Road) - 2016 Remaster",
+      "artists": [
+        "Neil Young"
+      ],
+      "album": "Tonight's the Night",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b273026754d7481c0ea80d88c7a5",
+      "durationMs": 183982
+    },
+    {
+      "id": "6nsxXdOAjeosqcGGsmPjnN",
+      "name": "Albuquerque - 2016 Remaster",
+      "artists": [
+        "Neil Young"
+      ],
+      "album": "Tonight's the Night",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b273026754d7481c0ea80d88c7a5",
+      "durationMs": 241175
+    },
+    {
+      "id": "3ED8Lk1ovJA37LP8Nnj7TM",
+      "name": "Tired Eyes - 2016 Remaster",
+      "artists": [
+        "Neil Young"
+      ],
+      "album": "Tonight's the Night",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b273026754d7481c0ea80d88c7a5",
+      "durationMs": 275377
+    },
+    {
+      "id": "2elnHyjV8B2xQkfDU7CPPO",
+      "name": "When You Were Mine",
+      "artists": [
+        "Cyndi Lauper"
+      ],
+      "album": "She's So Unusual",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b273ce023ce7dfdd5199bcdfd5a1",
+      "durationMs": 306036
+    },
+    {
+      "id": "6k4rh7HziUmX1OccXN0Yhn",
+      "name": "Strange Country",
+      "artists": [
+        "Kacy & Clayton"
+      ],
+      "album": "Strange Country",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b2734626921f137e0b3fd6ffbe62",
+      "durationMs": 212720
+    },
+    {
+      "id": "2oG4drPUGpzlVtyLabHJPl",
+      "name": "When You Were Mine",
+      "artists": [
+        "Prince"
+      ],
+      "album": "Dirty Mind",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b2733d5eebdf65ca2ccb308df87d",
+      "durationMs": 225546
+    },
+    {
+      "id": "0nyekZS8l2AqFafXOySkdn",
+      "name": "Long Haired Preachers",
+      "artists": [
+        "Harry McClintock"
+      ],
+      "album": "Haywire Mac",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b2733b21a8bdca36c2e6a9f89c80",
+      "durationMs": 222120
+    },
+    {
+      "id": "14XWXWv5FoCbFzLksawpEe",
+      "name": "Riders on the Storm",
+      "artists": [
+        "The Doors"
+      ],
+      "album": "L.A. Woman",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b27311d9db4f0db1e2689ca22c3d",
+      "durationMs": 434720
+    },
+    {
+      "id": "1tmCPGkgKKurSN1onKcaJt",
+      "name": "I Can Get off on You - Remastered",
+      "artists": [
+        "Waylon Jennings",
+        "Willie Nelson"
+      ],
+      "album": "Waylon & Willie",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b273280d6a361098589217395a00",
+      "durationMs": 147507
+    },
+    {
+      "id": "0yje3JVMgJNZENayymCTHA",
+      "name": "Come Monday",
+      "artists": [
+        "Jimmy Buffett"
+      ],
+      "album": "Living And Dying In 3 / 4 Time",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b273599269ba641a44e5f2ad64bb",
+      "durationMs": 191733
+    },
+    {
+      "id": "3oxqLl1TcDNYgAaAxct3jK",
+      "name": "Dear Doctor - 50th Anniversary Edition",
+      "artists": [
+        "The Rolling Stones"
+      ],
+      "album": "Beggars Banquet (50th Anniversary Edition)",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b27344934a06d21864415376f5f2",
+      "durationMs": 201946
+    },
+    {
+      "id": "5DZPlkknHAi3JxcpMFlJ69",
+      "name": "Factory Girl - 50th Anniversary Edition",
+      "artists": [
+        "The Rolling Stones"
+      ],
+      "album": "Beggars Banquet (50th Anniversary Edition)",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b27344934a06d21864415376f5f2",
+      "durationMs": 129933
+    },
+    {
+      "id": "1GcVa4jFySlun4jLSuMhiq",
+      "name": "Angie - Remastered 2009",
+      "artists": [
+        "The Rolling Stones"
+      ],
+      "album": "Goats Head Soup (Remastered 2009)",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b27361b669f15b10e729dd423ca8",
+      "durationMs": 272000
+    },
+    {
+      "id": "2t95lca5RT63G2J988AorQ",
+      "name": "Parachute Woman - 50th Anniversary Edition",
+      "artists": [
+        "The Rolling Stones"
+      ],
+      "album": "Beggars Banquet (50th Anniversary Edition)",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b27344934a06d21864415376f5f2",
+      "durationMs": 140146
+    },
+    {
+      "id": "5pbQlOzqzTacF4wbzmWEeA",
+      "name": "Dig A Pony - 2021 Mix",
+      "artists": [
+        "The Beatles"
+      ],
+      "album": "Let It Be (Super Deluxe)",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b2735a18ca8e4cd3652ef2617886",
+      "durationMs": 234760
+    },
+    {
+      "id": "5sFSXKwsf1KvKpZngwVtlI",
+      "name": "I Me Mine - 2021 Mix",
+      "artists": [
+        "The Beatles"
+      ],
+      "album": "Let It Be (Super Deluxe)",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b2735a18ca8e4cd3652ef2617886",
+      "durationMs": 145053
+    },
+    {
+      "id": "4zCMgTJ4h916qOHgu1JyAL",
+      "name": "I've Got A Feeling - 2021 Mix",
+      "artists": [
+        "The Beatles"
+      ],
+      "album": "Let It Be (Super Deluxe)",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b2735a18ca8e4cd3652ef2617886",
+      "durationMs": 217546
+    },
+    {
+      "id": "0c75cmBocBwDJCJfu8LU84",
+      "name": "Virgo Clowns - 1999 Remaster",
+      "artists": [
+        "Van Morrison"
+      ],
+      "album": "His Band and the Street Choir",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b27363706c24d560e6b4d3de8bcc",
+      "durationMs": 254106
+    },
+    {
+      "id": "7lN2UufX4GkadgLTXmZYCe",
+      "name": "Yellow Bird",
+      "artists": [
+        "King Swami G"
+      ],
+      "album": "Islands In The Sun",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b273d647c4ab25171f25654506e2",
+      "durationMs": 262040
+    },
+    {
+      "id": "0ivHDucXMbjTjiU4lMIkBO",
+      "name": "Coney Island Baby",
+      "artists": [
+        "Lou Reed"
+      ],
+      "album": "Coney Island Baby",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b2735dcf459d038104c9ba910442",
+      "durationMs": 394655
+    },
+    {
+      "id": "65EWiG9OfelPZrP4s0YgF9",
+      "name": "The Glory of Love",
+      "artists": [
+        "Joseph Spence"
+      ],
+      "album": "Good Morning Mr. Walker",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b2736ade73a4beb8abc38ddca2ef",
+      "durationMs": 170560
+    },
+    {
+      "id": "1mpQgyvdfbHzeXag2mQR9n",
+      "name": "Sloop John B.",
+      "artists": [
+        "Joseph Spence"
+      ],
+      "album": "Good Morning Mr. Walker",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b2736ade73a4beb8abc38ddca2ef",
+      "durationMs": 211106
+    },
+    {
+      "id": "18nTxNBmbAwpjEHnQ5nCk0",
+      "name": "Brownskin Gal",
+      "artists": [
+        "Joseph Spence"
+      ],
+      "album": "The Complete Folkways Recordings 1958",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b2731311d34ed01f64d99081f42a",
+      "durationMs": 318040
+    },
+    {
+      "id": "1Bqxrcrx2q1nrHDn4aWTV4",
+      "name": "Glory of Love",
+      "artists": [
+        "Big Bill Broonzy"
+      ],
+      "album": "Big Bill Broonzy Sings Folk Songs",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b273b18f7e8698d5c182f0bbf914",
+      "durationMs": 203533
+    },
+    {
+      "id": "7jPoeaQvsM5rjC89I1KfPM",
+      "name": "Waiting for the Sun - 2020 Remaster",
+      "artists": [
+        "The Doors"
+      ],
+      "album": "Morrison Hotel (50th Anniversary Deluxe Edition)",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b273de10ca4022cd5be72730cb49",
+      "durationMs": 240468
+    },
+    {
+      "id": "1vgSaC0BPlL6LEm4Xsx59J",
+      "name": "An Ending (Ascent) - Remastered 2005",
+      "artists": [
+        "Brian Eno"
+      ],
+      "album": "Apollo",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b273f2b52822fe54084cf07bfe02",
+      "durationMs": 266200
+    },
+    {
+      "id": "01wdtr66r5fwd8mIQwisMK",
+      "name": "Draft Daughter's Blues aka Ootischenia",
+      "artists": [
+        "The Be Good Tanyas"
+      ],
+      "album": "Hello Love",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b273e833eb1083fa19a21c449493",
+      "durationMs": 201080
+    },
+    {
+      "id": "72fAewq2UVWSf3RjtqICdS",
+      "name": "Sloop John B",
+      "artists": [
+        "The Beach Boys"
+      ],
+      "album": "Pet Sounds",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b27350eb0c521d2d3b2f599bff04",
+      "durationMs": 179493
+    },
+    {
+      "id": "26YjTwV7XOPgIQAkbvDBY0",
+      "name": "Lay and Love",
+      "artists": [
+        "Dawn McCarthy",
+        "Bonnie Billy"
+      ],
+      "album": "Wai Notes",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b273a4136af59d3cde704d9db2d3",
+      "durationMs": 218840
+    },
+    {
+      "id": "06jUWOXdi7tQcX5XHCdDHE",
+      "name": "Abandoned Love - Studio Outtake - 1975",
+      "artists": [
+        "Bob Dylan"
+      ],
+      "album": "Side Tracks",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b273be3f348c57e212090a1bdcf7",
+      "durationMs": 267240
+    },
+    {
+      "id": "3tUUat6xZBQhRxcSWB49NQ",
+      "name": "Midje",
+      "artists": [
+        "Momo Wandel Soumah"
+      ],
+      "album": "Matchowé (Guinea)",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b273423e7db26c7d4356b92c94e2",
+      "durationMs": 307733
+    },
+    {
+      "id": "6LtAhgrCemvL1AAtBqwoOB",
+      "name": "To Welcome Paddy Home",
+      "artists": [
+        "Boys Of The Lough"
+      ],
+      "album": "To Welcome Paddy Home",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b2736b5cc2343624cd25359aa5c1",
+      "durationMs": 231666
+    },
+    {
+      "id": "6ac6RlvEhiFraIxBYHhg1j",
+      "name": "A Pirate Looks At Forty",
+      "artists": [
+        "Jimmy Buffett"
+      ],
+      "album": "A-1-A",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b27333733085a70a5fa56623f8ea",
+      "durationMs": 235360
+    },
+    {
+      "id": "3k2l4to84cuUroP5miQDVL",
+      "name": "Harlem River Blues",
+      "artists": [
+        "Justin Townes Earle"
+      ],
+      "album": "Harlem River Blues",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b2731558c611c44176f8f35217fa",
+      "durationMs": 168613
+    },
+    {
+      "id": "4SQOwNcdZD3RtBiRH8UN7s",
+      "name": "Accidentally Like a Martyr",
+      "artists": [
+        "Warren Zevon"
+      ],
+      "album": "Preludes",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b273d374f44cb140b95b8691f305",
+      "durationMs": 186186
+    },
+    {
+      "id": "7FP6hpT0xXYdICBXcKl4Hr",
+      "name": "Epitaph for My Heart",
+      "artists": [
+        "The Magnetic Fields"
+      ],
+      "album": "69 Love Songs",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b2735e7d92681d4891c4b637c630",
+      "durationMs": 170386
+    },
+    {
+      "id": "42kyRfx4nUvCEKLn9XugvF",
+      "name": "I Shatter",
+      "artists": [
+        "The Magnetic Fields"
+      ],
+      "album": "69 Love Songs",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b2735e7d92681d4891c4b637c630",
+      "durationMs": 189240
+    },
+    {
+      "id": "0i0kLLNXBnX31p1vWb69jr",
+      "name": "Cry! Cry! Cry!",
+      "artists": [
+        "Johnny Cash",
+        "The Tennessee Two"
+      ],
+      "album": "With His Hot and Blue Guitar",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b27307b0de92cd25eaa9cc65a215",
+      "durationMs": 146970
+    },
+    {
+      "id": "5uh98HlgvoJd2zRWAduj2Y",
+      "name": "Bring on the Dancing Horses",
+      "artists": [
+        "Echo & the Bunnymen"
+      ],
+      "album": "Songs to Learn & Sing",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b2738c3bd313f076150e2d9299c2",
+      "durationMs": 235800
+    },
+    {
+      "id": "5Rbtpa0rp98NsqdYUagr0L",
+      "name": "The Lonesome Death of Hattie Carroll - Live at Seattle Center Coliseum, Seattle, WA - February 9, 1974 (Afternoon)",
+      "artists": [
+        "Bob Dylan",
+        "The Band"
+      ],
+      "album": "The 1974 Live Recordings Sampler",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b273ade1f3c9f6338d412045f65a",
+      "durationMs": 308746
+    },
+    {
+      "id": "2gke8YaJQur5OpkWAeIMdz",
+      "name": "Ojos Del Sol",
+      "artists": [
+        "Y La Bamba"
+      ],
+      "album": "Ojos Del Sol",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b2731a8987609c56225ef7aa22a2",
+      "durationMs": 247412
+    },
+    {
+      "id": "1Y6Dv0tWYUP3Za2Es9FUL2",
+      "name": "May This Be Love",
+      "artists": [
+        "Jimi Hendrix"
+      ],
+      "album": "Are You Experienced",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b273c9adfbd773852e286faed040",
+      "durationMs": 190226
+    },
+    {
+      "id": "1sbtYPTZ2TW5T54JZaIshg",
+      "name": "Orff-Schulwerk: Gassenhauer",
+      "artists": [
+        "Gunild Keetman",
+        "Various Artists",
+        "Slovenská filharmónia",
+        "English String Orchestra",
+        "Polish National Radio Symphony Orchestra",
+        "Czecho-Slovak Symphony Orchestra"
+      ],
+      "album": "Klassix for Kidz",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b273c8dc64cb700b137409f49944",
+      "durationMs": 185000
+    },
+    {
+      "id": "1zqcrpJ5NpHCFADOThQYXe",
+      "name": "Knockando",
+      "artists": [
+        "Michael Hurley"
+      ],
+      "album": "The Ancestral Swamp",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b273685b3248ada9f3277ed35c50",
+      "durationMs": 268253
+    },
+    {
+      "id": "1ooF2rRqaDVAZqtkmt53qq",
+      "name": "Slurf Song",
+      "artists": [
+        "Michael Hurley",
+        "Unholy Modal Rounders",
+        "Jeffrey Frederick & The Clamtones"
+      ],
+      "album": "Have Moicy!",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b273227c00d2ff10c7a1e3036e9d",
+      "durationMs": 199000
+    },
+    {
+      "id": "3tXhd4rrp98AeFXsChONXB",
+      "name": "Wednesday Evenin' Blues",
+      "artists": [
+        "John Lee Hooker"
+      ],
+      "album": "That's My Story",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b2738e5692a7968d07c3e940ac8b",
+      "durationMs": 214000
+    },
+    {
+      "id": "7hIdRDgUBPbqiQ7duhCyux",
+      "name": "Carmelita",
+      "artists": [
+        "Warren Zevon"
+      ],
+      "album": "Warren Zevon",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b2738c74c785283ac399b784ee6f",
+      "durationMs": 214746
+    },
+    {
+      "id": "1fRlDQzrpvWd4BlIzifUkJ",
+      "name": "Keep Me in Your Heart",
+      "artists": [
+        "Warren Zevon"
+      ],
+      "album": "The Wind",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b273e34f4cd4c206759b13bfb53c",
+      "durationMs": 208026
+    },
+    {
+      "id": "2AvMA7gOOhQpDDUjBs89ap",
+      "name": "Where Do You Go To (My Lovely)",
+      "artists": [
+        "Peter Sarstedt"
+      ],
+      "album": "Playlist: The Best Of Peter Sarstedt",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b273be8f688f6b18a9e29ee1477b",
+      "durationMs": 284706
+    },
+    {
+      "id": "0c2DAekH6ZEnHhf8dM1leK",
+      "name": "Queen Jane Approximately",
+      "artists": [
+        "Bob Dylan"
+      ],
+      "album": "Highway 61 Revisited",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b2730cb0884829c5503b2e242541",
+      "durationMs": 331426
+    },
+    {
+      "id": "319YqFvUODaOVRbRc0i9zD",
+      "name": "I Useta Lover",
+      "artists": [
+        "The Saw Doctors"
+      ],
+      "album": "If This Is Rock and Roll, I Want My Old Job Back",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b273f081b33acd07cabffbdcaa57",
+      "durationMs": 163546
+    },
+    {
+      "id": "2On7mEwAL6KRDYQufKLjDW",
+      "name": "All The Best - Live",
+      "artists": [
+        "Carla Bruni",
+        "Marianne Faithfull"
+      ],
+      "album": "A l'Olympia (Live)",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b273b06a4821e0acd4e354aedb21",
+      "durationMs": 188040
+    },
+    {
+      "id": "27OT57JvQVJDlFvoQ2U2VS",
+      "name": "Nature Boy",
+      "artists": [
+        "Esquivel And His Orchestra",
+        "Eden Ahbez"
+      ],
+      "album": "Jesusita de Chihuahua",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b273797deb45eafc8bc9f87d02c9",
+      "durationMs": 158876
+    },
+    {
+      "id": "2BhedrP5Pmh0m9Zs6fdw14",
+      "name": "El Wool Suite",
+      "artists": [
+        "The Incredible String Band"
+      ],
+      "album": "U",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b273c86d7e4f3744a9b937871023",
+      "durationMs": 508133
+    },
+    {
+      "id": "6Kr1utp4JL18eXP2EFRwcX",
+      "name": "The Lord Is In This Place",
+      "artists": [
+        "Fairport Convention"
+      ],
+      "album": "What We Did On Our Holidays (Bonus Track Edition)",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b273234be365781c415e1541cbeb",
+      "durationMs": 118666
+    },
+    {
+      "id": "6kwQFJxCAz8kdf83h2y5MO",
+      "name": "White Summer - Original Stereo",
+      "artists": [
+        "The Yardbirds"
+      ],
+      "album": "Little Games (Original Stereo)",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b27365ca8afbc45e7ddfdb1b5a98",
+      "durationMs": 238146
+    },
+    {
+      "id": "6PQ4LvywnlGR86T4HHO17e",
+      "name": "Genesis Hall",
+      "artists": [
+        "Fairport Convention"
+      ],
+      "album": "Unhalfbricking (Bonus Track Edition)",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b27362f2d2ef2ec6d1496020d61b",
+      "durationMs": 215106
+    },
+    {
+      "id": "4xkDVdwj6sn99JthnwPdcI",
+      "name": "Dog Blue - Instrumental",
+      "artists": [
+        "Mimi And Richard Fariña"
+      ],
+      "album": "Celebrations For A Grey Day",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b273f1e49f0775461f81593a020f",
+      "durationMs": 106000
+    },
+    {
+      "id": "7sTxTZSoqgpnqOMkwJGXHu",
+      "name": "Bunkhouse Theme",
+      "artists": [
+        "Bob Dylan"
+      ],
+      "album": "Pat Garrett & Billy The Kid (Soundtrack From The Motion Picture)",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b2736c86683d20c72e3874c11c6d",
+      "durationMs": 132373
+    },
+    {
+      "id": "6NWkrIWWVAhs3KBK3DsJHS",
+      "name": "Medley: The Lark In The Morning",
+      "artists": [
+        "Fairport Convention"
+      ],
+      "album": "Liege And Lief",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b273891c6dbba25bdba18d545757",
+      "durationMs": 248133
+    },
+    {
+      "id": "10Zp2cRLMFCWjUq6xdeyqC",
+      "name": "Maiden Of The Cancer Moon",
+      "artists": [
+        "Quicksilver Messenger Service"
+      ],
+      "album": "Happy Trails",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b273280865bd4718193d3913acbf",
+      "durationMs": 171840
+    },
+    {
+      "id": "2ilrSlLc9G9blgqdFFq0La",
+      "name": "Crazy Man Michael",
+      "artists": [
+        "Fairport Convention"
+      ],
+      "album": "Liege And Lief",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b273891c6dbba25bdba18d545757",
+      "durationMs": 280600
+    },
+    {
+      "id": "6FSMkF5hweh2bFK3a2t5rF",
+      "name": "The Ballad Of Easy Rider",
+      "artists": [
+        "Fairport Convention"
+      ],
+      "album": "Unhalfbricking (Bonus Track Edition)",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b27362f2d2ef2ec6d1496020d61b",
+      "durationMs": 295160
+    },
+    {
+      "id": "6PANXCHzEANzajOgtwLMnN",
+      "name": "Matty Groves",
+      "artists": [
+        "Fairport Convention"
+      ],
+      "album": "Liege And Lief",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b273891c6dbba25bdba18d545757",
+      "durationMs": 489106
+    },
+    {
+      "id": "02bTC7hvJ4SdmMYO03Duum",
+      "name": "Love Scene",
+      "artists": [
+        "Jerry Garcia"
+      ],
+      "album": "Zabriskie Point (Original Motion Picture Soundtrack) [Extended Edition]",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b27360d0b8cf38553aab2d3dda99",
+      "durationMs": 422933
+    },
+    {
+      "id": "3bnCt6EulEadrlBSULjoNi",
+      "name": "Tennessee Waltz",
+      "artists": [
+        "Patti Page"
+      ],
+      "album": "Zabriskie Point (Original Motion Picture Soundtrack) [Extended Edition]",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b27360d0b8cf38553aab2d3dda99",
+      "durationMs": 183866
+    },
+    {
+      "id": "4zEyzhp2m7NxfluZXQzogq",
+      "name": "Every Night",
+      "artists": [
+        "Odetta"
+      ],
+      "album": "Odetta Sings",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b2733fbf596c80dee23ff2d49996",
+      "durationMs": 188763
+    },
+    {
+      "id": "0L1B0rdj6oL7B5Injkhtsd",
+      "name": "The Mercy Seat",
+      "artists": [
+        "Johnny Cash"
+      ],
+      "album": "American III: Solitary Man",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b273c26357620e211089bf6b45e9",
+      "durationMs": 274200
+    },
+    {
+      "id": "4IU1RL4BKvFyXtbTwaHAvW",
+      "name": "Ventura Highway",
+      "artists": [
+        "America",
+        "George Martin"
+      ],
+      "album": "Homecoming",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b2735e2289475a30c75dfca7d228",
+      "durationMs": 211680
+    },
+    {
+      "id": "0slD4yP9v2Sfi4YNjUcfSC",
+      "name": "Peace Like a River",
+      "artists": [
+        "Paul Simon"
+      ],
+      "album": "Paul Simon",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b273f6a9991ae31a858deb411cbf",
+      "durationMs": 203280
+    },
+    {
+      "id": "1aohqa0DNsvnNQo1vr3s0f",
+      "name": "Acting School",
+      "artists": [
+        "Dean Johnson"
+      ],
+      "album": "Nothing for Me, Please",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b27347614144a4de4f558f3f13e4",
+      "durationMs": 205440
+    },
+    {
+      "id": "0rtfF7pfVYD5nvBQ1mPRsD",
+      "name": "The Ghost Has No Home",
+      "artists": [
+        "Cocteau Twins",
+        "Harold Budd"
+      ],
+      "album": "The Moon and the Melodies",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b2732bace4cf1388fa974fcdc14c",
+      "durationMs": 455800
+    },
+    {
+      "id": "7qJreNMHmeV7Ezs4y9eddQ",
+      "name": "Ride Into The Sun - \"1969\" / 2014 Mix",
+      "artists": [
+        "The Velvet Underground"
+      ],
+      "album": "The Velvet Underground (45th Anniversary / Super Deluxe)",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b27303a8c65d2a040290871b1a3f",
+      "durationMs": 213573
+    },
+    {
+      "id": "4c0ecVwn17owdwpIBL07wC",
+      "name": "Bleecker Street",
+      "artists": [
+        "Simon & Garfunkel"
+      ],
+      "album": "Wednesday Morning, 3 A.M.",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b273af4d7d647d72345ad6a294ad",
+      "durationMs": 167893
+    },
+    {
+      "id": "4FnOromo9r7kx6o6uMPl30",
+      "name": "The Dark Don't Hide It",
+      "artists": [
+        "Magnolia Electric Co.",
+        "Jason Molina"
+      ],
+      "album": "What Comes After The Blues",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b273426d24c10ecc9f2a1f887a3a",
+      "durationMs": 254960
+    },
+    {
+      "id": "4UxEp3sF6DwXoOli4zVzi9",
+      "name": "I'm Gonna Love The Hell Out Of You",
+      "artists": [
+        "Silver Jews"
+      ],
+      "album": "Tennessee",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b27350e7f783012d5a0cb26e2e5b",
+      "durationMs": 177933
+    },
+    {
+      "id": "6Wjs7hCvwEFaDhfKIYmsro",
+      "name": "Time Forgot (To Change My Heart)",
+      "artists": [
+        "Daniel Romano"
+      ],
+      "album": "Sleep Beneath The Willow",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b273c90065547941a14ef15ce3e6",
+      "durationMs": 240200
+    },
+    {
+      "id": "5nJ96pOx3kXvmISLO7xKIb",
+      "name": "All Apologies",
+      "artists": [
+        "Sinéad O'Connor"
+      ],
+      "album": "Universal Mother",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b2730252dd87b4ff317f775ced89",
+      "durationMs": 157733
+    },
+    {
+      "id": "3DvAPxnKXqRULULxdh4cRW",
+      "name": "Death of a Clown",
+      "artists": [
+        "The Kinks"
+      ],
+      "album": "Something Else (Deluxe)",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b2737c29f8edb00aedba1e901f32",
+      "durationMs": 181520
+    },
+    {
+      "id": "3VTNVsTTu05dmTsVFrmGpK",
+      "name": "Fairytale of New York (feat. Kirsty MacColl)",
+      "artists": [
+        "The Pogues",
+        "Kirsty MacColl"
+      ],
+      "album": "If I Should Fall from Grace with God (Expanded Edition)",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b273d78a4f4946cd9081bd6b57b5",
+      "durationMs": 272466
+    },
+    {
+      "id": "0yLfXULLuRtVj2L4DIrwO7",
+      "name": "Today",
+      "artists": [
+        "Jefferson Airplane"
+      ],
+      "album": "Surrealistic Pillow",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b2736a74089537c2dbd548c4a95e",
+      "durationMs": 177546
+    },
+    {
+      "id": "5TpgvBMHTLlAj7gzQcfUJ7",
+      "name": "Hey",
+      "artists": [
+        "Nilüfer Yanya"
+      ],
+      "album": "Extraordinary Renditions",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b273fb156eeb4ff1552379483d36",
+      "durationMs": 162321
+    },
+    {
+      "id": "2QwZ4Sg3SXyopVMoMOpI71",
+      "name": "Together",
+      "artists": [
+        "Misha Panfilov"
+      ],
+      "album": "Days As Echoes",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b2737a99d6a16fbd12a47343e7c0",
+      "durationMs": 394095
+    },
+    {
+      "id": "5JG2UkenJbKghnQiX4b22m",
+      "name": "Time",
+      "artists": [
+        "The Alan Parsons Project"
+      ],
+      "album": "The Turn Of A Friendly Card",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b27397640e686c66ea57428ead21",
+      "durationMs": 304165
+    },
+    {
+      "id": "0TZOdKFWNYfnwewAP8R4D8",
+      "name": "All About Our Love",
+      "artists": [
+        "Sade"
+      ],
+      "album": "Lovers Rock",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b27320fc6951e4d293707de2434c",
+      "durationMs": 160626
+    },
+    {
+      "id": "1CapNlKgeOWlBEE54CRamd",
+      "name": "Just Like Honey",
+      "artists": [
+        "The Jesus and Mary Chain"
+      ],
+      "album": "Psychocandy",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b273b65ec494e85bf34cd6df1e21",
+      "durationMs": 181746
+    },
+    {
+      "id": "2Jprr2Qbny90LinUBOe0Nz",
+      "name": "Winter Sun",
+      "artists": [
+        "Lez Zeppelin"
+      ],
+      "album": "Lez Zeppelin",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b2734cd0de706733b5d8adb2fc3c",
+      "durationMs": 161186
+    },
+    {
+      "id": "0ewKJ6eM0Z761OissISTW7",
+      "name": "In Dreams",
+      "artists": [
+        "Sierra Ferrell"
+      ],
+      "album": "Long Time Coming",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b273407ceaa5d7fdb779e73c48f3",
+      "durationMs": 161733
+    },
+    {
+      "id": "3e7yziCpnpx2ujgvXqSLzp",
+      "name": "Kingston Town",
+      "artists": [
+        "UB40"
+      ],
+      "album": "Labour Of Love II",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b2738949d9805df054b4bc9cd563",
+      "durationMs": 228293
+    },
+    {
+      "id": "57ct8jKi6trntXiRV0NnXi",
+      "name": "If You Could Read My Mind",
+      "artists": [
+        "Gordon Lightfoot"
+      ],
+      "album": "If You Could Read My Mind",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b2738fd7eec31ed567629f4ab420",
+      "durationMs": 228840
+    },
+    {
+      "id": "340t55txxJWQmTFK7wARZh",
+      "name": "If You Want To Sing Out, Sing Out",
+      "artists": [
+        "Yusuf / Cat Stevens"
+      ],
+      "album": "Tea For The Tillerman (Super Deluxe)",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b273e33202ec41441204bfcf18a5",
+      "durationMs": 165133
+    },
+    {
+      "id": "7ryZ8T60wHhbyJsZSO7ldI",
+      "name": "Until We Meet Again",
+      "artists": [
+        "Hermanos Gutiérrez"
+      ],
+      "album": "Sonido Cósmico",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b2730154dd5d23fb604d43f271cd",
+      "durationMs": 181772
+    },
+    {
+      "id": "1tUgdll0zp0QGFKd1OCSHi",
+      "name": "I'll Be Glad When You're Dead, You Rascal You",
+      "artists": [
+        "Louis Armstrong"
+      ],
+      "album": "Volume 7 You'Re Driving Me Crazy (1930-1931)",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b273e853162c2c4162b3cd8d15c8",
+      "durationMs": 192306
+    },
+    {
+      "id": "3by1VIPUbXseKgDEc7nlnI",
+      "name": "(I'll Be Glad When You're Dead) You Rascal You - Remastered",
+      "artists": [
+        "Louis Prima",
+        "Keely Smith",
+        "Sam Butera & The Witnesses"
+      ],
+      "album": "The Wildest! (Expanded Edition)",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b2732ad545d5e334210c993c5648",
+      "durationMs": 195733
+    }
+  ]
+}

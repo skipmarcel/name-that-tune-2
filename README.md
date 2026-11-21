@@ -54,8 +54,8 @@ This is a ground-up rebuild of [name-that-tune](https://github.com/skipmarcel/na
 Some decisions worth calling out:
 
 - **The Spotify client secret never reaches the browser.** The original project put the secret in the front-end bundle, where anyone could read it. Here a small serverless function exchanges the credentials for a short-lived access token, and the browser only ever sees that token.
-- **The answer stays hidden.** The track plays through Spotify's embed player, which displays the song title. The player is kept off-screen and controlled with the iFrame API, so the game's own UI handles play and pause, and the title and artist are only revealed after you guess.
   The endpoint caches the token in memory until just before it expires and returns it with `Cache-Control: no-store`. It is public by design, because a client-credentials token can only read public catalog data. The same handler runs as a Vercel function (`api/token.ts`) and as Vite dev-server middleware, so `npm run dev` works without the Vercel CLI.
+- **The answer stays hidden.** The track plays through Spotify's embed player, which displays the song title. The player is kept off-screen and controlled with the iFrame API, so the game's own UI handles play and pause, and the title and artist are only revealed after you guess.
 - **Guesses are judged leniently.** A guess is normalized (lowercased, accents and punctuation stripped, "feat." and remaster/live suffixes removed) and then compared against the title using a similarity threshold. Small typos are forgiven.
 - **Game logic is kept separate from the UI.** Scoring, track selection and guess matching are pure TypeScript functions with unit tests. The React components handle display and user input only.
 

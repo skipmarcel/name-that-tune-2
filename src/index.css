@@ -246,12 +246,19 @@ input:focus-visible {
   white-space: nowrap;
 }
 
-/* Keeps the Spotify embed playing while out of sight: it shows the answer. */
+/*
+ * Hides the Spotify embed, which shows the answer, while keeping it playable.
+ * It must stay inside the viewport: browsers throttle cross-origin iframes
+ * that are scrolled or positioned off-screen, and the embed then never
+ * finishes loading. Transparent, unclickable and behind nothing is enough.
+ */
 .embed-offscreen {
   position: fixed;
-  top: 0;
-  left: -10000px;
+  right: 0;
+  bottom: 0;
   width: 300px;
   height: 80px;
   overflow: hidden;
+  opacity: 0;
+  pointer-events: none;
 }

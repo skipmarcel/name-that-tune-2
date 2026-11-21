@@ -99,7 +99,7 @@ function App({ playlists = playlistOptions, loadSpotifyApi }: AppProps) {
         />
       )}
 
-      {/* The embed shows the song title, so it plays from off-screen. */}
+      {/* The embed shows the song title, so it plays invisibly (see .embed-offscreen). */}
       <div ref={attachEmbed} className="embed-offscreen" aria-hidden="true" inert />
     </main>
   )

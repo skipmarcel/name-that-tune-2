@@ -23,7 +23,7 @@ import {
 } from '../src/lib/playlist.ts'
 
 const REDIRECT_URI = 'http://127.0.0.1:5173/callback'
-const SCOPES = 'playlist-read-private playlist-read-collaborative'
+const SCOPES = 'playlist-read-private playlist-read-collaborative user-read-private'
 const OUTPUT_FILE = new URL('../src/data/playlist.json', import.meta.url)
 const SIGN_IN_TIMEOUT_MS = 5 * 60_000
 const API = 'https://api.spotify.com/v1'
@@ -136,13 +136,24 @@ async function exchangeCode(clientId: string, code: string, codeVerifier: string
 async function getJson(url: string, accessToken: string): Promise<Record<string, unknown>> {
   const response = await fetch(url, { headers: { Authorization: `Bearer ${accessToken}` } })
   if (!response.ok) {
+    // Spotify explains most refusals in the body, e.g. a missing Premium subscription.
+    const body = (await response.json().catch(() => null)) as {
+      error?: { message?: string } | string
+      error_description?: string
+    } | null
+    const reason =
+      typeof body?.error === 'object' ? body.error.message : (body?.error_description ?? body?.error)
     const hint =
-      response.status === 403 || response.status === 401
-        ? ' Spotify only shares a playlist\'s tracks with its owner or collaborators, so sign in with that account.'
-        : response.status === 404
-          ? ' Check VITE_PLAYLIST_ID.'
+      response.status === 404
+        ? ' Check VITE_PLAYLIST_ID.'
+        : response.status === 403
+          ? ' Spotify only shares a playlist\'s tracks with its owner or collaborators.'
           : ''
-    throw new Error(`Spotify returned ${response.status} for ${new URL(url).pathname}.${hint}`)
+    throw new Error(
+      `Spotify returned ${response.status} for ${new URL(url).pathname}` +
+        (reason ? `: "${reason}".` : '.') +
+        hint,
+    )
   }
   return (await response.json()) as Record<string, unknown>
 }
@@ -180,8 +191,18 @@ async function main() {
     const code = await signIn(clientId, codeChallenge)
     const accessToken = await exchangeCode(clientId, code, codeVerifier)
 
-    const details = await getJson(`${API}/playlists/${playlistId}?fields=name`, accessToken)
+    const me = await getJson(`${API}/me`, accessToken)
+    const details = await getJson(
+      `${API}/playlists/${playlistId}?fields=name,collaborative,owner(id,display_name)`,
+      accessToken,
+    )
+    const owner = (details.owner ?? {}) as { id?: string; display_name?: string }
     const name = typeof details.name === 'string' ? details.name : 'Untitled playlist'
+    console.log(`Signed in as ${String(me.display_name ?? me.id)} (${String(me.id)}, ${String(me.product ?? 'unknown')} plan)`)
+    console.log(`Playlist owner: ${String(owner.display_name ?? owner.id)} (${String(owner.id)})`)
+    if (owner.id !== me.id && details.collaborative !== true) {
+      console.warn('⚠ You are not this playlist\'s owner, so Spotify may refuse to share its tracks.')
+    }
     console.log(`Syncing “${name}”…`)
 
     const items = await fetchAllItems(playlistId, accessToken)

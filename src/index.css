@@ -882,3 +882,105 @@ button:disabled {
   opacity: 0;
   pointer-events: none;
 }
+
+/* ---------- Leaderboard ---------- */
+
+.leaderboard {
+  display: grid;
+  gap: 0.5rem;
+  text-align: left;
+}
+
+.leaderboard-title {
+  margin: 0;
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+.leaderboard-note {
+  margin: 0;
+  font-size: 0.9375rem;
+  color: var(--text-muted);
+}
+
+.leaderboard-list {
+  display: grid;
+  gap: 0.25rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.leaderboard-list li {
+  display: grid;
+  grid-template-columns: 1.75rem 1fr auto;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem 0.75rem;
+  border-radius: var(--radius-sm);
+  background: var(--surface);
+  border: 1px solid var(--border);
+}
+
+.leaderboard-list li.is-you {
+  border-color: var(--accent);
+  box-shadow: 0 0 0 2px color-mix(in srgb, var(--accent) 20%, transparent);
+}
+
+.leaderboard-rank {
+  font-weight: 800;
+  color: var(--text-muted);
+  font-variant-numeric: tabular-nums;
+}
+
+.leaderboard-list li:first-child .leaderboard-rank {
+  color: var(--accent);
+}
+
+.leaderboard-name {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-weight: 600;
+}
+
+.leaderboard-you {
+  font-weight: 400;
+  color: var(--text-muted);
+}
+
+.leaderboard-score {
+  font-weight: 800;
+  font-variant-numeric: tabular-nums;
+}
+
+.results .leaderboard-list li {
+  background: var(--bg);
+}
+
+.submit-form {
+  display: grid;
+  gap: 0.5rem;
+  text-align: left;
+}
+
+.submit-label {
+  font-weight: 700;
+}
+
+.submit-error {
+  margin: 0;
+  color: var(--danger);
+  font-size: 0.9375rem;
+}
+
+.submit-result {
+  margin: 0;
+  font-size: 1.0625rem;
+}
+
+.results .leaderboard,
+.results .submit-form,
+.results > .leaderboard-note {
+  margin-bottom: 0.75rem;
+}

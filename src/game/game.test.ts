@@ -71,7 +71,11 @@ describe('gameReducer', () => {
     const state = play([twoRounds, { type: 'guess', text: 'harder better faster stronger' }])
     expect(state.phase).toBe('revealed')
     expect(state.score).toBe(3)
-    expect(currentRound(state)).toMatchObject({ outcome: 'correct', points: 3 })
+    expect(currentRound(state)).toMatchObject({
+      outcome: 'correct',
+      winningGuess: 'harder better faster stronger',
+      points: 3,
+    })
   })
 
   it('takes a point off for each hint, up to three hints', () => {
@@ -102,7 +106,7 @@ describe('gameReducer', () => {
     const state = play([twoRounds, { type: 'giveUp' }])
     expect(state.phase).toBe('revealed')
     expect(state.score).toBe(0)
-    expect(currentRound(state)).toMatchObject({ outcome: 'gaveUp', points: 0 })
+    expect(currentRound(state)).toMatchObject({ outcome: 'gaveUp', winningGuess: null, points: 0 })
   })
 
   it('moves to the next round, then finishes after the last one', () => {

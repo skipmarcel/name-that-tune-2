@@ -2,6 +2,7 @@ import { act, render, screen, waitFor, within } from '@testing-library/react'
 import userEvent from '@testing-library/user-event'
 import App from './App'
 import type { PlaylistOption, Track } from './lib/playlist'
+import type { LeaderboardClient } from './leaderboard/client'
 import { createFakeIframeApi } from './player/fake-iframe-api'
 
 function track(id: string, name: string, artist = 'Artist'): Track {
@@ -16,10 +17,17 @@ function manyTracks(id: string, count: number) {
   return Array.from({ length: count }, (_, i) => track(`${id}-${i}`, `Song ${id} ${i}`))
 }
 
-async function renderApp(playlists: PlaylistOption[]) {
+/** A leaderboard that can't be reached: games still work, just unranked. */
+const offline: LeaderboardClient = {
+  startGame: () => Promise.reject(new Error('offline')),
+  getLeaderboard: () => Promise.reject(new Error('offline')),
+  submitScore: () => Promise.reject(new Error('offline')),
+}
+
+async function renderApp(playlists: PlaylistOption[], leaderboard: LeaderboardClient = offline) {
   const fake = createFakeIframeApi()
   const user = userEvent.setup()
-  render(<App playlists={playlists} loadSpotifyApi={fake.loadApi} />)
+  render(<App playlists={playlists} loadSpotifyApi={fake.loadApi} leaderboard={leaderboard} />)
   // Let the (fake) iFrame API finish loading.
   await act(async () => {})
   return { fake, user }
@@ -138,6 +146,16 @@ describe('App', () => {
     expect(screen.getByRole('button', { name: 'Start' })).toBeInTheDocument()
   })
 
+  it('still plays when the leaderboard is unreachable, but says the game is unranked', async () => {
+    const { user } = await renderApp([playlist('p', 'One', [track('x', 'Mars')])])
+    expect(await screen.findByText('The leaderboard is unavailable right now.')).toBeInTheDocument()
+    await user.click(screen.getByRole('button', { name: 'Start' }))
+    await user.click(screen.getByRole('button', { name: 'Give up' }))
+    await user.click(screen.getByRole('button', { name: 'See results' }))
+    expect(screen.getByText(/wasn.t ranked/)).toBeInTheDocument()
+    expect(screen.queryByLabelText('Add your score to the leaderboard')).not.toBeInTheDocument()
+  })
+
   it('keeps the embed hidden and out of the accessibility tree', async () => {
     const { user } = await renderApp([playlist('p', 'One', [track('x', 'Mars')])])
     await user.click(screen.getByRole('button', { name: 'Start' }))
@@ -152,6 +170,7 @@ describe('App', () => {
       <App
         playlists={[playlist('p', 'One', [track('x', 'Mars')])]}
         loadSpotifyApi={() => Promise.reject(new Error('blocked'))}
+        leaderboard={offline}
       />,
     )
     await user.click(screen.getByRole('button', { name: 'Start' }))

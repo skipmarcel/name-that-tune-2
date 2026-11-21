@@ -1,3 +1,4 @@
+import type { ReactNode } from 'react'
 import type { Round } from '../game/game'
 import { verdict } from '../game/verdict'
 
@@ -7,9 +8,11 @@ interface ResultsViewProps {
   maxScore: number
   playlistTitle: string
   onPlayAgain: () => void
+  /** Shown between the song list and the Play again button (the leaderboard). */
+  children?: ReactNode
 }
 
-export function ResultsView({ rounds, score, maxScore, playlistTitle, onPlayAgain }: ResultsViewProps) {
+export function ResultsView({ rounds, score, maxScore, playlistTitle, onPlayAgain, children }: ResultsViewProps) {
   const correct = rounds.filter((r) => r.outcome === 'correct').length
 
   return (
@@ -38,6 +41,8 @@ export function ResultsView({ rounds, score, maxScore, playlistTitle, onPlayAgai
           </li>
         ))}
       </ol>
+
+      {children}
 
       <button type="button" className="button-primary button-wide" onClick={onPlayAgain}>
         Play again

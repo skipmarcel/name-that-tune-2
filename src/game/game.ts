@@ -23,6 +23,8 @@ export interface Round {
   wrongGuesses: string[]
   /** How the round ended; null while it's still being played. */
   outcome: 'correct' | 'gaveUp' | null
+  /** The guess that was accepted, sent to the server for scoring. */
+  winningGuess: string | null
   points: number
 }
 
@@ -89,7 +91,7 @@ export function gameReducer(state: GameState, action: GameAction): GameState {
     case 'start': {
       if (action.tracks.length === 0) return state
       const rounds = action.tracks.map(
-        (track): Round => ({ track, hintsUsed: 0, wrongGuesses: [], outcome: null, points: 0 }),
+        (track): Round => ({ track, hintsUsed: 0, wrongGuesses: [], outcome: null, winningGuess: null, points: 0 }),
       )
       return { phase: 'guessing', rounds, roundIndex: 0, score: 0 }
     }
@@ -106,7 +108,7 @@ export function gameReducer(state: GameState, action: GameAction): GameState {
       }
       const points = pointsFor(round.hintsUsed)
       return {
-        ...updateCurrentRound(state, { outcome: 'correct', points }),
+        ...updateCurrentRound(state, { outcome: 'correct', winningGuess: text, points }),
         phase: 'revealed',
         score: state.score + points,
       }

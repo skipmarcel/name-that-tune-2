@@ -10,7 +10,8 @@
     "lint": "oxlint",
     "typecheck": "tsc -b",
     "test": "vitest run",
-    "test:watch": "vitest"
+    "test:watch": "vitest",
+    "sync-playlist": "node scripts/sync-playlist.ts"
   },
   "dependencies": {
     "react": "^19.3.1",

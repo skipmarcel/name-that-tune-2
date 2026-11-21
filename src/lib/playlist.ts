@@ -2,9 +2,9 @@
  * Playlist data shared by the game and the `sync-playlist` script.
  *
  * Spotify only returns a playlist's tracks to its signed-in owner, so the
- * track list is fetched ahead of time by `npm run sync-playlist` and saved to
- * `src/data/playlist.json`. This module defines that file's shape and turns
- * raw Spotify API items into it. It has no browser or Node dependencies.
+ * track lists are fetched ahead of time by `npm run sync-playlist` and saved to
+ * `src/data/playlists/<id>.json`. This module defines that file's shape, turns
+ * raw Spotify API items into it and joins it with the playlist config. It has no browser or Node dependencies.
  */
 
 export interface Track {
@@ -99,4 +99,39 @@ export function normalizePlaylistItems(items: readonly unknown[]): Track[] {
     }
   }
   return tracks
+}
+
+/** One entry in src/data/playlists.config.json. */
+export interface PlaylistConfigEntry {
+  /** Spotify playlist ID. */
+  id: string
+  /** Name shown to players; defaults to the playlist's Spotify name. */
+  title?: string
+}
+
+/** A playlist players can choose, in the order listed in the config. */
+export interface PlaylistOption {
+  id: string
+  title: string
+  tracks: Track[]
+}
+
+/**
+ * Combines the config with the synced playlist files. Playlists that haven't
+ * been synced yet (no file, or no tracks) are included with no tracks, so the
+ * UI can show them as unavailable instead of silently dropping them.
+ */
+export function buildPlaylistOptions(
+  config: readonly PlaylistConfigEntry[],
+  saved: readonly SavedPlaylist[],
+): PlaylistOption[] {
+  const savedById = new Map(saved.map((playlist) => [playlist.id, playlist]))
+  return config.map(({ id, title }) => {
+    const playlist = savedById.get(id)
+    return {
+      id,
+      title: title?.trim() || playlist?.name || 'Untitled playlist',
+      tracks: playlist?.tracks ?? [],
+    }
+  })
 }

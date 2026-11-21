@@ -1,30 +1,34 @@
 /**
- * Saves the game's playlist to src/data/playlist.json.
+ * Saves the tracks of every playlist in src/data/playlists.config.json to
+ * src/data/playlists/<id>.json.
  *
- *   npm run sync-playlist
+ *   npm run sync-playlist                  # sync every playlist in the config
+ *   npm run sync-playlist -- <id or link>  # sync just one of them
  *
- * Spotify only returns a playlist's tracks to a signed-in user, so this opens
- * a Spotify sign-in page in the browser (Authorization Code flow with PKCE),
- * then reads every page of the playlist and writes the playable tracks to disk.
- * Only SPOTIFY_CLIENT_ID and VITE_PLAYLIST_ID are needed; the client secret and
- * the sign-in token are never stored.
+ * Spotify only returns a playlist's tracks to its signed-in owner or
+ * collaborators, so this opens a Spotify sign-in page in the browser
+ * (Authorization Code flow with PKCE), then reads every page of each playlist
+ * and writes the playable tracks to disk. Only SPOTIFY_CLIENT_ID is needed;
+ * the client secret and the sign-in token are never stored.
  *
  * The redirect URI below must be listed in the app's settings on the Spotify
  * Developer Dashboard.
  */
 import { spawn } from 'node:child_process'
 import { createHash, randomBytes } from 'node:crypto'
-import { writeFile } from 'node:fs/promises'
+import { mkdir, readFile, writeFile } from 'node:fs/promises'
 import { createServer } from 'node:http'
 import {
   normalizePlaylistItems,
   parsePlaylistId,
+  type PlaylistConfigEntry,
   type SavedPlaylist,
 } from '../src/lib/playlist.ts'
 
 const REDIRECT_URI = 'http://127.0.0.1:5173/callback'
 const SCOPES = 'playlist-read-private playlist-read-collaborative user-read-private'
-const OUTPUT_FILE = new URL('../src/data/playlist.json', import.meta.url)
+const CONFIG_FILE = new URL('../src/data/playlists.config.json', import.meta.url)
+const OUTPUT_DIR = new URL('../src/data/playlists/', import.meta.url)
 const SIGN_IN_TIMEOUT_MS = 5 * 60_000
 const API = 'https://api.spotify.com/v1'
 
@@ -145,7 +149,7 @@ async function getJson(url: string, accessToken: string): Promise<Record<string,
       typeof body?.error === 'object' ? body.error.message : (body?.error_description ?? body?.error)
     const hint =
       response.status === 404
-        ? ' Check VITE_PLAYLIST_ID.'
+        ? ' Check the ID in src/data/playlists.config.json.'
         : response.status === 403
           ? ' Spotify only shares a playlist\'s tracks with its owner or collaborators.'
           : ''
@@ -172,6 +176,52 @@ async function fetchAllItems(playlistId: string, accessToken: string) {
   return items
 }
 
+async function readConfig(): Promise<PlaylistConfigEntry[]> {
+  const config: unknown = JSON.parse(await readFile(CONFIG_FILE, 'utf8'))
+  if (!Array.isArray(config)) fail('src/data/playlists.config.json must be a JSON array.')
+  return config.map((entry: PlaylistConfigEntry, i) => {
+    const id = parsePlaylistId(String(entry?.id ?? ''))
+    if (!id) fail(`Entry ${i + 1} in src/data/playlists.config.json has an invalid "id".`)
+    return { ...entry, id }
+  })
+}
+
+/** Reads one playlist and saves it. Returns false if Spotify refused it. */
+async function syncPlaylist(entry: PlaylistConfigEntry, me: Record<string, unknown>, accessToken: string) {
+  const label = entry.title ?? entry.id
+  try {
+    const details = await getJson(
+      `${API}/playlists/${entry.id}?fields=name,collaborative,owner(id,display_name)`,
+      accessToken,
+    )
+    const owner = (details.owner ?? {}) as { id?: string; display_name?: string }
+    const name = typeof details.name === 'string' ? details.name : 'Untitled playlist'
+    console.log(`\n“${name}”${entry.title && entry.title !== name ? ` (shown as “${entry.title}”)` : ''}`)
+    if (owner.id !== me.id && details.collaborative !== true) {
+      console.warn(
+        `⚠ Owned by ${String(owner.display_name ?? owner.id)}, not you, so Spotify may refuse to share its tracks.`,
+      )
+    }
+
+    const items = await fetchAllItems(entry.id, accessToken)
+    const tracks = normalizePlaylistItems(items)
+    if (tracks.length === 0) throw new Error('The playlist has no playable tracks.')
+
+    const playlist: SavedPlaylist = { id: entry.id, name, syncedAt: new Date().toISOString(), tracks }
+    await writeFile(new URL(`${entry.id}.json`, OUTPUT_DIR), `${JSON.stringify(playlist, null, 2)}\n`)
+
+    const skipped = items.length - tracks.length
+    console.log(
+      `✔ Saved ${tracks.length} tracks to src/data/playlists/${entry.id}.json` +
+        (skipped > 0 ? ` (skipped ${skipped} unplayable or duplicate items)` : ''),
+    )
+    return true
+  } catch (error) {
+    console.error(`✖ ${label}: ${error instanceof Error ? error.message : String(error)}`)
+    return false
+  }
+}
+
 async function main() {
   try {
     process.loadEnvFile('.env')
@@ -181,8 +231,17 @@ async function main() {
 
   const clientId = process.env.SPOTIFY_CLIENT_ID
   if (!clientId) fail('SPOTIFY_CLIENT_ID is missing from .env.')
-  const playlistId = parsePlaylistId(process.env.VITE_PLAYLIST_ID ?? '')
-  if (!playlistId) fail('VITE_PLAYLIST_ID in .env is not a valid playlist ID or link.')
+
+  let playlists = await readConfig()
+  const only = process.argv[2]
+  if (only) {
+    const id = parsePlaylistId(only)
+    playlists = playlists.filter((entry) => entry.id === id)
+    if (playlists.length === 0) {
+      fail(`${only} is not in src/data/playlists.config.json. Add it there first.`)
+    }
+  }
+  if (playlists.length === 0) fail('src/data/playlists.config.json has no playlists.')
 
   const codeVerifier = base64Url(randomBytes(64))
   const codeChallenge = base64Url(createHash('sha256').update(codeVerifier).digest())
@@ -190,38 +249,17 @@ async function main() {
   try {
     const code = await signIn(clientId, codeChallenge)
     const accessToken = await exchangeCode(clientId, code, codeVerifier)
-
     const me = await getJson(`${API}/me`, accessToken)
-    const details = await getJson(
-      `${API}/playlists/${playlistId}?fields=name,collaborative,owner(id,display_name)`,
-      accessToken,
-    )
-    const owner = (details.owner ?? {}) as { id?: string; display_name?: string }
-    const name = typeof details.name === 'string' ? details.name : 'Untitled playlist'
-    console.log(`Signed in as ${String(me.display_name ?? me.id)} (${String(me.id)}, ${String(me.product ?? 'unknown')} plan)`)
-    console.log(`Playlist owner: ${String(owner.display_name ?? owner.id)} (${String(owner.id)})`)
-    if (owner.id !== me.id && details.collaborative !== true) {
-      console.warn('⚠ You are not this playlist\'s owner, so Spotify may refuse to share its tracks.')
-    }
-    console.log(`Syncing “${name}”…`)
-
-    const items = await fetchAllItems(playlistId, accessToken)
-    const tracks = normalizePlaylistItems(items)
-    if (tracks.length === 0) fail('The playlist has no playable tracks.')
-
-    const playlist: SavedPlaylist = {
-      id: playlistId,
-      name,
-      syncedAt: new Date().toISOString(),
-      tracks,
-    }
-    await writeFile(OUTPUT_FILE, `${JSON.stringify(playlist, null, 2)}\n`)
-
-    const skipped = items.length - tracks.length
     console.log(
-      `✔ Saved ${tracks.length} tracks to src/data/playlist.json` +
-        (skipped > 0 ? ` (skipped ${skipped} unplayable or duplicate items)` : ''),
+      `Signed in as ${String(me.display_name ?? me.id)} (${String(me.id)}, ${String(me.product ?? 'unknown')} plan)`,
     )
+
+    await mkdir(OUTPUT_DIR, { recursive: true })
+    let failures = 0
+    for (const entry of playlists) {
+      if (!(await syncPlaylist(entry, me, accessToken))) failures++
+    }
+    if (failures > 0) fail(`${failures} of ${playlists.length} playlists could not be synced.`)
   } catch (error) {
     fail(error instanceof Error ? error.message : String(error))
   }

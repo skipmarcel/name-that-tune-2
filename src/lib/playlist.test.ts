@@ -1,4 +1,4 @@
-import { normalizePlaylistItems, parsePlaylistId } from './playlist'
+import { buildPlaylistOptions, normalizePlaylistItems, parsePlaylistId } from './playlist'
 
 const ID = '4j9MhzbUmYadbnn4qBJiSC'
 
@@ -90,5 +90,38 @@ describe('normalizePlaylistItems', () => {
   it('copes with a missing album or cover art', () => {
     const [track] = normalizePlaylistItems([{ item: spotifyTrack({ album: undefined }) }])
     expect(track).toMatchObject({ album: '', imageUrl: null })
+  })
+})
+
+describe('buildPlaylistOptions', () => {
+  const saved = (id: string, name: string, trackCount: number) => ({
+    id,
+    name,
+    syncedAt: '2026-11-21T00:00:00.000Z',
+    tracks: normalizePlaylistItems(
+      Array.from({ length: trackCount }, (_, i) => ({ item: spotifyTrack({ id: `${id}-${i}` }) })),
+    ),
+  })
+
+  it('keeps the config order and uses config titles over Spotify names', () => {
+    const options = buildPlaylistOptions(
+      [{ id: 'b', title: 'Obscure Folk and Rock' }, { id: 'a' }],
+      [saved('a', 'For Coding', 2), saved('b', 'Faves', 3)],
+    )
+    expect(options.map((o) => [o.id, o.title, o.tracks.length])).toEqual([
+      ['b', 'Obscure Folk and Rock', 3],
+      ['a', 'For Coding', 2],
+    ])
+  })
+
+  it('includes playlists that have not been synced, with no tracks', () => {
+    expect(buildPlaylistOptions([{ id: 'new', title: 'New' }], [])).toEqual([
+      { id: 'new', title: 'New', tracks: [] },
+    ])
+    expect(buildPlaylistOptions([{ id: 'new' }], [])[0].title).toBe('Untitled playlist')
+  })
+
+  it('ignores synced files that are no longer in the config', () => {
+    expect(buildPlaylistOptions([], [saved('a', 'Old', 1)])).toEqual([])
   })
 })

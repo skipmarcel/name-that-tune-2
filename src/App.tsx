@@ -6,6 +6,7 @@ import { ResultsView } from './components/ResultsView'
 import { RevealView } from './components/RevealView'
 import { RoundView } from './components/RoundView'
 import { ScoreSubmission } from './components/ScoreSubmission'
+import { SpirographBackground } from './components/SpirographBackground'
 import { playlistOptions } from './data/playlists'
 import { ROUNDS_PER_GAME, currentRound, gameReducer, initialGameState, maxScore, startGame } from './game/game'
 import { ARTIST_POINTS, MAX_POINTS, TITLE_POINTS } from './game/scoring'
@@ -101,6 +102,7 @@ function App({ playlists = playlistOptions, loadSpotifyApi, leaderboard = leader
 
   return (
     <div className="shell">
+      <SpirographBackground />
       <header className={`site-header${inGame ? ' is-compact' : ''}`}>
         {inGame ? (
           <button type="button" className="brand brand-button" onClick={backToStart} aria-label="Song Sleuth: quit to start">

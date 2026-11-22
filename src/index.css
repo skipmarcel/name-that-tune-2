@@ -374,6 +374,12 @@ button:disabled {
 .start-button {
   min-height: 3.25rem;
   font-size: 1.0625rem;
+  /* Stays reachable at the bottom of the screen while the playlist list
+     scrolls, then settles back under the list. */
+  position: sticky;
+  bottom: max(16px, env(safe-area-inset-bottom));
+  z-index: 1;
+  box-shadow: 0 6px 24px rgb(0 0 0 / 60%);
 }
 
 /* ---------- Game header ---------- */

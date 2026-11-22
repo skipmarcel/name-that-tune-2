@@ -996,3 +996,22 @@ button:disabled {
 .results-score {
   letter-spacing: -0.02em;
 }
+
+/* ---------- Share ---------- */
+
+.share {
+  display: grid;
+  gap: 0.25rem;
+  margin-top: 0.75rem;
+}
+
+.share-status {
+  min-height: 1.25em;
+  margin: 0;
+  font-size: 0.875rem;
+  color: var(--success);
+}
+
+.share-status:empty {
+  min-height: 0;
+}

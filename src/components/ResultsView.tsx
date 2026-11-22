@@ -1,6 +1,8 @@
 import type { ReactNode } from 'react'
 import type { Round } from '../game/game'
+import { shareText } from '../game/share'
 import { verdict } from '../game/verdict'
+import { ShareButton } from './ShareButton'
 
 interface ResultsViewProps {
   rounds: Round[]
@@ -27,6 +29,10 @@ export function ResultsView({ rounds, score, maxScore, playlistTitle, onPlayAgai
       <p className="results-summary">
         You named {artists} of {rounds.length} artists, and both artist and title {both} {both === 1 ? 'time' : 'times'}.
       </p>
+
+      <ShareButton
+        text={shareText({ rounds, score, maxScore, playlistTitle, url: window.location.origin })}
+      />
 
       <ol className="results-list">
         {rounds.map(({ track, points }) => (

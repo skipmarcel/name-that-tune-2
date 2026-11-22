@@ -76,25 +76,31 @@ export function songKey(title: string): string {
   return normalize(stripBrackets(stripSubtitle(stripVersionInfo(title)))) || normalize(title)
 }
 
-/** Classic edit distance (insertions, deletions, substitutions). */
-export function levenshtein(a: string, b: string): number {
+/**
+ * Edit distance counting insertions, deletions, substitutions and swaps of
+ * two neighboring letters ("brain" → "brian" is one edit). Known as the
+ * optimal string alignment distance.
+ */
+export function editDistance(a: string, b: string): number {
   if (a === b) return 0
-  let previous = Array.from({ length: b.length + 1 }, (_, i) => i)
+  const rows: number[][] = Array.from({ length: a.length + 1 }, (_, i) => [i])
+  for (let j = 1; j <= b.length; j++) rows[0][j] = j
   for (let i = 1; i <= a.length; i++) {
-    const current = [i]
     for (let j = 1; j <= b.length; j++) {
       const cost = a[i - 1] === b[j - 1] ? 0 : 1
-      current[j] = Math.min(previous[j] + 1, current[j - 1] + 1, previous[j - 1] + cost)
+      rows[i][j] = Math.min(rows[i - 1][j] + 1, rows[i][j - 1] + 1, rows[i - 1][j - 1] + cost)
+      if (i > 1 && j > 1 && a[i - 1] === b[j - 2] && a[i - 2] === b[j - 1]) {
+        rows[i][j] = Math.min(rows[i][j], rows[i - 2][j - 2] + 1)
+      }
     }
-    previous = current
   }
-  return previous[b.length]
+  return rows[a.length][b.length]
 }
 
 /** 1 for identical strings, falling towards 0 as they differ. */
 export function similarity(a: string, b: string): number {
   const longest = Math.max(a.length, b.length)
-  return longest === 0 ? 1 : 1 - levenshtein(a, b) / longest
+  return longest === 0 ? 1 : 1 - editDistance(a, b) / longest
 }
 
 const NUMBER_TOKEN = /^(\d+|i|ii|iii|iv|v|vi|vii|viii|ix|x|xi|xii)$/
@@ -111,7 +117,7 @@ function numberTokens(normalized: string): string {
 function matches(guess: string, answer: string): boolean {
   if (answer.length <= EXACT_MATCH_MAX_LENGTH) return guess === answer
   if (numberTokens(guess) !== numberTokens(answer)) return false
-  const edits = levenshtein(guess, answer)
+  const edits = editDistance(guess, answer)
   return edits <= MAX_TYPOS && 1 - edits / Math.max(guess.length, answer.length) >= SIMILARITY_THRESHOLD
 }
 
@@ -120,4 +126,24 @@ export function isCorrectGuess(guess: string, title: string): boolean {
   const normalizedGuess = normalize(guess)
   if (!normalizedGuess) return false
   return acceptedAnswers(title).some((answer) => matches(normalizedGuess, answer))
+}
+
+/** Forms of an artist name that count: "The Jesus and Mary Chain" also as "Jesus and Mary Chain". */
+function artistForms(name: string): string[] {
+  const normalized = normalize(name)
+  return [normalized, normalized.replace(/^the /, '')].filter(Boolean)
+}
+
+/**
+ * Whether a guess names the artist. Any one credited artist counts ("Philip
+ * Glass" for "Philip Glass, Michael Riesman"), as does naming them all.
+ * A leading "The" is optional, and the same typo rules as titles apply.
+ */
+export function isCorrectArtist(guess: string, artists: readonly string[]): boolean {
+  const normalizedGuess = normalize(guess)
+  if (!normalizedGuess) return false
+  const names = artists.length > 1 ? [...artists, artists.join(' and ')] : artists
+  const answers = [...new Set(names.flatMap(artistForms))]
+  const guesses = artistForms(guess)
+  return answers.some((answer) => guesses.some((g) => matches(g, answer)))
 }

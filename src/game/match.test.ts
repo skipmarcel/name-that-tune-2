@@ -1,4 +1,13 @@
-import { acceptedAnswers, displayTitle, isCorrectGuess, levenshtein, normalize, similarity, songKey } from './match'
+import {
+  acceptedAnswers,
+  displayTitle,
+  isCorrectArtist,
+  isCorrectGuess,
+  editDistance,
+  normalize,
+  similarity,
+  songKey,
+} from './match'
 
 describe('normalize', () => {
   it('ignores case, accents, punctuation and spacing', () => {
@@ -12,11 +21,16 @@ describe('normalize', () => {
   })
 })
 
-describe('levenshtein / similarity', () => {
+describe('editDistance / similarity', () => {
   it('counts single-character edits', () => {
-    expect(levenshtein('kitten', 'sitting')).toBe(3)
-    expect(levenshtein('', 'abc')).toBe(3)
-    expect(levenshtein('same', 'same')).toBe(0)
+    expect(editDistance('kitten', 'sitting')).toBe(3)
+    expect(editDistance('', 'abc')).toBe(3)
+    expect(editDistance('same', 'same')).toBe(0)
+  })
+
+  it('counts swapped neighboring letters as one edit', () => {
+    expect(editDistance('brain', 'brian')).toBe(1)
+    expect(editDistance('hte', 'the')).toBe(1)
   })
 
   it('scales similarity to the longer string', () => {
@@ -97,5 +111,38 @@ describe('isCorrectGuess', () => {
     ['Dnot Cal Me Heor', "Don't Call Me Hero"], // three typos
   ])('rejects %j for %j', (guess, title) => {
     expect(isCorrectGuess(guess, title)).toBe(false)
+  })
+})
+
+describe('isCorrectArtist', () => {
+  const glass = ['Philip Glass', 'Michael Riesman', 'Philip Glass Ensemble']
+
+  it.each([
+    ['the jesus and mary chain', ['The Jesus and Mary Chain']],
+    ['jesus and mary chain', ['The Jesus and Mary Chain']], // "The" is optional
+    ['Jesus & Mary Chain', ['The Jesus and Mary Chain']],
+    ['the beatles', ['Beatles']],
+    ['philip glass', glass], // any one credited artist
+    ['michael riesman', glass],
+    ['calvin harris and dua lipa', ['Calvin Harris', 'Dua Lipa']], // all of them
+    ['brian eno', ['Brian Eno']],
+    ['brain eno', ['Brian Eno']], // a typo
+    ['sibylle baier', ['Sibylle Baier']],
+    ['joe dassin', ['Joe Dassin']],
+    ['ABBA', ['ABBA']],
+    ['blink 182', ['blink-182']],
+  ])('accepts %j for %j', (guess, artists) => {
+    expect(isCorrectArtist(guess, artists)).toBe(true)
+  })
+
+  it.each([
+    ['', ['Brian Eno']],
+    ['the', ['The Jesus and Mary Chain']],
+    ['abbo', ['ABBA']], // short names must be exact
+    ['philip', glass],
+    ['blink 183', ['blink-182']],
+    ['nick cave', ['Warren Ellis']],
+  ])('rejects %j for %j', (guess, artists) => {
+    expect(isCorrectArtist(guess, artists)).toBe(false)
   })
 })

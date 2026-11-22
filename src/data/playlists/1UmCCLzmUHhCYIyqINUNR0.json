@@ -1,0 +1,516 @@
+{
+  "id": "1UmCCLzmUHhCYIyqINUNR0",
+  "name": "Nostalgia 2000s Mix",
+  "syncedAt": "2026-11-22T17:02:47.906Z",
+  "tracks": [
+    {
+      "id": "17A0HiJjuQwZuTAzLekMeP",
+      "name": "The Orb Of Dreamers",
+      "artists": [
+        "The Daniel Pemberton TV Orchestra"
+      ],
+      "album": "Little BIG Music: Musical Oddities From And Inspired By Little Big Planet",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b2734cb703e41e1e5dc2177c8e1f",
+      "durationMs": 151000
+    },
+    {
+      "id": "4oHla6Sgx9F3n1jUmPanHF",
+      "name": "Hide and Seek - 20th Anniversary Remaster",
+      "artists": [
+        "Imogen Heap"
+      ],
+      "album": "Speak for Yourself (20th Anniversary Remaster)",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b273c8cb2bce57487ea8e70b0727",
+      "durationMs": 268813
+    },
+    {
+      "id": "1PVoCVLV1aLoqXpMNBSYYS",
+      "name": "Kissing the Lipless - 2023 Remaster",
+      "artists": [
+        "The Shins"
+      ],
+      "album": "Chutes Too Narrow (20th Anniversary Remaster)",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b273bc422a05d5cc2beb7a5b181c",
+      "durationMs": 198813
+    },
+    {
+      "id": "4G21jWo0Cm6lOIUNnZ2mUI",
+      "name": "Such Great Heights - Remastered",
+      "artists": [
+        "The Postal Service"
+      ],
+      "album": "Give Up (Deluxe 10th Anniversary Edition)",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b27385f0e9a8cd0d663470492ec1",
+      "durationMs": 266506
+    },
+    {
+      "id": "5r5cp9IpziiIsR6b93vcnQ",
+      "name": "Walking On A Dream",
+      "artists": [
+        "Empire Of The Sun"
+      ],
+      "album": "Walking On A Dream (10th Anniversary Edition)",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b273f3aa0e6ca22a382007f61e4d",
+      "durationMs": 198440
+    },
+    {
+      "id": "2QC2OVBBadAsBIJDDjyoG9",
+      "name": "Strange Condition",
+      "artists": [
+        "Pete Yorn"
+      ],
+      "album": "musicforthemorningafter",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b2733c6a8fbce795f48681837d05",
+      "durationMs": 237099
+    },
+    {
+      "id": "4prEPl61C8qZpeo3IkYSMl",
+      "name": "Sleepyhead",
+      "artists": [
+        "Passion Pit"
+      ],
+      "album": "Manners",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b2733437e8bbed340ca556c42c04",
+      "durationMs": 174760
+    },
+    {
+      "id": "6GG73Jik4jUlQCkKg9JuGO",
+      "name": "The Middle",
+      "artists": [
+        "Jimmy Eat World"
+      ],
+      "album": "Bleed American",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b27395d1d98c5176e4f982bd73d6",
+      "durationMs": 165853
+    },
+    {
+      "id": "4bz7uB4edifWKJXSDxwHcs",
+      "name": "Galvanize",
+      "artists": [
+        "The Chemical Brothers",
+        "Q-Tip"
+      ],
+      "album": "Push The Button",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b2738e8f975a2b364769040c8169",
+      "durationMs": 393813
+    },
+    {
+      "id": "594P4Vej0r6OfiRme4kovX",
+      "name": "Pure Shores",
+      "artists": [
+        "All Saints"
+      ],
+      "album": "Saints & Sinners (25th Anniversary Edition)",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b2735daf78fa2dc57961f20ed38d",
+      "durationMs": 268746
+    },
+    {
+      "id": "7w57O4o0xCTn9YpKuaPZDd",
+      "name": "The Great Beyond",
+      "artists": [
+        "R.E.M."
+      ],
+      "album": "In Time: The Best Of R.E.M. 1988-2003",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b273519038856cb5329dc27f5916",
+      "durationMs": 307000
+    },
+    {
+      "id": "5qPGi9p8VqcizfdgWxtmLt",
+      "name": "Lovers in Japan",
+      "artists": [
+        "Coldplay"
+      ],
+      "album": "Viva La Vida or Death and All His Friends",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b273e21cc1db05580b6f2d2a3b6e",
+      "durationMs": 411013
+    },
+    {
+      "id": "57rAvblBMBmdPBugRF1T77",
+      "name": "The Skin of My Yellow Country Teeth",
+      "artists": [
+        "Clap Your Hands Say Yeah"
+      ],
+      "album": "Clap Your Hands Say Yeah",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b273767b6fb2ca6416973d8a2867",
+      "durationMs": 343773
+    },
+    {
+      "id": "33yAEqzKXexYM3WlOYtTfQ",
+      "name": "D.A.N.C.E.",
+      "artists": [
+        "Justice"
+      ],
+      "album": "Justice",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b2731c0bcf8b536295438d26c70d",
+      "durationMs": 242266
+    },
+    {
+      "id": "5vFKQF10Jhyysg3JUbfBUd",
+      "name": "Summer Skin",
+      "artists": [
+        "Death Cab for Cutie"
+      ],
+      "album": "Plans",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b273c985bcc18dd81da80839e5a9",
+      "durationMs": 194226
+    },
+    {
+      "id": "0pzjcWYkyynxhONSm5C8Cu",
+      "name": "My Doorbell",
+      "artists": [
+        "The White Stripes"
+      ],
+      "album": "Get Behind Me Satan",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b273e8a1ae591befe4bb0a9261ab",
+      "durationMs": 241866
+    },
+    {
+      "id": "5KBVqZDqF5WkHcK7auacGC",
+      "name": "Mall Rat",
+      "artists": [
+        "Jerry Martin"
+      ],
+      "album": "The Sims (Original Soundtrack)",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b27335b061ddb14b44a1a8fdffad",
+      "durationMs": 164502
+    },
+    {
+      "id": "6VUYwnd11VvLWdubhFioLz",
+      "name": "On the Radio",
+      "artists": [
+        "Regina Spektor"
+      ],
+      "album": "Begin to Hope",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b2732d81f491319b86356eb10c4e",
+      "durationMs": 200413
+    },
+    {
+      "id": "6XGKlssGb3oE9IUCvjLthd",
+      "name": "Your Ex-Lover Is Dead",
+      "artists": [
+        "Stars"
+      ],
+      "album": "Set Yourself On Fire",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b27356988c31bc674fc9cd441def",
+      "durationMs": 256053
+    },
+    {
+      "id": "1N62wozuHCvczCkY4QidpP",
+      "name": "Over My Head (Cable Car)",
+      "artists": [
+        "The Fray"
+      ],
+      "album": "How To Save A Life",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b27359b8b957f164ce660919f1f4",
+      "durationMs": 236266
+    },
+    {
+      "id": "7hPO1N8dk3vH8kCYqHhJZX",
+      "name": "We Used To Be Friends",
+      "artists": [
+        "The Dandy Warhols"
+      ],
+      "album": "Welcome To The Monkey House",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b273ceb6d842d08edd289475b88c",
+      "durationMs": 199960
+    },
+    {
+      "id": "4xj5OL6pyQTOsDRewbO5zv",
+      "name": "Amsterdam",
+      "artists": [
+        "Peter Bjorn and John"
+      ],
+      "album": "Writer's Block",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b2739cf4ac84b224a02f34d2e4f6",
+      "durationMs": 217306
+    },
+    {
+      "id": "3Fzlg5r1IjhLk2qRw667od",
+      "name": "Dancing in the Moonlight",
+      "artists": [
+        "Toploader"
+      ],
+      "album": "Onka's Big Moka",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b273e16a6534cd5a968a5b725d03",
+      "durationMs": 232693
+    },
+    {
+      "id": "0DiWol3AO6WpXZgp0goxAV",
+      "name": "One More Time",
+      "artists": [
+        "Daft Punk"
+      ],
+      "album": "Discovery",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b2731e81bff9807a9e629fce5ade",
+      "durationMs": 320357
+    },
+    {
+      "id": "3xKTpGCsafXzV4muM1Hpl3",
+      "name": "Let Go",
+      "artists": [
+        "Frou Frou"
+      ],
+      "album": "Details",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b2732d0c0ef37bf28fe4b2b35789",
+      "durationMs": 253893
+    },
+    {
+      "id": "1crbFuCkGL4kXnAGd63RXq",
+      "name": "Crooked Teeth",
+      "artists": [
+        "Death Cab for Cutie"
+      ],
+      "album": "Plans",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b273c985bcc18dd81da80839e5a9",
+      "durationMs": 203733
+    },
+    {
+      "id": "0UeYCHOETPfai02uskjJ3x",
+      "name": "Shooting Stars",
+      "artists": [
+        "Bag Raiders"
+      ],
+      "album": "Bag Raiders (Deluxe)",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b27350b5922bdf87ba4213b25234",
+      "durationMs": 235813
+    },
+    {
+      "id": "2IMIbiJlbi0pIs3FBpKFhS",
+      "name": "Warwick Avenue",
+      "artists": [
+        "Duffy"
+      ],
+      "album": "Rockferry",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b27387c95c59b33bdfdafc25a813",
+      "durationMs": 226386
+    },
+    {
+      "id": "1jlG3KJ3gdYmhfuySFfpO1",
+      "name": "I'm with You",
+      "artists": [
+        "Avril Lavigne"
+      ],
+      "album": "Let Go",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b273f7ec724fbf97a30869d06240",
+      "durationMs": 223066
+    },
+    {
+      "id": "4LxDdYU3x9tyDxy3CghqdC",
+      "name": "Sunrise",
+      "artists": [
+        "Simply Red"
+      ],
+      "album": "Home",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b27317a3d8e105d4f872fc66893d",
+      "durationMs": 199040
+    },
+    {
+      "id": "7DOtIhTTpPZyjvbO509hSC",
+      "name": "Don't Tell Me",
+      "artists": [
+        "Madonna"
+      ],
+      "album": "Music",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b273e7bba2f848d93d632e4dfd35",
+      "durationMs": 280973
+    },
+    {
+      "id": "4cDvCd4mmOtM9zZTvGIKEI",
+      "name": "1 Thing (feat. Eve) (feat. Eve)",
+      "artists": [
+        "Amerie",
+        "Eve"
+      ],
+      "album": "Touch",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b27315dd2fc9aa1109bbe1456916",
+      "durationMs": 258519
+    },
+    {
+      "id": "3q7D4kfMcju2alVibiUAcz",
+      "name": "In the Morning",
+      "artists": [
+        "The Coral"
+      ],
+      "album": "The Invisible Invasion",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b273ac921487c9f8b90cb178be6e",
+      "durationMs": 152520
+    },
+    {
+      "id": "6JH9yWhgbm0y9iAJhCslNc",
+      "name": "Handlebars",
+      "artists": [
+        "Flobots"
+      ],
+      "album": "Fight With Tools",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b2739c42c35d57212a5920c42f6c",
+      "durationMs": 206813
+    },
+    {
+      "id": "6TrNRd98WksT9Kkmx9uj6R",
+      "name": "Let It Rock",
+      "artists": [
+        "Kevin Rudolf",
+        "Lil Wayne"
+      ],
+      "album": "In The City",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b2732442cdde190f8a1112e084ee",
+      "durationMs": 231173
+    },
+    {
+      "id": "2SiqlgLMfKQbczSMRp8drY",
+      "name": "Into The Ocean",
+      "artists": [
+        "Blue October"
+      ],
+      "album": "Foiled",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b27303c87a7a7fb22e536c6ea781",
+      "durationMs": 239946
+    },
+    {
+      "id": "0d28khcov6AiegSCpG5TuT",
+      "name": "Feel Good Inc.",
+      "artists": [
+        "Gorillaz",
+        "De La Soul"
+      ],
+      "album": "Demon Days",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b273622aefd794f6fe4d8e714358",
+      "durationMs": 222640
+    },
+    {
+      "id": "1d1Uc9yNUMvUb0RbakGDt0",
+      "name": "Caring Is Creepy - 2021 Remaster",
+      "artists": [
+        "The Shins"
+      ],
+      "album": "Oh, Inverted World (20th Anniversary Remaster)",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b2734205b816277c7f9dba098d28",
+      "durationMs": 199053
+    },
+    {
+      "id": "6MtKObWYda2qnNIpJI21uD",
+      "name": "Pursuit Of Happiness (Nightmare)",
+      "artists": [
+        "Kid Cudi",
+        "MGMT",
+        "Ratatat"
+      ],
+      "album": "Man On The Moon: The End Of Day (Deluxe)",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b273a487deeecb334b6619489d74",
+      "durationMs": 295293
+    },
+    {
+      "id": "4oSmBSB929wtG9psa7GHoU",
+      "name": "I Believe In A Thing Called Love",
+      "artists": [
+        "The Darkness"
+      ],
+      "album": "Permission To Land... Again (20th Anniversary Edition)",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b27301ef4467a46343d21f97b7ab",
+      "durationMs": 216453
+    },
+    {
+      "id": "6u9RqxALwkjJ1ukB1y8vuP",
+      "name": "You've Got The Love",
+      "artists": [
+        "Florence + The Machine"
+      ],
+      "album": "Lungs (Deluxe Edition)",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b2730672b0f8756ae2af86e8a5ce",
+      "durationMs": 168666
+    },
+    {
+      "id": "0Stkh0VvjWMqQOWNkHVhJq",
+      "name": "Big City Life",
+      "artists": [
+        "Mattafix"
+      ],
+      "album": "Signs Of A Struggle",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b273fe2bed47246644df1bec0127",
+      "durationMs": 240893
+    },
+    {
+      "id": "0E29BKKGCJHcb7b9oIWgGB",
+      "name": "Calling All Angels",
+      "artists": [
+        "Train"
+      ],
+      "album": "My Private Nation",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b2737ee0e0e83730306ce40970ad",
+      "durationMs": 242200
+    },
+    {
+      "id": "7uRPUuUJpqMLvl785x4Een",
+      "name": "Starry Eyed Surprise",
+      "artists": [
+        "Paul Oakenfold",
+        "Shifty Shellshock",
+        "Crazy Town"
+      ],
+      "album": "Bunkka (Remastered)",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b2730eca70c28cef7bf5dd26af60",
+      "durationMs": 227722
+    },
+    {
+      "id": "5ZsPy9wHH733NlU6c4v2Hi",
+      "name": "When It's Over - David Kahne Main",
+      "artists": [
+        "Sugar Ray"
+      ],
+      "album": "Sugar Ray",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b2730c60a78a9e6022c996c791f9",
+      "durationMs": 219226
+    },
+    {
+      "id": "7p3VuRuNPThu26MqYWb4Kv",
+      "name": "Amore caro, amore bello",
+      "artists": [
+        "Bruno Lauzi"
+      ],
+      "album": "I Grandi Successi Originali",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b273c5f8fb693f1b40264db7567d",
+      "durationMs": 185120
+    },
+    {
+      "id": "71V89tJj9CboDyzncO6ZN2",
+      "name": "Stars Are Blind",
+      "artists": [
+        "Paris Hilton"
+      ],
+      "album": "Paris (U.S. Standard Version)",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b2737bdd687e400f491202df0b65",
+      "durationMs": 236600
+    },
+    {
+      "id": "7yMiX7n9SBvadzox8T5jzT",
+      "name": "Clint Eastwood",
+      "artists": [
+        "Gorillaz",
+        "Del The Funky Homosapien"
+      ],
+      "album": "Gorillaz",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b273c73a7bb15f43bae86215934b",
+      "durationMs": 340920
+    },
+    {
+      "id": "5OQGeJ1ceykovrykZsGhqL",
+      "name": "Breathless",
+      "artists": [
+        "The Corrs"
+      ],
+      "album": "In Blue",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b2735320a1b471ae75632ef787e5",
+      "durationMs": 207506
+    },
+    {
+      "id": "3tFECpGckFpp0HpQje78gi",
+      "name": "Forever Young",
+      "artists": [
+        "Youth Group"
+      ],
+      "album": "Casino Twilight Dogs",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b273afe44166f2ba6223a0ed85b6",
+      "durationMs": 239120
+    }
+  ]
+}

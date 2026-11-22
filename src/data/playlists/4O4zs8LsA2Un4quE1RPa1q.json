@@ -1,0 +1,497 @@
+{
+  "id": "4O4zs8LsA2Un4quE1RPa1q",
+  "name": "Classic Heavy Metal",
+  "syncedAt": "2026-11-22T14:43:15.832Z",
+  "tracks": [
+    {
+      "id": "2rd9ETlulTbz6BYZcdvIE1",
+      "name": "War Pigs / Luke's Wall - 2012 - Remaster",
+      "artists": [
+        "Black Sabbath"
+      ],
+      "album": "Paranoid (Remaster)",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b273d5fccf9ce08b6a1e7d12a222",
+      "durationMs": 474359
+    },
+    {
+      "id": "11u8c6LbxMGj5JmwYCJoo0",
+      "name": "Queen of the Deep - 2007 Remaster",
+      "artists": [
+        "UFO"
+      ],
+      "album": "Phenomenon (2007 Remaster)",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b2731aebacc79b33347a31c79afe",
+      "durationMs": 344600
+    },
+    {
+      "id": "7FtRUrOEDUHTvenvp1BqZo",
+      "name": "Catch The Rainbow",
+      "artists": [
+        "Rainbow"
+      ],
+      "album": "Ritchie Blackmore's Rainbow",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b2733626f32e555553b537a6493f",
+      "durationMs": 396466
+    },
+    {
+      "id": "1i5yWGXgtFABa0czv2pbZH",
+      "name": "Turbo Lover - Remastered",
+      "artists": [
+        "Judas Priest"
+      ],
+      "album": "Turbo 30",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b27361c27985f0b03b5062942df6",
+      "durationMs": 333999
+    },
+    {
+      "id": "71LmwNWHchuDe1QwrEKsB1",
+      "name": "God Was Never on Your Side",
+      "artists": [
+        "Motörhead"
+      ],
+      "album": "Kiss of Death",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b2730ce07088a4cf2395183c99ea",
+      "durationMs": 261186
+    },
+    {
+      "id": "6J6riyv0pGpXETSiHrjrzF",
+      "name": "The Sails of Charon - 2015 - Remaster",
+      "artists": [
+        "Scorpions"
+      ],
+      "album": "Taken by Force",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b273f8aebf7e3acf14e5d4cdc866",
+      "durationMs": 311866
+    },
+    {
+      "id": "2fJVGY7cozwugqn34a7VrA",
+      "name": "Black Car",
+      "artists": [
+        "Acid"
+      ],
+      "album": "Maniac",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b2733d4326c71955d507d8a5286e",
+      "durationMs": 255453
+    },
+    {
+      "id": "2jK9kxEQ1icBligV1jurjo",
+      "name": "Hard Rain Fallin'",
+      "artists": [
+        "Sir Lord Baltimore"
+      ],
+      "album": "Kingdom Come",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b273b15327d3a27f16694ce9c4d5",
+      "durationMs": 176000
+    },
+    {
+      "id": "2dbOYFfS7r7NAzquRvji9A",
+      "name": "Balls to the Wall",
+      "artists": [
+        "Accept"
+      ],
+      "album": "Balls To The Wall",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b27374a7bd17c802c562274d3b32",
+      "durationMs": 342600
+    },
+    {
+      "id": "0b0OJq95xmNrW8bwlSPZJ6",
+      "name": "Breadfan",
+      "artists": [
+        "Budgie"
+      ],
+      "album": "Never Turn Your Back On A Friend",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b273c0580ebfe5f1a9ac7a521801",
+      "durationMs": 365813
+    },
+    {
+      "id": "0kZpg64mTDk3V6jhGGEd7M",
+      "name": "Am I Demon",
+      "artists": [
+        "Danzig"
+      ],
+      "album": "Danzig",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b273bc8d8db760af7b9d0c91747f",
+      "durationMs": 297293
+    },
+    {
+      "id": "1Y373MqadDRtclJNdnUXVc",
+      "name": "Paranoid - 2012 - Remaster",
+      "artists": [
+        "Black Sabbath"
+      ],
+      "album": "Paranoid (Remaster)",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b273d5fccf9ce08b6a1e7d12a222",
+      "durationMs": 168405
+    },
+    {
+      "id": "1soxeK1ZBX9SsSjK4j4ECa",
+      "name": "Doctor Doctor - 2007 Remaster",
+      "artists": [
+        "UFO"
+      ],
+      "album": "Phenomenon (2007 Remaster)",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b2731aebacc79b33347a31c79afe",
+      "durationMs": 252453
+    },
+    {
+      "id": "1UxfpknSzFSP6uVpD5imSG",
+      "name": "The Evil That Men Do (2015 Remaster)",
+      "artists": [
+        "Iron Maiden"
+      ],
+      "album": "Seventh Son of a Seventh Son (2015 Remaster)",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b2736ee8cd5613c9c2c3055cbf5b",
+      "durationMs": 274213
+    },
+    {
+      "id": "3w9zHVKI28aUPZTxq8oDC6",
+      "name": "Electric Eye",
+      "artists": [
+        "Judas Priest"
+      ],
+      "album": "Screaming For Vengeance (Expanded Edition)",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b273475bd4fb40ba687fbf002c82",
+      "durationMs": 222440
+    },
+    {
+      "id": "0j7hyKTaetFpKsCgOyGPAI",
+      "name": "Stand Up and Shout",
+      "artists": [
+        "Dio"
+      ],
+      "album": "Holy Diver",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b2732457ab409ae106f8ae1dff89",
+      "durationMs": 198173
+    },
+    {
+      "id": "6X072JM07roPKz9TJnYfWw",
+      "name": "Love Me Like a Reptile",
+      "artists": [
+        "Motörhead"
+      ],
+      "album": "Ace of Spades (Expanded Edition)",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b273cb92df4d1fdbafa4a6e18855",
+      "durationMs": 201680
+    },
+    {
+      "id": "5u8Li7Ipc5xQLCrE8wiTSA",
+      "name": "Gypsy",
+      "artists": [
+        "Masquerade of Shadows"
+      ],
+      "album": "Wolfman",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b2733f26ab63e6b31948154fb2b6",
+      "durationMs": 190093
+    },
+    {
+      "id": "51YZAJhOwIC5Gg3jMbAmhZ",
+      "name": "For Whom The Bell Tolls (Remastered)",
+      "artists": [
+        "Metallica"
+      ],
+      "album": "Ride The Lightning (Deluxe Remaster)",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b273533fd0b248052d04e6b732c0",
+      "durationMs": 309973
+    },
+    {
+      "id": "0KjWAihYp5v6TtWw1xaBg0",
+      "name": "Coast To Coast",
+      "artists": [
+        "Scorpions"
+      ],
+      "album": "Lovedrive",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b273c9703979ebcc156cebd0e2c4",
+      "durationMs": 283426
+    },
+    {
+      "id": "4VoXFBTPanmp4roNEsQC9c",
+      "name": "Crash Course In Brain Surgery - 2013 Remaster",
+      "artists": [
+        "Budgie"
+      ],
+      "album": "Crash Course In Brain Surgery (2013 Remaster)",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b27355eae525c2169bbe1a882980",
+      "durationMs": 159386
+    },
+    {
+      "id": "4fiOTntQKr24p07FvQDHZE",
+      "name": "Raining Blood",
+      "artists": [
+        "Slayer"
+      ],
+      "album": "Reign In Blood (Expanded)",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b2731530f31c8d4197777b70ee5d",
+      "durationMs": 255186
+    },
+    {
+      "id": "5clz8BOBulxx7q2yHxqOCk",
+      "name": "Children of the Grave - 2014 Remaster",
+      "artists": [
+        "Black Sabbath"
+      ],
+      "album": "Master of Reality (2014 Remaster)",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b273c199494ba9ea2b73e9208f91",
+      "durationMs": 317206
+    },
+    {
+      "id": "1Hs2MG2LBJaSPk7X0fzmfk",
+      "name": "See You on the Other Side",
+      "artists": [
+        "Ozzy Osbourne"
+      ],
+      "album": "Ozzmosis (Expanded Edition)",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b27320904d686b3d8d433834e079",
+      "durationMs": 370432
+    },
+    {
+      "id": "2vlFd6wPsR3xvWPCOE0dQt",
+      "name": "Fear of the Dark (2015 Remaster)",
+      "artists": [
+        "Iron Maiden"
+      ],
+      "album": "Fear of the Dark (2015 Remaster)",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b2731bf5cfb4ddbbd12b4c1297e5",
+      "durationMs": 438120
+    },
+    {
+      "id": "2RaA6kIcvomt77qlIgGhCT",
+      "name": "Breaking the Law",
+      "artists": [
+        "Judas Priest"
+      ],
+      "album": "British Steel",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b273be0e5ebab8c61469b1ff9f62",
+      "durationMs": 153840
+    },
+    {
+      "id": "6rHF1P6L6XWdNmM8LeSR4Q",
+      "name": "Lights Out - 2008 Remaster",
+      "artists": [
+        "UFO"
+      ],
+      "album": "Lights Out (2008 Remaster)",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b273b20fa39da82fe6e7151e9d9d",
+      "durationMs": 275226
+    },
+    {
+      "id": "2XvVueul226rT8g4DQuKSK",
+      "name": "Killed by Death",
+      "artists": [
+        "Motörhead"
+      ],
+      "album": "All the Aces",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b27367102086e78a14eb0d436982",
+      "durationMs": 278373
+    },
+    {
+      "id": "0KAaslGdPc5I6WxmKe3whe",
+      "name": "Hangar 18",
+      "artists": [
+        "Megadeth"
+      ],
+      "album": "Rust In Peace",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b27342be808911785ceb13140edc",
+      "durationMs": 314560
+    },
+    {
+      "id": "4q9QVIaLqjbcoqeCfM2zan",
+      "name": "Creeping Death (Remastered)",
+      "artists": [
+        "Metallica"
+      ],
+      "album": "Ride The Lightning (Deluxe Remaster)",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b273533fd0b248052d04e6b732c0",
+      "durationMs": 395706
+    },
+    {
+      "id": "4nX2DhzGlJRdmdiAUbvJy5",
+      "name": "Am I Evil? - Remastered 2021",
+      "artists": [
+        "Diamond Head"
+      ],
+      "album": "Lightning To The Nations (The White Album) [Remastered 2021]",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b2731488f9b8118fec0e039dd280",
+      "durationMs": 463052
+    },
+    {
+      "id": "4bCvW1kZ7f29QhjNqiQiTp",
+      "name": "Melt The Ice Away",
+      "artists": [
+        "Budgie"
+      ],
+      "album": "Impeckable (Expanded Edition)",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b273d14461def9cb89811066801d",
+      "durationMs": 213426
+    },
+    {
+      "id": "6sD2mCUjmi0S3PTKxdW1Lc",
+      "name": "Long Way Back From Hell",
+      "artists": [
+        "Danzig"
+      ],
+      "album": "Danzig II: Lucifuge",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b273f7a90f998d2d262b0621703c",
+      "durationMs": 263400
+    },
+    {
+      "id": "3xHIzMtYweNIgsOGIbdyXt",
+      "name": "Evil Woman",
+      "artists": [
+        "Black Sabbath"
+      ],
+      "album": "The Ultimate Collection",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b273012d727b175d4a91c792fb4c",
+      "durationMs": 202013
+    },
+    {
+      "id": "0gXMYs6RDg5muWWoi2q3mb",
+      "name": "Road to Nowhere",
+      "artists": [
+        "Ozzy Osbourne"
+      ],
+      "album": "No More Tears (Expanded Edition)",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b273509342e69eb341df70e5c2e3",
+      "durationMs": 313057
+    },
+    {
+      "id": "5QspX9XtBavOhWmkv9SINP",
+      "name": "Seventh Son of a Seventh Son (2015 Remaster)",
+      "artists": [
+        "Iron Maiden"
+      ],
+      "album": "Seventh Son of a Seventh Son (2015 Remaster)",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b2736ee8cd5613c9c2c3055cbf5b",
+      "durationMs": 594080
+    },
+    {
+      "id": "3Rtv6zRNKpeSygXoaF9kCm",
+      "name": "Beyond the Realms of Death",
+      "artists": [
+        "Judas Priest"
+      ],
+      "album": "Stained Class",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b273a4c79ec8f98d1866d266f5af",
+      "durationMs": 409800
+    },
+    {
+      "id": "23TkmQDHw8ZYoGVdCaTmAZ",
+      "name": "Entrance of the Devil",
+      "artists": [
+        "Zior"
+      ],
+      "album": "Before My Eyes Go Blind: The Complete Recordings",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b2731d96c3879a57e282d4acae30",
+      "durationMs": 131586
+    },
+    {
+      "id": "1RQilPMMZilPmHvW2GEkxG",
+      "name": "Stone Dead Forever",
+      "artists": [
+        "Motörhead"
+      ],
+      "album": "Bomber (Deluxe Edition)",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b2734eff8fe6439dadbc28020b35",
+      "durationMs": 291840
+    },
+    {
+      "id": "6i7IXg8j7ZngiEOgBYjkhw",
+      "name": "Sweating Bullets - Remastered 2004",
+      "artists": [
+        "Megadeth"
+      ],
+      "album": "Countdown To Extinction (Expanded Edition - Remastered)",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b2737b178f928742be1492c6fba2",
+      "durationMs": 327040
+    },
+    {
+      "id": "1tTPC0hsnXq1IGpvWY54JC",
+      "name": "Fuel",
+      "artists": [
+        "Metallica"
+      ],
+      "album": "Reload",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b273a49eff6d64cafc2551553380",
+      "durationMs": 269733
+    },
+    {
+      "id": "4v6F1pLKcfAJbVbGs2NAJH",
+      "name": "Love to Love - 2008 Remaster",
+      "artists": [
+        "UFO"
+      ],
+      "album": "Lights Out (2008 Remaster)",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b273b20fa39da82fe6e7151e9d9d",
+      "durationMs": 436786
+    },
+    {
+      "id": "1KJSyY61dglJHGEUV8CdMm",
+      "name": "Kingdom Come",
+      "artists": [
+        "Manowar"
+      ],
+      "album": "Kings of Metal",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b2732612add61ad53e5a5d33c2d4",
+      "durationMs": 236973
+    },
+    {
+      "id": "6xFnhCWV0CNFBeChPtdNBV",
+      "name": "All the Fools Sailed Away",
+      "artists": [
+        "Dio"
+      ],
+      "album": "Dream Evil",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b273b4ac2396a4c3558fca7380a1",
+      "durationMs": 432800
+    },
+    {
+      "id": "0xIZPPBfLqQEAj1BLmGrNc",
+      "name": "Black Sabbath - 2014 Remaster",
+      "artists": [
+        "Black Sabbath"
+      ],
+      "album": "Black Sabbath (2014 Remaster)",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b273975ae67d8fb422586b8e2f83",
+      "durationMs": 378226
+    },
+    {
+      "id": "7w6PJe5KBPyvuRYxFkPssC",
+      "name": "No More Tears",
+      "artists": [
+        "Ozzy Osbourne"
+      ],
+      "album": "No More Tears (Expanded Edition)",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b273509342e69eb341df70e5c2e3",
+      "durationMs": 444983
+    },
+    {
+      "id": "46git0nQMdtpHto6GawuIs",
+      "name": "Infinite Dreams (2015 Remaster)",
+      "artists": [
+        "Iron Maiden"
+      ],
+      "album": "Seventh Son of a Seventh Son (2015 Remaster)",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b2736ee8cd5613c9c2c3055cbf5b",
+      "durationMs": 369373
+    },
+    {
+      "id": "7LLQxMvAYOpoC2PKe3VQn5",
+      "name": "The Hellion",
+      "artists": [
+        "Judas Priest"
+      ],
+      "album": "Screaming For Vengeance (Expanded Edition)",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b273475bd4fb40ba687fbf002c82",
+      "durationMs": 39920
+    },
+    {
+      "id": "0lfddylH264Q3wDvHLddFW",
+      "name": "Fast and Loose",
+      "artists": [
+        "Motörhead"
+      ],
+      "album": "Ace of Spades (Expanded Edition)",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b273cb92df4d1fdbafa4a6e18855",
+      "durationMs": 201240
+    }
+  ]
+}

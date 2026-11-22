@@ -1,0 +1,507 @@
+{
+  "id": "0xxx5gRfobmISOHOul976v",
+  "name": "Classic Rock Hits",
+  "syncedAt": "2026-11-22T14:43:15.251Z",
+  "tracks": [
+    {
+      "id": "3lh3iiiJeiBXHSZw6u0kh6",
+      "name": "Into the Mystic - 2013 Remaster",
+      "artists": [
+        "Van Morrison"
+      ],
+      "album": "Moondance",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b273d828b182ee9b7193a0f8b5d6",
+      "durationMs": 205613
+    },
+    {
+      "id": "73HwMEPCCCEqKFYONpOxe9",
+      "name": "Always Crashing in the Same Car - 2017 Remaster",
+      "artists": [
+        "David Bowie"
+      ],
+      "album": "Low (2017 Remaster)",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b273481e219b2d0a0218681ad612",
+      "durationMs": 215466
+    },
+    {
+      "id": "4uYwlMp841PLJmj1gJJwIq",
+      "name": "Lay, Lady, Lay",
+      "artists": [
+        "Bob Dylan"
+      ],
+      "album": "Nashville Skyline",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b273d2796d29db72c9d7f9083fe0",
+      "durationMs": 201387
+    },
+    {
+      "id": "3TO7bbrUKrOSPGRTB5MeCz",
+      "name": "Time",
+      "artists": [
+        "Pink Floyd"
+      ],
+      "album": "The Dark Side of the Moon",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b273db216ca805faf5fe35df4ee6",
+      "durationMs": 422853
+    },
+    {
+      "id": "70gbuMqwNBE2Y5rkQJE9By",
+      "name": "Going to California - Remaster",
+      "artists": [
+        "Led Zeppelin"
+      ],
+      "album": "Led Zeppelin IV (Deluxe Edition)",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b273c8a11e48c91a982d086afc69",
+      "durationMs": 212160
+    },
+    {
+      "id": "00oZhqZIQfL9P5CjOP6JsO",
+      "name": "Tomorrow Never Knows - Remastered 2009",
+      "artists": [
+        "The Beatles"
+      ],
+      "album": "Revolver (Remastered 2009)",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b27328b8b9b46428896e6491e97a",
+      "durationMs": 179546
+    },
+    {
+      "id": "5UgT7w6zVZjP3oyawMzbiK",
+      "name": "The End",
+      "artists": [
+        "The Doors"
+      ],
+      "album": "The Doors",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b27300d037dd3dfb578da4692088",
+      "durationMs": 703373
+    },
+    {
+      "id": "3a4tMwQGoRWXOdf1n69Pqy",
+      "name": "Song For Our Ancestors",
+      "artists": [
+        "Steve Miller Band"
+      ],
+      "album": "Sailor",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b2734a5a4e864a19413378404898",
+      "durationMs": 359040
+    },
+    {
+      "id": "78WZnssOo9rS83np6YWmWS",
+      "name": "Sing This All Together (See What Happens) - Remastered 2017 / Stereo",
+      "artists": [
+        "The Rolling Stones"
+      ],
+      "album": "Their Satanic Majesties Request (50th Anniversary Special Edition / Remastered)",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b27363a1d46bf691ebd45e3cb393",
+      "durationMs": 513813
+    },
+    {
+      "id": "2rDdGYpZ69iqfrGGrEwq3P",
+      "name": "Oh Well (Pt. 2) - 2013 Remaster",
+      "artists": [
+        "Fleetwood Mac"
+      ],
+      "album": "Then Play On (2013 Remaster; Expanded Edition)",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b2737fed393cf771d20794c673ae",
+      "durationMs": 339734
+    },
+    {
+      "id": "4COmeKH1pLNNpXcgtMcyQH",
+      "name": "...And the Gods Made Love",
+      "artists": [
+        "Jimi Hendrix"
+      ],
+      "album": "Electric Ladyland",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b273522088789d49e216d9818292",
+      "durationMs": 82626
+    },
+    {
+      "id": "1Ir0qn7wNZ636Q4WUHKZZp",
+      "name": "Les Brers In A Minor",
+      "artists": [
+        "Allman Brothers Band"
+      ],
+      "album": "Eat A Peach",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b2734bc9f9e91d7562e4b08493f5",
+      "durationMs": 547063
+    },
+    {
+      "id": "6OhJ1O5p3r33FC8x2YWiqW",
+      "name": "In The Death Cell (Love Theme Reprise)",
+      "artists": [
+        "Queen"
+      ],
+      "album": "Flash Gordon (Original Soundtrack)",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b27310dc8a63acde6246aa0eac5e",
+      "durationMs": 144880
+    },
+    {
+      "id": "2LXISHBkx8FyoxCBkckh19",
+      "name": "Do It Again",
+      "artists": [
+        "Steely Dan"
+      ],
+      "album": "Can't Buy A Thrill",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b2730ddd7e736f870994f4707947",
+      "durationMs": 357041
+    },
+    {
+      "id": "7b6lqlyTFvHKBL2op6OhsS",
+      "name": "As You Said",
+      "artists": [
+        "Cream"
+      ],
+      "album": "Wheels Of Fire",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b2735c7731f5acdcb2d02d78b7ee",
+      "durationMs": 260466
+    },
+    {
+      "id": "71T6GmtlsI9fhXX090H9c3",
+      "name": "Nucleus",
+      "artists": [
+        "The Alan Parsons Project"
+      ],
+      "album": "I Robot",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b27394e8bcd042aa9c3a6c5d7064",
+      "durationMs": 202426
+    },
+    {
+      "id": "4chKhw2tf3sOD6AK1ZBXeo",
+      "name": "Journey Through the Past",
+      "artists": [
+        "Neil Young"
+      ],
+      "album": "Neil Young Archives Vol. I (1963 - 1972)",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b273a50772fcbe41d6f9a630052b",
+      "durationMs": 141480
+    },
+    {
+      "id": "0f0DUjcrkg9Vi4Eg0abLPi",
+      "name": "I Am The Sea",
+      "artists": [
+        "The Who"
+      ],
+      "album": "Quadrophenia (Super Deluxe Edition)",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b273700f438bf4d4468092798a4c",
+      "durationMs": 129880
+    },
+    {
+      "id": "1W5cgXiGKQz124boRPxTB9",
+      "name": "Will Gaines - 2000 Remaster",
+      "artists": [
+        "Eric Clapton"
+      ],
+      "album": "Rush (Music from the Motion Picture Soundtrack)",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b27344cb13558d57f5a066fac381",
+      "durationMs": 228813
+    },
+    {
+      "id": "3G0EALIIp5DAeIERxXBHmo",
+      "name": "Waterloo Sunset",
+      "artists": [
+        "The Kinks"
+      ],
+      "album": "Something Else (Deluxe)",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b2737c29f8edb00aedba1e901f32",
+      "durationMs": 194520
+    },
+    {
+      "id": "1o6DclZHw0HomxXEQR1ijX",
+      "name": "Rock & Roll - Full Length Version; 2015 Remaster",
+      "artists": [
+        "The Velvet Underground"
+      ],
+      "album": "Loaded: Re-Loaded 45th Anniversary Edition",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b273a6d589272dca67a07a00c8a8",
+      "durationMs": 283000
+    },
+    {
+      "id": "0JBjdLNU5n5Y8VEaNqiZFF",
+      "name": "Rude Awakening #2",
+      "artists": [
+        "Creedence Clearwater Revival"
+      ],
+      "album": "Pendulum (Expanded Edition)",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b27351f311c2fb06ad2789e3ff91",
+      "durationMs": 382066
+    },
+    {
+      "id": "6YvEvzEhfUlAZ86Nc32yVr",
+      "name": "The Journey",
+      "artists": [
+        "Boston"
+      ],
+      "album": "Don't Look Back",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b27380aee3216dbae96c8d21c452",
+      "durationMs": 104093
+    },
+    {
+      "id": "1gRchGMOQESb5XvzIoTwB5",
+      "name": "Boogie Man",
+      "artists": [
+        "Aerosmith"
+      ],
+      "album": "Get A Grip",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b27391b246743456e285a20a46ed",
+      "durationMs": 137000
+    },
+    {
+      "id": "42yn3QxDnflI9ULE5S6w0y",
+      "name": "Who substitute darkness for light and light for darkness, Vol. 2",
+      "artists": [
+        "Isaiah Storm"
+      ],
+      "album": "Death (Electronic Only)",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b273004220070dc17580b5678af8",
+      "durationMs": 157522
+    },
+    {
+      "id": "3worA6TSIQprQImPGDuzYi",
+      "name": "Stop",
+      "artists": [
+        "Low Action"
+      ],
+      "album": "Tunica",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b273dbfa559111081fc6e7b88f3c",
+      "durationMs": 173634
+    },
+    {
+      "id": "0mpvfrQ1kPDZz8UdWwRWwA",
+      "name": "Dark Trails",
+      "artists": [
+        "Moon Lanterns"
+      ],
+      "album": "Volume 1",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b273fa7e373753ddf4d44e4489a4",
+      "durationMs": 146163
+    },
+    {
+      "id": "6O3YVHQaeImvCBbJbalB00",
+      "name": "A New Career in a New Town - 2017 Remaster",
+      "artists": [
+        "David Bowie"
+      ],
+      "album": "Low (2017 Remaster)",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b273481e219b2d0a0218681ad612",
+      "durationMs": 175386
+    },
+    {
+      "id": "6vPOtk0qPsQzuPFXpO5pWe",
+      "name": "Fuga #2",
+      "artists": [
+        "Rondo Barockoko"
+      ],
+      "album": "Classic Goes Rock",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b2731d065a2d3ca12ed54ef490a8",
+      "durationMs": 198948
+    },
+    {
+      "id": "7AalBKBoLDR4UmRYRJpdbj",
+      "name": "Fearless",
+      "artists": [
+        "Pink Floyd"
+      ],
+      "album": "Meddle",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b2739eee212bba82bed8da96a8f7",
+      "durationMs": 367880
+    },
+    {
+      "id": "0VG9YWiGjyoKZNLurIhDfW",
+      "name": "The Rain Song - (Live at MSG 1973) [Remaster]",
+      "artists": [
+        "Led Zeppelin"
+      ],
+      "album": "The Song Remains the Same (Remaster)",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b2731ac4670157a26949de3ba875",
+      "durationMs": 500733
+    },
+    {
+      "id": "0kEDYd5bgOdo2yjTaXGMi4",
+      "name": "Within You Without You - 2017 Mix",
+      "artists": [
+        "The Beatles"
+      ],
+      "album": "Sgt. Pepper's Lonely Hearts Club Band (Super Deluxe Edition)",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b273d6275471a517fc2399054f2c",
+      "durationMs": 307586
+    },
+    {
+      "id": "6pJcXp7Q7GQCbAeUwm25x1",
+      "name": "Pearl - Instrumental",
+      "artists": [
+        "Janis Joplin"
+      ],
+      "album": "Pearl (Legacy Edition)",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b2736f8c26346723dd0531696bed",
+      "durationMs": 267000
+    },
+    {
+      "id": "3kLFfUPLDYOQxQLuy8acxo",
+      "name": "Space Intro",
+      "artists": [
+        "Steve Miller Band"
+      ],
+      "album": "Fly Like An Eagle",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b2732fc23e78e87d793054bba090",
+      "durationMs": 74628
+    },
+    {
+      "id": "19kAUW6NMzgDHKT19s7782",
+      "name": "Lady Jane - Stereo Version",
+      "artists": [
+        "The Rolling Stones"
+      ],
+      "album": "Aftermath",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b273bad7062c3fd2f2d037989694",
+      "durationMs": 188080
+    },
+    {
+      "id": "6bHKrR0Vo31LF3zt02ieMs",
+      "name": "Underway",
+      "artists": [
+        "Fleetwood Mac"
+      ],
+      "album": "Men of the World: The Early Years",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b2733d315db900709dc42e07c646",
+      "durationMs": 973666
+    },
+    {
+      "id": "3q3gK9I4mj03565IGtVA0d",
+      "name": "Moon, Turn the Tides...Gently Gently Away",
+      "artists": [
+        "Jimi Hendrix"
+      ],
+      "album": "Electric Ladyland",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b273522088789d49e216d9818292",
+      "durationMs": 61773
+    },
+    {
+      "id": "0RuZtsPTHqrrbJ281jWzKk",
+      "name": "Ship Of Fools - Live At The Isle Of Wight Festival 1970",
+      "artists": [
+        "The Doors"
+      ],
+      "album": "Live at the Isle of Wight Festival 1970",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b27335c05a215f7b027c9eb7b1bc",
+      "durationMs": 437760
+    },
+    {
+      "id": "3OOfHa3D7Ed2yr1y6lnDua",
+      "name": "In The Space Capsule (The Love Theme)",
+      "artists": [
+        "Queen"
+      ],
+      "album": "Flash Gordon (Original Soundtrack)",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b27310dc8a63acde6246aa0eac5e",
+      "durationMs": 162587
+    },
+    {
+      "id": "3nxbH2IWfGptNYmnWbxl2m",
+      "name": "Rubber Waves - Radio Edit",
+      "artists": [
+        "Alex Reese"
+      ],
+      "album": "Rubber Waves (Radio Edit)",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b273f1ccb2b959d46e65d80ea96a",
+      "durationMs": 216585
+    },
+    {
+      "id": "1ghdAPdJSb8Asy8aiO0cc4",
+      "name": "Bass-Relief",
+      "artists": [
+        "Gillham"
+      ],
+      "album": "Gillham",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b2731896dc1640cc818d0acb0081",
+      "durationMs": 67727
+    },
+    {
+      "id": "77bqmTRhMYPeQOzF74gMbB",
+      "name": "Total Eclipse",
+      "artists": [
+        "The Alan Parsons Project"
+      ],
+      "album": "I Robot",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b27394e8bcd042aa9c3a6c5d7064",
+      "durationMs": 192466
+    },
+    {
+      "id": "1KADAjWFMDcv3qPt6gYEFu",
+      "name": "Guitar Solo, No. 1",
+      "artists": [
+        "Neil Young"
+      ],
+      "album": "Dead Man: A Film By Jim Jarmusch (Music From And Inspired By The Motion Picture)",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b27397082caf69c51b76cb775e9e",
+      "durationMs": 318493
+    },
+    {
+      "id": "5RTzgqn99Zf9F0ipdCXcDO",
+      "name": "Pure And Easy - Lifehouse Chronicles / Home Studio Mix / Remastered 2022",
+      "artists": [
+        "The Who"
+      ],
+      "album": "Who’s Next : Life House (Super Deluxe)",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b273b738367ec6cdbd3e29d7efdf",
+      "durationMs": 519520
+    },
+    {
+      "id": "6RzWEoa0xCyTczjZm7aQqo",
+      "name": "Cold Turkey - 2000 Remaster",
+      "artists": [
+        "Eric Clapton"
+      ],
+      "album": "Rush (Music from the Motion Picture Soundtrack)",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b27344cb13558d57f5a066fac381",
+      "durationMs": 142960
+    },
+    {
+      "id": "1GEOSS415bZVHNuXWlCT6b",
+      "name": "Mother",
+      "artists": [
+        "Pink Floyd"
+      ],
+      "album": "The Wall",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b273b694e89ba937dd2631ff584c",
+      "durationMs": 334880
+    },
+    {
+      "id": "7yyfMWXQqXmoSOKAhNxFUo",
+      "name": "Wine Glasses",
+      "artists": [
+        "Pink Floyd"
+      ],
+      "album": "Wish You Were Here 50",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b273c5bbb392e84b1ce4c29a709d",
+      "durationMs": 131946
+    },
+    {
+      "id": "6pnwfWyaWjQiHCKTiZLItr",
+      "name": "Shine On You Crazy Diamond (Pts. 1-5)",
+      "artists": [
+        "Pink Floyd"
+      ],
+      "album": "Wish You Were Here",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b273828e52cfb7bf22869349799e",
+      "durationMs": 812800
+    },
+    {
+      "id": "21A2oTRuD9YMEFtiSn8WRK",
+      "name": "A New World",
+      "artists": [
+        "Boston"
+      ],
+      "album": "Third Stage",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b27390134cd3281b98365af6d5c6",
+      "durationMs": 36106
+    },
+    {
+      "id": "1Ni3mifglsV0zYiOGuaz50",
+      "name": "Prelude To Joanie",
+      "artists": [
+        "Aerosmith"
+      ],
+      "album": "Rock In A Hard Place",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b273ef9404339704588cb6792d97",
+      "durationMs": 80597
+    }
+  ]
+}

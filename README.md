@@ -157,6 +157,7 @@ tests/                  End-to-end leaderboard flow: the app against the real AP
 - [x] Shared leaderboard with server-side scoring
 - [x] Responsive, accessible UI
 - [x] Deploy to Vercel
+- [x] Share your score (emoji grid, no spoilers) and link-preview cards
 
 ## What changed from the original
 

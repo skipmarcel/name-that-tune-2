@@ -31,18 +31,6 @@ function ticketTracks(ticket: GameTicket, tracks: Track[]): Track[] | null {
   return picked.length > 0 && picked.every(Boolean) ? (picked as Track[]) : null
 }
 
-function Logo() {
-  return (
-    <svg className="logo-mark" viewBox="0 0 32 32" aria-hidden="true">
-      <circle cx="13" cy="13" r="9" fill="none" stroke="currentColor" strokeWidth="3" />
-      <path d="M19.5 19.5 28 28" stroke="currentColor" strokeWidth="3.5" strokeLinecap="round" />
-      <path d="M11 17.5V9.5l5.5-1.5v7.5" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinejoin="round" />
-      <circle cx="9.6" cy="17.6" r="1.6" fill="currentColor" />
-      <circle cx="15.1" cy="15.6" r="1.6" fill="currentColor" />
-    </svg>
-  )
-}
-
 function App({ playlists = playlistOptions, loadSpotifyApi, leaderboard = leaderboardClient }: AppProps) {
   const available = playlists.filter((p) => p.tracks.length > 0)
   const [selectedId, setSelectedId] = useState(available[0]?.id)
@@ -106,8 +94,7 @@ function App({ playlists = playlistOptions, loadSpotifyApi, leaderboard = leader
       {inGame && (
         <header className="site-header">
           <button type="button" className="brand brand-button" onClick={backToStart} aria-label="TuneIn: quit to start">
-            <Logo />
-            <span>TuneIn</span>
+            TuneIn
           </button>
         </header>
       )}
@@ -116,7 +103,6 @@ function App({ playlists = playlistOptions, loadSpotifyApi, leaderboard = leader
         {state.phase === 'ready' && (
           <section className="home" aria-labelledby="home-heading">
             <h1 id="home-heading" className="home-title">
-              <Logo />
               TuneIn
             </h1>
             <ul className="home-steps">

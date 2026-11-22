@@ -133,12 +133,6 @@ code {
   background: var(--surface-2);
 }
 
-.logo-mark {
-  width: 1.75rem;
-  height: 1.75rem;
-  color: var(--accent);
-}
-
 .site-footer {
   padding: 1rem 0 1.5rem;
   font-size: 0.8125rem;
@@ -246,20 +240,11 @@ button:disabled {
 }
 
 .home-title {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 0.15em;
   margin: 0;
   font-size: clamp(2.5rem, 11vw, 3.5rem);
   line-height: 1;
   letter-spacing: -0.04em;
   font-weight: 850;
-}
-
-.home-title .logo-mark {
-  width: 0.85em;
-  height: 0.85em;
 }
 
 .home-steps {

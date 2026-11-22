@@ -1,4 +1,4 @@
-import { buildPlaylistOptions, normalizePlaylistItems, parsePlaylistId } from './playlist'
+import { buildPlaylistOptions, isTypeable, normalizePlaylistItems, parsePlaylistId } from './playlist'
 
 const ID = '4j9MhzbUmYadbnn4qBJiSC'
 
@@ -123,5 +123,18 @@ describe('buildPlaylistOptions', () => {
 
   it('ignores synced files that are no longer in the config', () => {
     expect(buildPlaylistOptions([], [saved('a', 'Old', 1)])).toEqual([])
+  })
+})
+
+describe('isTypeable', () => {
+  it('accepts titles and artists with English letters or digits, accents included', () => {
+    expect(isTypeable({ name: "L'été indien", artists: ['Joe Dassin'] })).toBe(true)
+    expect(isTypeable({ name: '1979', artists: ['The Smashing Pumpkins'] })).toBe(true)
+  })
+
+  it('rejects a track if the title or any artist has none', () => {
+    expect(isTypeable({ name: "You Don't Remember", artists: ['イングヴェイ・マルムスティーン'] })).toBe(false)
+    expect(isTypeable({ name: 'Mars', artists: ['Nick Cave', 'ウォーレン'] })).toBe(false)
+    expect(isTypeable({ name: '夜に駆ける', artists: ['YOASOBI'] })).toBe(false)
   })
 })

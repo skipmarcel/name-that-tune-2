@@ -19,6 +19,7 @@ import { createHash, randomBytes } from 'node:crypto'
 import { mkdir, readFile, writeFile } from 'node:fs/promises'
 import { createServer } from 'node:http'
 import {
+  isTypeable,
   normalizePlaylistItems,
   parsePlaylistId,
   type PlaylistConfigEntry,
@@ -204,7 +205,14 @@ async function syncPlaylist(entry: PlaylistConfigEntry, me: Record<string, unkno
     }
 
     const items = await fetchAllItems(entry.id, accessToken)
-    const tracks = normalizePlaylistItems(items)
+    const playable = normalizePlaylistItems(items)
+    const tracks = playable.filter(isTypeable)
+    for (const track of playable.filter((t) => !isTypeable(t))) {
+      console.warn(
+        `⚠ Left out “${track.name}” by ${track.artists.join(', ')}: players can't type that on an English keyboard. ` +
+          'Swap it for a version credited in English to include it.',
+      )
+    }
     if (tracks.length === 0) throw new Error('The playlist has no playable tracks.')
 
     const playlist: SavedPlaylist = { id: entry.id, name, syncedAt: new Date().toISOString(), tracks }

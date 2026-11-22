@@ -135,3 +135,14 @@ export function buildPlaylistOptions(
     }
   })
 }
+
+/**
+ * Whether players can type both the title and every credited artist on an
+ * English keyboard. Spotify sometimes credits an artist in another script
+ * (e.g. Yngwie Malmsteen as "イングヴェイ・マルムスティーン"), which no one could
+ * guess, so the sync leaves those tracks out.
+ */
+export function isTypeable(track: Pick<Track, 'name' | 'artists'>): boolean {
+  const typeable = (text: string) => /[A-Za-z0-9]/.test(text)
+  return typeable(track.name) && track.artists.every(typeable)
+}

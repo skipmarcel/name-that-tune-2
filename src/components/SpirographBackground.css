@@ -1,64 +1,40 @@
 /*
- * Spirograph background. Pure CSS: each line's rotation, size, color and
- * animation delay is computed from --i (its index) and --n (lines in its
- * flower), set inline by SpirographBackground.tsx.
- *
- * Dark mode: the original neon palette, lines lightened where they cross
- * (screen blend) with a soft glow. Light mode: the warm "sunset" palette,
- * darkened where lines cross (multiply), so it reads on the cream page.
+ * Spirograph background: neon outlines on black. Each line's rotation, size,
+ * color and draw-in delay is computed from --i (its index) and --n (lines in
+ * its flower), set inline by SpirographBackground.tsx along with the
+ * flower's position, size and timing.
  */
 
 .spiro-stage {
-  /* Light theme */
-  --spiro-h1: 330;
-  --spiro-h2: 12;
-  --spiro-h3: 350;
-  --spiro-h4: 38;
-  --spiro-h5: 300;
-  --spiro-h6: 22;
-  --spiro-h7: 342;
-  --spiro-span: 40;
-  --spiro-sat: 85%;
-  --spiro-light: 55%;
+  --spiro-h1: 315;
+  --spiro-h2: 185;
+  --spiro-h3: 48;
+  --spiro-h4: 268;
+  --spiro-h5: 140;
+  --spiro-h6: 18;
+  --spiro-h7: 225;
+  --spiro-span: 90;
   --spiro-line: 1.2px;
-  --spiro-blend: multiply;
-  --spiro-glow: none;
-  --spiro-speed: 1;
+  --spiro-glow: 0 0 6px currentColor, inset 0 0 6px currentColor;
 
   position: fixed;
   inset: 0;
   z-index: -1;
   overflow: hidden;
   pointer-events: none;
-  opacity: 0.32;
+  background: #000;
+  /* Dimmed so text outside the cards stays easy to read. */
+  opacity: 0.6;
 }
 
-@media (prefers-color-scheme: dark) {
-  .spiro-stage {
-    --spiro-h1: 315;
-    --spiro-h2: 185;
-    --spiro-h3: 48;
-    --spiro-h4: 268;
-    --spiro-h5: 140;
-    --spiro-h6: 18;
-    --spiro-h7: 225;
-    --spiro-span: 90;
-    --spiro-sat: 100%;
-    --spiro-light: 62%;
-    --spiro-blend: screen;
-    --spiro-glow: 0 0 6px currentColor, inset 0 0 6px currentColor;
-    opacity: 0.5;
-  }
-}
-
-/* Glow is the most expensive part to animate; skip it on small screens. */
+/* Glow is the most expensive part to draw; skip it on small screens. */
 @media (max-width: 40rem) {
   .spiro-stage {
     --spiro-glow: none;
   }
 }
 
-/* ---------- flower: anchor + slow spin ---------- */
+/* ---------- flower: anchor, slow spin, then fade out ---------- */
 
 .spiro-flower {
   position: absolute;
@@ -66,7 +42,13 @@
   top: var(--y);
   width: 0;
   height: 0;
-  animation: spiro-spin calc(var(--spin) / var(--spiro-speed)) linear infinite var(--dir, normal);
+  /* Keeps the lines' screen blending inside the flower, so fading the
+     flower fades its lines evenly. */
+  isolation: isolate;
+  rotate: var(--start);
+  animation:
+    spiro-spin var(--spin) linear infinite var(--dir, normal),
+    spiro-fade var(--fade) ease-in-out var(--fade-delay) forwards;
 }
 
 /* ---------- shape recipes (multiples of --size) ---------- */
@@ -114,8 +96,6 @@
 /* ---------- one line of the drawing ---------- */
 
 .spiro-flower i {
-  --cyc: calc(var(--cycle) / var(--spiro-speed));
-
   position: absolute;
   left: 0;
   top: 0;
@@ -127,52 +107,48 @@
   border-radius: var(--r);
 
   /* Hue walks across the flower's span, line by line. */
-  color: hsl(calc(var(--hue) + var(--spiro-span) * var(--i) / var(--n)) var(--spiro-sat) var(--spiro-light));
+  color: hsl(calc(var(--hue) + var(--spiro-span) * var(--i) / var(--n)) 100% 62%);
 
   /* Rotate around the anchor, then push out by the offset. */
   transform: rotate(calc(var(--i) * var(--sym) / var(--n) * 1deg)) translateX(calc(var(--size) * var(--o)));
 
-  mix-blend-mode: var(--spiro-blend);
+  mix-blend-mode: screen; /* crossings get brighter */
   box-shadow: var(--spiro-glow);
 
-  /* Staggered delays sweep each pattern in, then back out. The negative
-     offset starts mid-cycle so the screen is never empty. */
-  animation: spiro-draw var(--cyc) cubic-bezier(0.2, 0.7, 0.2, 1) infinite backwards;
-  animation-delay: calc(var(--cyc) * 0.42 * var(--i) / var(--n) - var(--offset) / var(--spiro-speed));
+  /* Lines draw in one after another across the build time, then stay. */
+  animation: spiro-draw 1.4s cubic-bezier(0.2, 0.7, 0.2, 1) both;
+  animation-delay: calc(var(--build) * 0.85 * var(--i) / var(--n));
 }
 
 /* `scale` and `rotate` are standalone properties, so animating them never
    overwrites each line's own `transform`. */
 @keyframes spiro-draw {
-  0% {
+  from {
     opacity: 0;
     scale: 0.15;
   }
-  7% {
+  to {
     opacity: 1;
     scale: 1;
-  }
-  60% {
-    opacity: 1;
-    scale: 1;
-  }
-  80% {
-    opacity: 0;
-    scale: 1.18;
-  }
-  100% {
-    opacity: 0;
-    scale: 1.18;
   }
 }
 
 @keyframes spiro-spin {
+  from {
+    rotate: var(--start);
+  }
   to {
-    rotate: 360deg;
+    rotate: calc(var(--start) + 360deg);
   }
 }
 
-/* A calm, still pattern for people who turn motion off. */
+@keyframes spiro-fade {
+  to {
+    opacity: 0;
+  }
+}
+
+/* With motion turned off: one still, fully drawn design. */
 @media (prefers-reduced-motion: reduce) {
   .spiro-flower,
   .spiro-flower i {

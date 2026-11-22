@@ -43,6 +43,10 @@ async function renderApp(playlists: PlaylistOption[]) {
   return { user, server }
 }
 
+// These tests type into real inputs and sign real tickets, so they take a few
+// seconds; allow headroom for when the whole suite runs in parallel.
+vi.setConfig({ testTimeout: 15_000 })
+
 describe('shared leaderboard', () => {
   it('ranks a game on the shared leaderboard', async () => {
     const playlists = [playlist('folk', 'Folk', [track('t1', 'Just Like Honey', 'The Jesus and Mary Chain')])]

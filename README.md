@@ -1,4 +1,4 @@
-# Song Sleuth 🎵
+# TuneIn 🎵
 
 [![CI](https://github.com/skipmarcel/name-that-tune-2/actions/workflows/ci.yml/badge.svg)](https://github.com/skipmarcel/name-that-tune-2/actions/workflows/ci.yml)
 
@@ -159,7 +159,7 @@ tests/                  End-to-end leaderboard flow: the app against the real AP
 
 ## What changed from the original
 
-| Original (2023)                                       | Song Sleuth (this repo)                           |
+| Original (2023)                                       | TuneIn (this repo)                                |
 | ----------------------------------------------------- | ------------------------------------------------- |
 | Client secret in the front-end bundle                 | No secret needed at all (PKCE sync, embed player) |
 | Spotify embed displayed the answer                    | Player hidden; answer revealed after the guess    |

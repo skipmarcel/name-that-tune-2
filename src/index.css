@@ -105,6 +105,7 @@ code {
 
 .site-header {
   padding: 1.25rem 0 0.5rem;
+  text-align: center;
 }
 
 .brand {
@@ -120,7 +121,6 @@ code {
 
 .brand-button {
   padding: 0.25rem 0.5rem 0.25rem 0.25rem;
-  margin-left: -0.25rem;
   border: 0;
   border-radius: 999px;
   background: none;
@@ -241,10 +241,15 @@ button:disabled {
   display: flex;
   flex-direction: column;
   gap: 1.25rem;
-  padding-top: 1.5rem;
+  padding-top: 2.5rem;
+  text-align: center;
 }
 
 .home-title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.15em;
   margin: 0;
   font-size: clamp(2.5rem, 11vw, 3.5rem);
   line-height: 1;
@@ -252,11 +257,25 @@ button:disabled {
   font-weight: 850;
 }
 
-.home-lede {
+.home-title .logo-mark {
+  width: 0.85em;
+  height: 0.85em;
+}
+
+.home-steps {
+  display: grid;
+  gap: 0.2rem;
   margin: 0;
+  padding: 0;
+  list-style: none;
   font-size: 1.0625rem;
   color: var(--text-muted);
-  max-width: 28rem;
+}
+
+.home-steps li:last-child {
+  margin-top: 0.2rem;
+  font-weight: 700;
+  color: var(--text);
 }
 
 .notice {
@@ -271,6 +290,8 @@ button:disabled {
 }
 
 .playlist-picker legend {
+  width: 100%;
+  text-align: center;
   padding: 0;
   margin-bottom: 0.625rem;
   font-weight: 700;
@@ -955,4 +976,10 @@ button:disabled {
 .results .submit-form,
 .results > .leaderboard-note {
   margin-bottom: 0.75rem;
+}
+
+/* Text that isn't inside a box is centered. */
+.home .leaderboard-title,
+.home .leaderboard-note {
+  text-align: center;
 }

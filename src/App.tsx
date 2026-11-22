@@ -8,8 +8,8 @@ import { RoundView } from './components/RoundView'
 import { ScoreSubmission } from './components/ScoreSubmission'
 import { SpirographBackground } from './components/SpirographBackground'
 import { playlistOptions } from './data/playlists'
-import { ROUNDS_PER_GAME, currentRound, gameReducer, initialGameState, maxScore, startGame } from './game/game'
-import { ARTIST_POINTS, MAX_POINTS, TITLE_POINTS } from './game/scoring'
+import { currentRound, gameReducer, initialGameState, maxScore, startGame } from './game/game'
+import { ARTIST_POINTS, TITLE_POINTS } from './game/scoring'
 import { leaderboardClient, type GameTicket, type LeaderboardClient } from './leaderboard/client'
 import { useLeaderboard } from './leaderboard/useLeaderboard'
 import type { PlaylistOption, Track } from './lib/playlist'
@@ -103,30 +103,28 @@ function App({ playlists = playlistOptions, loadSpotifyApi, leaderboard = leader
   return (
     <div className="shell">
       <SpirographBackground />
-      <header className={`site-header${inGame ? ' is-compact' : ''}`}>
-        {inGame ? (
-          <button type="button" className="brand brand-button" onClick={backToStart} aria-label="Song Sleuth: quit to start">
+      {inGame && (
+        <header className="site-header">
+          <button type="button" className="brand brand-button" onClick={backToStart} aria-label="TuneIn: quit to start">
             <Logo />
-            <span>Song Sleuth</span>
+            <span>TuneIn</span>
           </button>
-        ) : (
-          <p className="brand">
-            <Logo />
-            <span>Song Sleuth</span>
-          </p>
-        )}
-      </header>
+        </header>
+      )}
 
       <main className="main">
         {state.phase === 'ready' && (
           <section className="home" aria-labelledby="home-heading">
             <h1 id="home-heading" className="home-title">
-              Name that tune.
+              <Logo />
+              TuneIn
             </h1>
-            <p className="home-lede">
-              Hear a clip, then name the artist ({ARTIST_POINTS} points) and the song ({TITLE_POINTS} point).{' '}
-              {ROUNDS_PER_GAME} songs, up to {MAX_POINTS * ROUNDS_PER_GAME} points.
-            </p>
+            <ul className="home-steps">
+              <li>Listen to a clip</li>
+              <li>Name the artist for {ARTIST_POINTS} points</li>
+              <li>Name the song for {TITLE_POINTS} point</li>
+              <li>Get your name on the board!</li>
+            </ul>
             {available.length === 0 ? (
               <p className="card notice" role="status">
                 No songs yet. Run <code>npm run sync-playlist</code> to load the playlists.
@@ -150,7 +148,7 @@ function App({ playlists = playlistOptions, loadSpotifyApi, leaderboard = leader
 
         {(state.phase === 'guessing' || state.phase === 'revealed') && round && (
           <>
-            <h1 className="visually-hidden">Song Sleuth</h1>
+            <h1 className="visually-hidden">TuneIn</h1>
             <GameHeader rounds={state.rounds} roundIndex={state.roundIndex} score={state.score} />
             {state.phase === 'guessing' ? (
               <RoundView
@@ -168,7 +166,7 @@ function App({ playlists = playlistOptions, loadSpotifyApi, leaderboard = leader
 
         {state.phase === 'finished' && (
           <>
-            <h1 className="visually-hidden">Song Sleuth results</h1>
+            <h1 className="visually-hidden">TuneIn results</h1>
             <ResultsView
               rounds={state.rounds}
               score={state.score}

@@ -36,7 +36,9 @@ async function renderApp(playlists: PlaylistOption[], leaderboard: LeaderboardCl
 describe('App', () => {
   it('renders the home screen', async () => {
     await renderApp([playlist('a', 'For Coding', manyTracks('a', 3))])
-    expect(screen.getByRole('heading', { level: 1, name: /name that tune/i })).toBeInTheDocument()
+    expect(screen.getByRole('heading', { level: 1, name: 'TuneIn' })).toBeInTheDocument()
+    expect(screen.getByText('Name the artist for 2 points')).toBeInTheDocument()
+    expect(screen.getByText('Name the song for 1 point')).toBeInTheDocument()
     expect(screen.getByRole('button', { name: 'Start' })).toBeEnabled()
   })
 

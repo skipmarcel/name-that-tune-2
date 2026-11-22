@@ -1,0 +1,1035 @@
+{
+  "id": "5GlrAOpOzTMNm4qxpMAdOz",
+  "name": "Classic Country",
+  "syncedAt": "2026-11-22T17:06:50.905Z",
+  "tracks": [
+    {
+      "id": "3EUl8M6SzxZl03NPkB8mUd",
+      "name": "Neon Moon",
+      "artists": [
+        "Brooks & Dunn"
+      ],
+      "album": "#1s ... and then some",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b273941001e5ce6bc1272466de29",
+      "durationMs": 263760
+    },
+    {
+      "id": "62qNdSlhFznQD0gHpCGrtw",
+      "name": "Delta Dawn",
+      "artists": [
+        "Tanya Tucker"
+      ],
+      "album": "Delta Dawn",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b273ba6c1e3f4d2454cec0c54361",
+      "durationMs": 178400
+    },
+    {
+      "id": "7nVQ8mo77KaUvhUQzh4vMy",
+      "name": "Mammas Don't Let Your Babies Grow up to Be Cowboys",
+      "artists": [
+        "Waylon Jennings",
+        "Willie Nelson"
+      ],
+      "album": "Waylon & Willie",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b273280d6a361098589217395a00",
+      "durationMs": 157913
+    },
+    {
+      "id": "2sZIclzhHlH8tzf7wry9hK",
+      "name": "Harper Valley P.T.A.",
+      "artists": [
+        "Jeannie C. Riley"
+      ],
+      "album": "Harper Valley P.T.A. (The Plantation Recordings 1968-70)",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b273b547cd753b67701cfef801d9",
+      "durationMs": 194400
+    },
+    {
+      "id": "2SpEHTbUuebeLkgs9QB7Ue",
+      "name": "Jolene",
+      "artists": [
+        "Dolly Parton"
+      ],
+      "album": "Jolene",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b273220f3b1f40e3276662155f16",
+      "durationMs": 163275
+    },
+    {
+      "id": "6V9VCm1zOY2lGR80RehJ9i",
+      "name": "Wichita Lineman - Remastered 2001",
+      "artists": [
+        "Glen Campbell"
+      ],
+      "album": "Wichita Lineman (Remastered)",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b273b367fb90309a051f8aaacc9a",
+      "durationMs": 186200
+    },
+    {
+      "id": "1ne9wOtDF2jM6Cm8WBkaER",
+      "name": "Rocky Mountain High",
+      "artists": [
+        "John Denver"
+      ],
+      "album": "Rocky Mountain High",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b273f334ccd898713faa1cfd7628",
+      "durationMs": 285797
+    },
+    {
+      "id": "6mRin9FEDl34pZOZwID90v",
+      "name": "Folsom Prison Blues (2017 Remaster)",
+      "artists": [
+        "Johnny Cash"
+      ],
+      "album": "Johnny Cash with His Hot and Blue Guitar (2017 Definitive Expanded Remastered Edition)",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b27343839850e3cc4e0568cf0dca",
+      "durationMs": 167008
+    },
+    {
+      "id": "3zpj9dvJABiyMrmLCPw6i8",
+      "name": "Crazy - Single Version",
+      "artists": [
+        "Patsy Cline",
+        "The Jordanaires"
+      ],
+      "album": "Showcase",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b2736fda96b0954b958ee44c8efc",
+      "durationMs": 164573
+    },
+    {
+      "id": "2xYQTU2bbg6WVAmpY1eae4",
+      "name": "Always On My Mind",
+      "artists": [
+        "Willie Nelson"
+      ],
+      "album": "Always On My Mind",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b273e786801505efc5bb2e97ed04",
+      "durationMs": 213359
+    },
+    {
+      "id": "6Ha2dwEqdLBrDhImosfrBA",
+      "name": "Cattle Call",
+      "artists": [
+        "Eddy Arnold"
+      ],
+      "album": "The Essential Eddy Arnold",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b27328dd56a575f17720f07a399c",
+      "durationMs": 163346
+    },
+    {
+      "id": "4TnUKixNWMfajncgdSwFoi",
+      "name": "Amarillo By Morning",
+      "artists": [
+        "George Strait"
+      ],
+      "album": "Strait From The Heart",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b27331603889a9011b33a8d14b2c",
+      "durationMs": 173466
+    },
+    {
+      "id": "0hveAq1VSNWo9MQYGMHvFF",
+      "name": "I'm So Lonesome I Could Cry",
+      "artists": [
+        "Hank Williams"
+      ],
+      "album": "Moanin' The Blues (Expanded Edition)",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b2732fffd0a4d07e1381b996645e",
+      "durationMs": 168773
+    },
+    {
+      "id": "0AQquaENerGps8BQmbPw14",
+      "name": "Big Iron",
+      "artists": [
+        "Marty Robbins"
+      ],
+      "album": "Gunfighter Ballads And Trail Songs",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b273084051346f432cc68a1279cd",
+      "durationMs": 235733
+    },
+    {
+      "id": "7ETtI1QTDcdI8yL55eXVOF",
+      "name": "Blue Eyes Crying In the Rain",
+      "artists": [
+        "Willie Nelson"
+      ],
+      "album": "The Essential Willie Nelson",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b273cd06c30fffa0c176b7fe0065",
+      "durationMs": 138440
+    },
+    {
+      "id": "2Cb2l4UoXynCHCeCYHRZN8",
+      "name": "Stand By Your Man",
+      "artists": [
+        "Tammy Wynette"
+      ],
+      "album": "Stand By Your Man",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b2738c66ab65968b335b7847a202",
+      "durationMs": 157893
+    },
+    {
+      "id": "7E8nKMtXMqIQbvl1Ta9Ucw",
+      "name": "Walkin' After Midnight",
+      "artists": [
+        "Patsy Cline"
+      ],
+      "album": "Patsy Cline",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b27397f9dd1653b9dbd23acc5cb1",
+      "durationMs": 154666
+    },
+    {
+      "id": "6nRvgo4ySezQKD1D7NIqAu",
+      "name": "I Will Always Love You",
+      "artists": [
+        "Dolly Parton"
+      ],
+      "album": "Jolene",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b273220f3b1f40e3276662155f16",
+      "durationMs": 177404
+    },
+    {
+      "id": "3XG7bMVcMWLIn2k9jLAaAt",
+      "name": "King Of The Road",
+      "artists": [
+        "Roger Miller"
+      ],
+      "album": "Golden Hits",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b2736a437a9c79f45e8baba285a0",
+      "durationMs": 147306
+    },
+    {
+      "id": "6zQnzN80m28yNfz544YBI2",
+      "name": "Don't Come Home A-Drinkin' (With Lovin' On Your Mind) - Single Version",
+      "artists": [
+        "Loretta Lynn"
+      ],
+      "album": "The Definitive Collection",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b27305d5e9443603589ac9230162",
+      "durationMs": 127520
+    },
+    {
+      "id": "7xVj55oXJ9eesE9f2XVHKe",
+      "name": "Blues, Stay Away From Me",
+      "artists": [
+        "The Delmore Brothers"
+      ],
+      "album": "16 All Time Favorite Songs",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b273ec52bc23e8dac4b8d4894c4c",
+      "durationMs": 174693
+    },
+    {
+      "id": "6oXkUmLOdmsEQS4AlEIKZ8",
+      "name": "Galveston",
+      "artists": [
+        "Glen Campbell"
+      ],
+      "album": "Glen Campbell - The Capitol Years 1965 - 1977",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b27366aff06c0306e4c356bc99c8",
+      "durationMs": 160866
+    },
+    {
+      "id": "064SVQsmWl5EF0zahmzkQk",
+      "name": "Let Your Love Flow",
+      "artists": [
+        "The Bellamy Brothers"
+      ],
+      "album": "Bellamy Brothers",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b273dc0b5f94d9ee21d0eb209d81",
+      "durationMs": 196826
+    },
+    {
+      "id": "5rDkA2TFOImbiVenmnE9r4",
+      "name": "Ring of Fire",
+      "artists": [
+        "Johnny Cash"
+      ],
+      "album": "The Essential Johnny Cash",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b273c17beab3e27f18af397a00b2",
+      "durationMs": 155706
+    },
+    {
+      "id": "1lnQ6kkVaHg0Itdx88REdJ",
+      "name": "Cold, Cold Heart",
+      "artists": [
+        "Hank Williams"
+      ],
+      "album": "Memorial Album (Expanded Edition)",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b273058ec9749ace1aa96ab57829",
+      "durationMs": 165800
+    },
+    {
+      "id": "2ik5qJAcmrjbpON5QPxmRr",
+      "name": "Snowbird",
+      "artists": [
+        "Anne Murray"
+      ],
+      "album": "This Way Is My Way",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b273bfbc721ebd8ef8eea13e0497",
+      "durationMs": 134226
+    },
+    {
+      "id": "0VwTeYNjcl30DyQlt3GPe0",
+      "name": "Rhinestone Cowboy",
+      "artists": [
+        "Glen Campbell"
+      ],
+      "album": "Rhinestone Cowboy (Expanded Edition)",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b27363134b3cf76a63e91647e1bb",
+      "durationMs": 194453
+    },
+    {
+      "id": "7D1SZqENQIU3MigCSgff3l",
+      "name": "Act Naturally",
+      "artists": [
+        "Buck Owens"
+      ],
+      "album": "Buck Owens Country Legends",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b273be40432ed005dbf3ff52c85a",
+      "durationMs": 138489
+    },
+    {
+      "id": "4AItZ329ewZOhqmxrSPzDd",
+      "name": "I Walk the Line (2017 Remaster)",
+      "artists": [
+        "Johnny Cash"
+      ],
+      "album": "Johnny Cash with His Hot and Blue Guitar (2017 Definitive Expanded Remastered Edition)",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b27343839850e3cc4e0568cf0dca",
+      "durationMs": 162112
+    },
+    {
+      "id": "6H7nDglS6xWpRidbhMwI2L",
+      "name": "Here You Come Again",
+      "artists": [
+        "Dolly Parton"
+      ],
+      "album": "Here You Come Again",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b273d7858b14895fb15088dfd5e1",
+      "durationMs": 179491
+    },
+    {
+      "id": "5gbm0aNo7eXNuOEkQi5m9B",
+      "name": "Jambalaya (On The Bayou)",
+      "artists": [
+        "Hank Williams"
+      ],
+      "album": "Honky Tonkin (Expanded Undubbed Edition)",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b2732195d0fe53c63e96b0f31654",
+      "durationMs": 174866
+    },
+    {
+      "id": "61uAY9xdzYiIbYJ07XvKso",
+      "name": "Big Bad John",
+      "artists": [
+        "Jimmy Dean"
+      ],
+      "album": "The Best Of Jimmy Dean",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b27327d93862a093ad506c03739e",
+      "durationMs": 182560
+    },
+    {
+      "id": "5qYp7YDkLAaSd1nBWejkAD",
+      "name": "It Wasn't God Who Made Honky Tonk Angels - 1952 Single Version",
+      "artists": [
+        "Kitty Wells"
+      ],
+      "album": "Kitty Wells’ Country Hit Parade",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b273b94f6075f87e0936e7e165a4",
+      "durationMs": 152866
+    },
+    {
+      "id": "2mqXqQnxcFq5tmG98kUQZw",
+      "name": "Blue Kentucky Girl",
+      "artists": [
+        "Loretta Lynn"
+      ],
+      "album": "Blue Kentucky Girl",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b2733426e20f790730006fc1e5f1",
+      "durationMs": 163640
+    },
+    {
+      "id": "1l2Xmg54EUr3TDzNIaCr1z",
+      "name": "Coat of Many Colors",
+      "artists": [
+        "Dolly Parton"
+      ],
+      "album": "Coat Of Many Colors",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b2737fad1327fda63bea0e059072",
+      "durationMs": 186453
+    },
+    {
+      "id": "6h3YJ05BovN1Pgk145J3r9",
+      "name": "Mama Tried",
+      "artists": [
+        "Merle Haggard"
+      ],
+      "album": "Mama Tried/ Pride In What I Am",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b2732ad2990a9ccda2d86f69568b",
+      "durationMs": 134453
+    },
+    {
+      "id": "5fcxVCOtfesNzI2n4Y4kiJ",
+      "name": "Jackson",
+      "artists": [
+        "Johnny Cash",
+        "June Carter Cash"
+      ],
+      "album": "Carryin' On With Johnny Cash And June Carter",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b273542d4d1ff8b8e669cc676ebe",
+      "durationMs": 165826
+    },
+    {
+      "id": "0VxX3RBKO46Ky6XgvN0bME",
+      "name": "There Stands The Glass",
+      "artists": [
+        "Webb Pierce"
+      ],
+      "album": "20th Century Masters: The Millennium Collection: Best Of Webb Pierce",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b2734d1542ba6653ffd5cc46fe1a",
+      "durationMs": 146666
+    },
+    {
+      "id": "1YYhDizHx7PnDhAhko6cDS",
+      "name": "Take Me Home, Country Roads - Original Version",
+      "artists": [
+        "John Denver"
+      ],
+      "album": "Poems, Prayers and Promises",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b273795c9ba853f5a9f7a88b4e31",
+      "durationMs": 193937
+    },
+    {
+      "id": "6gRACp2CvsIhc7hyw8CecQ",
+      "name": "The Devil Went Down to Georgia",
+      "artists": [
+        "The Charlie Daniels Band"
+      ],
+      "album": "Million Mile Reflections",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b273f6862fa8a9ae5d2375fbb014",
+      "durationMs": 215066
+    },
+    {
+      "id": "1A6P8IxzNyBRsQualaNXNY",
+      "name": "Pancho and Lefty",
+      "artists": [
+        "Willie Nelson",
+        "Merle Haggard"
+      ],
+      "album": "Walking the Line",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b273b2d53d4d0a1ab5e1a34577e1",
+      "durationMs": 286066
+    },
+    {
+      "id": "4WScDSwAa9m48pgHugVkCo",
+      "name": "Luckenbach, Texas (Back to the Basics of Love) (feat. Willie Nelson)",
+      "artists": [
+        "Waylon Jennings",
+        "Willie Nelson"
+      ],
+      "album": "Ol' Waylon",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b273198158539283a215a43f1575",
+      "durationMs": 201898
+    },
+    {
+      "id": "1sueD22EyCamMjdQu9Kuo3",
+      "name": "One Piece at a Time",
+      "artists": [
+        "Johnny Cash",
+        "Tennessee Three"
+      ],
+      "album": "One Piece At A Time",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b27387a937c230523c6ff4f8552f",
+      "durationMs": 241813
+    },
+    {
+      "id": "0deAIqyKFFw55JDMGWTcdA",
+      "name": "Hey, Good Lookin'",
+      "artists": [
+        "Hank Williams"
+      ],
+      "album": "Memorial Album (Expanded Edition)",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b273058ec9749ace1aa96ab57829",
+      "durationMs": 176893
+    },
+    {
+      "id": "6cen3TFIPFBq2VkUM4Fod8",
+      "name": "My Special Angel",
+      "artists": [
+        "Bobby Helms"
+      ],
+      "album": "Bobby Helms Sings To My Special Angel",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b27366827d5efbd7292e34b878b3",
+      "durationMs": 179293
+    },
+    {
+      "id": "69HICMmc6nNLucAx3aJX9M",
+      "name": "Thank God I'm a Country Boy",
+      "artists": [
+        "John Denver"
+      ],
+      "album": "Back Home Again",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b2733c16761584c4015495bdda87",
+      "durationMs": 193093
+    },
+    {
+      "id": "5KqldkCunQ2rWxruMEtGh0",
+      "name": "The Gambler",
+      "artists": [
+        "Kenny Rogers"
+      ],
+      "album": "The Gambler",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b273c289ed4316aaab5a5b7376c1",
+      "durationMs": 214880
+    },
+    {
+      "id": "1sfXFEpGVK5s5i8eHEtNPj",
+      "name": "The Year That Clayton Delaney Died",
+      "artists": [
+        "Tom T. Hall"
+      ],
+      "album": "In Search Of A Song",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b2733305a61c7c68406cc38da410",
+      "durationMs": 164720
+    },
+    {
+      "id": "39AxeDwNIyjPKgI7g9H2Jg",
+      "name": "The Wild Side Of Life",
+      "artists": [
+        "Hank Thompson",
+        "Hank Thompson And His Brazos Valley Boys"
+      ],
+      "album": "Songs Of The Brazos Valley",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b273a96ba061b8d41f85ccf0a25c",
+      "durationMs": 164520
+    },
+    {
+      "id": "5f38UWziNmvOjdMHvwxsL9",
+      "name": "D-I-V-O-R-C-E",
+      "artists": [
+        "Tammy Wynette"
+      ],
+      "album": "Tammy's Greatest Hits",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b2738f2ecca123135b7a0cb24e46",
+      "durationMs": 175253
+    },
+    {
+      "id": "35lvsuK0VXkk5GxcmL3Bdw",
+      "name": "Goodnight, Irene",
+      "artists": [
+        "Ernest Tubb",
+        "Red Foley",
+        "Sunshine Trio"
+      ],
+      "album": "The Very Best Of Ernest Tubb",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b273e41095f98939c3fa8831741f",
+      "durationMs": 180866
+    },
+    {
+      "id": "7Jpclr7tZ6aQXjoKzWXUJV",
+      "name": "Don't It Make My Brown Eyes Blue",
+      "artists": [
+        "Crystal Gayle"
+      ],
+      "album": "We Must Believe In Magic",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b273274feffe2955b9e67b2cb209",
+      "durationMs": 157653
+    },
+    {
+      "id": "6d7Jz2np6jtNaZv1DiWfJs",
+      "name": "Behind Closed Doors",
+      "artists": [
+        "Charlie Rich"
+      ],
+      "album": "Love Songs",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b273b62ff6505da187f5b73b17d0",
+      "durationMs": 174666
+    },
+    {
+      "id": "29TI0GvP5gMQMPTJjdMe0H",
+      "name": "You Never Even Called Me By My Name",
+      "artists": [
+        "David Allan Coe"
+      ],
+      "album": "David Allan Coe - 16 Biggest Hits",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b273243cc5bc1bb1f6ab8002a35c",
+      "durationMs": 314226
+    },
+    {
+      "id": "3CqLvQ9fPOLtLIKb7r5ti6",
+      "name": "Good Hearted Woman",
+      "artists": [
+        "Waylon Jennings",
+        "Willie Nelson"
+      ],
+      "album": "Ultimate Waylon Jennings",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b27386889a813ba3f2eacf2ad71f",
+      "durationMs": 178733
+    },
+    {
+      "id": "57X5xjtkK1Mo9TYAcxgJlx",
+      "name": "I Ain't Never - Single Version",
+      "artists": [
+        "Webb Pierce"
+      ],
+      "album": "20th Century Masters: The Millennium Collection: Best Of Webb Pierce",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b2734d1542ba6653ffd5cc46fe1a",
+      "durationMs": 113640
+    },
+    {
+      "id": "7MqkjX5YCXhazcaAlHvPmJ",
+      "name": "Honeycomb",
+      "artists": [
+        "Jimmie Rodgers"
+      ],
+      "album": "The Best Of Jimmie Rodgers",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b273b1a29812459c2d7da0463530",
+      "durationMs": 137106
+    },
+    {
+      "id": "1YaPhbIo2oKWT5ejlMEL5Z",
+      "name": "Fist City",
+      "artists": [
+        "Loretta Lynn"
+      ],
+      "album": "Fist City",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b273e0e88db51b41a906c9ee084b",
+      "durationMs": 133933
+    },
+    {
+      "id": "5bA26v8eeZrbHJpD4YPKAX",
+      "name": "Abilene",
+      "artists": [
+        "George Hamilton IV"
+      ],
+      "album": "Abilene",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b2734dc8a0c08d663a8664e051d1",
+      "durationMs": 133333
+    },
+    {
+      "id": "3Iy8UTb7n8QpYcQK23ZjG9",
+      "name": "A White Sport Coat (with Ray Conniff)",
+      "artists": [
+        "Marty Robbins",
+        "Ray Conniff"
+      ],
+      "album": "The Essential Marty Robbins 1951-1982",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b2737e5240d0a0d470ab2f8c13ed",
+      "durationMs": 148600
+    },
+    {
+      "id": "1xVOttVNT27FBTD8iHjOfU",
+      "name": "It's Only Make Believe",
+      "artists": [
+        "Conway Twitty"
+      ],
+      "album": "Conway Twitty Sings",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b27300bc11e4af98a74a21c18aaf",
+      "durationMs": 132026
+    },
+    {
+      "id": "2R6F4KMboA1iO3GE1f7Z5o",
+      "name": "I've Got a Tiger By the Tail",
+      "artists": [
+        "Buck Owens"
+      ],
+      "album": "I've Got a Tiger By the Tail",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b2734e07c2a836b27f02a0f7f4ee",
+      "durationMs": 133120
+    },
+    {
+      "id": "1q0wCfrE9eGFMzS2g8aVnx",
+      "name": "He Stopped Loving Her Today",
+      "artists": [
+        "George Jones"
+      ],
+      "album": "I Am What I Am (Expanded Edition)",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b27370baa048c4fdcc6c8152f399",
+      "durationMs": 195760
+    },
+    {
+      "id": "6zFsz86nAj5gcvzyVqNL3k",
+      "name": "I Fall To Pieces - Single Version",
+      "artists": [
+        "Patsy Cline",
+        "The Jordanaires"
+      ],
+      "album": "Showcase",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b2736fda96b0954b958ee44c8efc",
+      "durationMs": 171333
+    },
+    {
+      "id": "7e4jSwxQw6w4qHc9WmAh7c",
+      "name": "Okie From Muskogee",
+      "artists": [
+        "Merle Haggard"
+      ],
+      "album": "Down Every Road 1962-1994",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b2735b0e7f4396a021ace28ee393",
+      "durationMs": 164106
+    },
+    {
+      "id": "7eR2Kgh4bCmelLG1rakYFO",
+      "name": "Coal Miner's Daughter (Featuring Loretta Lynn, Sheryl Crow and Miranda Lambert)",
+      "artists": [
+        "Loretta Lynn",
+        "Sheryl Crow",
+        "Miranda Lambert"
+      ],
+      "album": "Coal Miner's Daughter: A Tribute To Loretta Lynn",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b273170d97ce06636330313848a6",
+      "durationMs": 191333
+    },
+    {
+      "id": "2YhYp9UrFqdSUvrUiXvDrV",
+      "name": "Ballad Of Forty Dollars",
+      "artists": [
+        "Tom T. Hall"
+      ],
+      "album": "Tom T. Hall's Greatest Hits",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b273c5241d193269a177425ebcb9",
+      "durationMs": 185666
+    },
+    {
+      "id": "0sJchoPZwC2MV8WzZRoZUk",
+      "name": "The Last Thing On My Mind",
+      "artists": [
+        "Porter Wagoner",
+        "Dolly Parton"
+      ],
+      "album": "The Essential Porter Wagoner & Dolly Parton",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b27393c07b1304e2d60aeb06f1aa",
+      "durationMs": 156160
+    },
+    {
+      "id": "42mWEvGlwKGhVQs8XkvQKP",
+      "name": "She Thinks I Still Care",
+      "artists": [
+        "George Jones"
+      ],
+      "album": "The New Favorites Of George Jones",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b27379d3c44956d209a80fa2380c",
+      "durationMs": 154800
+    },
+    {
+      "id": "73xcnqBwjnGwAlrfBomLP3",
+      "name": "Every Which Way but Loose - 2009 Remaster",
+      "artists": [
+        "Eddie Rabbitt"
+      ],
+      "album": "Number One Hits",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b2734eaed5bf854ec6cb5d78b26b",
+      "durationMs": 171653
+    },
+    {
+      "id": "1PpbrbgsXRXeKw1GnZMEv7",
+      "name": "I Believe In You",
+      "artists": [
+        "Don Williams"
+      ],
+      "album": "I Believe In You",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b273ccb29d3f5fbed7ff9c76e6cd",
+      "durationMs": 246440
+    },
+    {
+      "id": "62ZRHYSOIT9WeZnz18kTHS",
+      "name": "Guitar Town",
+      "artists": [
+        "Steve Earle"
+      ],
+      "album": "Guitar Town",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b2735ff72df9c47887e1fbfe992b",
+      "durationMs": 155266
+    },
+    {
+      "id": "5YwgJ6lpZ3SiAQwBEpjqey",
+      "name": "Rose Garden",
+      "artists": [
+        "Lynn Anderson"
+      ],
+      "album": "Rose Garden",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b273c88a398a82acc86bb938ebda",
+      "durationMs": 175866
+    },
+    {
+      "id": "4vcHOxfV846dVjyToPFBRp",
+      "name": "Singing the Blues",
+      "artists": [
+        "Marty Robbins"
+      ],
+      "album": "The Essential Marty Robbins 1951-1982",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b2737e5240d0a0d470ab2f8c13ed",
+      "durationMs": 145640
+    },
+    {
+      "id": "02sENi9ULQ36x9mKo5B7XW",
+      "name": "Louisiana Woman, Mississippi Man",
+      "artists": [
+        "Conway Twitty",
+        "Loretta Lynn"
+      ],
+      "album": "Louisiana Woman, Mississippi Man",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b27313b06de2ebe90916265a105b",
+      "durationMs": 151731
+    },
+    {
+      "id": "0cThXovxrvU68JuzYUXhJT",
+      "name": "Tulsa Time",
+      "artists": [
+        "Don Williams"
+      ],
+      "album": "Expressions",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b273dc818eefac30b87902131b72",
+      "durationMs": 195346
+    },
+    {
+      "id": "4XbxeoBeQnwpsyJyZEMoWc",
+      "name": "Take This Job and Shove It",
+      "artists": [
+        "Johnny Paycheck"
+      ],
+      "album": "Super Hits",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b273048cb5506c49eab53043f081",
+      "durationMs": 156293
+    },
+    {
+      "id": "15ADURMdkO25JGD5mIcodM",
+      "name": "Lucille",
+      "artists": [
+        "Kenny Rogers"
+      ],
+      "album": "Kenny Rogers",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b273c478c6674ce0b3219e8e3e7e",
+      "durationMs": 220866
+    },
+    {
+      "id": "7ow0KcdNRitEedvwQNTd6S",
+      "name": "Young Love",
+      "artists": [
+        "Sonny James"
+      ],
+      "album": "Capitol Collectors Series",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b273a17f91b1df7e8a3c3bc90937",
+      "durationMs": 152200
+    },
+    {
+      "id": "4EogB3ZPP598C0Ziq53jMs",
+      "name": "Blue Suede Shoes",
+      "artists": [
+        "Carl Perkins"
+      ],
+      "album": "The Dance Album",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b2739347034c32dfb749455ca900",
+      "durationMs": 134445
+    },
+    {
+      "id": "4dim8F8t01qimHOmr6S3Gd",
+      "name": "Hello Walls",
+      "artists": [
+        "Faron Young"
+      ],
+      "album": "The Complete Capitol Hits Of Faron Young",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b27331ad98dc9bfa9bed6bda112a",
+      "durationMs": 146840
+    },
+    {
+      "id": "5KMWwtJv3Ll2ROZfMerQs0",
+      "name": "Same Old Train",
+      "artists": [
+        "Marty Stuart",
+        "Earl Scruggs",
+        "Clint Black",
+        "Joe Diffie",
+        "Merle Haggard",
+        "Emmylou Harris",
+        "Alison Krauss",
+        "Patty Loveless",
+        "Ricky Skaggs",
+        "Pam Tillis",
+        "Randy Travis",
+        "Travis Tritt",
+        "Dwight Yoakam"
+      ],
+      "album": "Tribute To Tradition",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b2739e5b53323cb9277708d0a446",
+      "durationMs": 361093
+    },
+    {
+      "id": "7k1Xm1wy00hCKJDYJL5p1n",
+      "name": "All My Ex's Live In Texas",
+      "artists": [
+        "George Strait"
+      ],
+      "album": "George Strait's Greatest Hits, Volume Two",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b273a0f423462a8668c76fe2d571",
+      "durationMs": 200826
+    },
+    {
+      "id": "1ipcb9qXpSHWhSUvdxJhsx",
+      "name": "Forever and Ever, Amen",
+      "artists": [
+        "Randy Travis"
+      ],
+      "album": "Always & Forever",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b273723376f081b369b02795a7fb",
+      "durationMs": 212640
+    },
+    {
+      "id": "0aJHZYjwbfTmeyUWF7zGxI",
+      "name": "'Til I Can Make It on My Own",
+      "artists": [
+        "Tammy Wynette"
+      ],
+      "album": "The Essential Tammy Wynette",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b273a5af746af7612830be7e29bd",
+      "durationMs": 182080
+    },
+    {
+      "id": "41jCeKeeVTxxDli1XdCPnx",
+      "name": "You Ain't Woman Enough - Single Version",
+      "artists": [
+        "Loretta Lynn"
+      ],
+      "album": "The Definitive Collection",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b27305d5e9443603589ac9230162",
+      "durationMs": 132320
+    },
+    {
+      "id": "446eGf6Afa6PuZYTsF19U1",
+      "name": "I'm Movin' On",
+      "artists": [
+        "Hank Snow, The Singing Ranger, And His Rainbow Ranch Boys"
+      ],
+      "album": "Super Hits",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b273ee00d9d467fd5a45808c062b",
+      "durationMs": 167920
+    },
+    {
+      "id": "2cD3pqgT9Yn4GUcGflMYdk",
+      "name": "Love Is Alive",
+      "artists": [
+        "The Judds"
+      ],
+      "album": "Why Not Me",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b273501fb9db222be904c7c1188c",
+      "durationMs": 236973
+    },
+    {
+      "id": "3HynxUWKnm7rtzjVkyXoHu",
+      "name": "Gotta Travel On",
+      "artists": [
+        "Billy Grammer"
+      ],
+      "album": "Gotta Travel On: The Very Best Of Billy Grammar",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b273adec3a8ad2693429d9be08c9",
+      "durationMs": 150493
+    },
+    {
+      "id": "0mSywazXcVFQZRk2Gg9ImX",
+      "name": "I Don't Wanna Play House",
+      "artists": [
+        "Tammy Wynette"
+      ],
+      "album": "Tammy's Greatest Hits",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b2738f2ecca123135b7a0cb24e46",
+      "durationMs": 154626
+    },
+    {
+      "id": "0lgckCZ94ZjtCBpjfRL5Su",
+      "name": "Blue, Blue Day",
+      "artists": [
+        "Don Gibson"
+      ],
+      "album": "The Essential Don Gibson",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b27327e46d71dc655ea26112baa8",
+      "durationMs": 113240
+    },
+    {
+      "id": "0dc0eU5THc1uE0Q0KV73XN",
+      "name": "Please Help Me, I'm Falling",
+      "artists": [
+        "Hank Locklin"
+      ],
+      "album": "RCA Country Legends",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b27351626ff4836e45a4dafa5cda",
+      "durationMs": 141466
+    },
+    {
+      "id": "3kDSSR6noFrYJBxijqEVm3",
+      "name": "The Streets of Baltimore",
+      "artists": [
+        "Bobby Bare"
+      ],
+      "album": "Streets of Baltimore",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b2737382902eb734966598a99b05",
+      "durationMs": 160398
+    },
+    {
+      "id": "5NFZTWVwhc1NmPSqgiLZOq",
+      "name": "Under Your Spell Again",
+      "artists": [
+        "Buck Owens"
+      ],
+      "album": "Buck Owens Country Legends",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b273be40432ed005dbf3ff52c85a",
+      "durationMs": 159570
+    },
+    {
+      "id": "2Krnm3qWdy4VG5vTkT0cDn",
+      "name": "Almost Persuaded",
+      "artists": [
+        "David Houston"
+      ],
+      "album": "Almost Persuaded",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b27322bd868e9ca5e2481bc7ad21",
+      "durationMs": 179847
+    },
+    {
+      "id": "1guPCVBMmglx2m1DM0xOBu",
+      "name": "Once a Day",
+      "artists": [
+        "Connie Smith"
+      ],
+      "album": "Connie Smith",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b2730e50662321fd9e10f6706623",
+      "durationMs": 140120
+    },
+    {
+      "id": "0LATteOxdYq4vXTNZ97r77",
+      "name": "Guitars, Cadillacs",
+      "artists": [
+        "Dwight Yoakam"
+      ],
+      "album": "Guitars, Cadillacs, Etc., Etc.",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b27386cf7e1d553e1a5984831133",
+      "durationMs": 185239
+    },
+    {
+      "id": "6BjA6FWovt4T2T5ZIW1XJQ",
+      "name": "Leaving Louisiana In The Broad Daylight",
+      "artists": [
+        "The Oak Ridge Boys"
+      ],
+      "album": "The Oak Ridge Boys Have Arrived",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b27326d5dfb086ec10f61419c621",
+      "durationMs": 179533
+    },
+    {
+      "id": "0J6dezPhTa0ePaN87kphCs",
+      "name": "What's Your Mama's Name Child",
+      "artists": [
+        "Tanya Tucker"
+      ],
+      "album": "Tanya Tucker / Super Hits",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b2739a56895642f5871b46d2517a",
+      "durationMs": 182493
+    },
+    {
+      "id": "50PU05RTGva8laKDwxED9Y",
+      "name": "Louisiana Saturday Night",
+      "artists": [
+        "Mel McDaniel"
+      ],
+      "album": "I'm Countryfied",
+      "imageUrl": "https://i.scdn.co/image/ab67616d0000b273ba39c0f3ea158d2210eb7dce",
+      "durationMs": 144186
+    }
+  ]
+}

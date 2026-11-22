@@ -7,9 +7,9 @@ interface GameHeaderProps {
 }
 
 function dotState(round: Round, index: number, roundIndex: number) {
-  if (round.outcome === 'correct') return 'correct'
-  if (round.outcome === 'gaveUp') return 'missed'
-  return index === roundIndex ? 'current' : 'upcoming'
+  if (round.outcome === null) return index === roundIndex ? 'current' : 'upcoming'
+  if (round.outcome === 'complete') return 'correct'
+  return round.points > 0 ? 'partial' : 'missed'
 }
 
 export function GameHeader({ rounds, roundIndex, score }: GameHeaderProps) {

@@ -8,7 +8,7 @@ import { RoundView } from './components/RoundView'
 import { ScoreSubmission } from './components/ScoreSubmission'
 import { playlistOptions } from './data/playlists'
 import { ROUNDS_PER_GAME, currentRound, gameReducer, initialGameState, maxScore, startGame } from './game/game'
-import { MAX_POINTS } from './game/scoring'
+import { ARTIST_POINTS, MAX_POINTS, TITLE_POINTS } from './game/scoring'
 import { leaderboardClient, type GameTicket, type LeaderboardClient } from './leaderboard/client'
 import { useLeaderboard } from './leaderboard/useLeaderboard'
 import type { PlaylistOption, Track } from './lib/playlist'
@@ -122,8 +122,8 @@ function App({ playlists = playlistOptions, loadSpotifyApi, leaderboard = leader
               Name that tune.
             </h1>
             <p className="home-lede">
-              Hear a clip, type the title. {ROUNDS_PER_GAME} songs, up to {MAX_POINTS} points each. Hints help, but
-              they cost you.
+              Hear a clip, then name the artist ({ARTIST_POINTS} points) and the song ({TITLE_POINTS} point).{' '}
+              {ROUNDS_PER_GAME} songs, up to {MAX_POINTS * ROUNDS_PER_GAME} points.
             </p>
             {available.length === 0 ? (
               <p className="card notice" role="status">
@@ -155,9 +155,8 @@ function App({ playlists = playlistOptions, loadSpotifyApi, leaderboard = leader
                 key={state.roundIndex}
                 round={round}
                 player={player}
-                onGuess={(text) => dispatch({ type: 'guess', text })}
-                onHint={() => dispatch({ type: 'hint' })}
-                onGiveUp={() => dispatch({ type: 'giveUp' })}
+                onGuess={(guess) => dispatch({ type: 'guess', ...guess })}
+                onReveal={() => dispatch({ type: 'reveal' })}
               />
             ) : (
               <RevealView round={round} isLastRound={state.roundIndex === state.rounds.length - 1} onNext={next} />

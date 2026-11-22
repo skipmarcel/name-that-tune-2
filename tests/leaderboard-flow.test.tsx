@@ -52,6 +52,7 @@ describe('shared leaderboard', () => {
     await within(home).findByText('No scores yet. Be the first.')
 
     await user.click(screen.getByRole('button', { name: 'Start' }))
+    await user.type(screen.getByLabelText('Artist'), 'the jesus and mary chain')
     await user.type(screen.getByLabelText('Song title'), 'just like honey{Enter}')
     server.advance(30_000)
     await user.click(screen.getByRole('button', { name: 'See results' }))
@@ -74,7 +75,7 @@ describe('shared leaderboard', () => {
     const { user } = await renderApp(playlists)
 
     await user.click(screen.getByRole('button', { name: 'Start' }))
-    await user.click(screen.getByRole('button', { name: 'Give up' }))
+    await user.click(screen.getByRole('button', { name: 'Reveal answer' }))
     await user.click(screen.getByRole('button', { name: 'See results' })) // no time has passed
     await user.type(screen.getByLabelText('Add your score to the leaderboard'), 'Speedy')
     await user.click(screen.getByRole('button', { name: 'Submit' }))

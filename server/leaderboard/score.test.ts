@@ -3,20 +3,18 @@ import { parseRounds, scoreRounds } from './score.js'
 
 describe('parseRounds', () => {
   it('accepts well-formed rounds', () => {
-    expect(parseRounds([{ guess: 'mars', hintsUsed: 1 }, { guess: null, hintsUsed: 0 }], 2)).toEqual([
-      { guess: 'mars', hintsUsed: 1 },
-      { guess: null, hintsUsed: 0 },
+    expect(parseRounds([{ artist: 'nick cave', title: 'mars' }, { artist: null, title: null }], 2)).toEqual([
+      { artist: 'nick cave', title: 'mars' },
+      { artist: null, title: null },
     ])
   })
 
   it.each([
     ['not an array', 'nope', 1],
-    ['wrong count', [{ guess: null, hintsUsed: 0 }], 2],
-    ['negative hints', [{ guess: 'x', hintsUsed: -1 }], 1],
-    ['too many hints', [{ guess: 'x', hintsUsed: 4 }], 1],
-    ['fractional hints', [{ guess: 'x', hintsUsed: 1.5 }], 1],
-    ['non-string guess', [{ guess: 42, hintsUsed: 0 }], 1],
-    ['huge guess', [{ guess: 'x'.repeat(201), hintsUsed: 0 }], 1],
+    ['wrong count', [{ artist: null, title: null }], 2],
+    ['missing fields', [{}], 1],
+    ['non-string guess', [{ artist: 42, title: null }], 1],
+    ['huge guess', [{ artist: null, title: 'x'.repeat(201) }], 1],
     ['null round', [null], 1],
   ])('rejects %s', (_label, value, count) => {
     expect(parseRounds(value, count)).toBeNull()
@@ -24,19 +22,27 @@ describe('parseRounds', () => {
 })
 
 describe('scoreRounds', () => {
-  const titles = ['Just Like Honey', 'Mars', 'The Big Ship - 2004 Remaster']
+  const tracks = [
+    { name: 'Just Like Honey', artists: ['The Jesus and Mary Chain'] },
+    { name: 'Mars', artists: ['Nick Cave', 'Warren Ellis'] },
+    { name: 'The Big Ship - 2004 Remaster', artists: ['Brian Eno'] },
+  ]
 
-  it('scores rounds by re-checking each guess against the real title', () => {
+  it('re-checks each guess: artist 2 points, title 1', () => {
     expect(
-      scoreRounds(titles, [
-        { guess: 'just like hony', hintsUsed: 0 }, // 3
-        { guess: 'mars', hintsUsed: 2 }, // 1
-        { guess: null, hintsUsed: 3 }, // gave up
+      scoreRounds(tracks, [
+        { artist: 'jesus and mary chain', title: 'just like hony' }, // 3
+        { artist: 'warren ellis', title: null }, // 2
+        { artist: null, title: 'the big ship' }, // 1
       ]),
-    ).toEqual({ score: 4, maxScore: 9, correct: 2 })
+    ).toEqual({ score: 6, maxScore: 9, correct: 1 })
   })
 
-  it('gives nothing for a guess that does not match, whatever the client claims', () => {
-    expect(scoreRounds(['Mars'], [{ guess: 'Venus', hintsUsed: 0 }])).toEqual({ score: 0, maxScore: 3, correct: 0 })
+  it('gives nothing for guesses that do not match, whatever the client claims', () => {
+    expect(scoreRounds([tracks[1]], [{ artist: 'Venus', title: 'Jupiter' }])).toEqual({
+      score: 0,
+      maxScore: 3,
+      correct: 0,
+    })
   })
 })

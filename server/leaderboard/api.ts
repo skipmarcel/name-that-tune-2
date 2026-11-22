@@ -4,7 +4,7 @@
  *
  *   POST /api/games         { playlistId }                 → { ticket, trackIds }
  *   GET  /api/leaderboard?playlist=<id>                    → { entries }
- *   POST /api/leaderboard   { ticket, name, rounds }       → { rank, entry, entries }
+ *   POST /api/leaderboard   { ticket, name, rounds: [{ artist, title }] } → { rank, entry, entries }
  */
 import { startGame } from '../../src/game/game.js'
 import type { Track } from '../../src/lib/playlist.js'
@@ -109,9 +109,9 @@ export function createLeaderboardApi({
     const ticket = typeof body.ticket === 'string' ? decodeTicket(body.ticket, secret) : null
     if (!ticket) return error(400, 'Invalid game ticket')
 
-    const tracks = getTracks(ticket.playlistId)
-    const titles = ticket.trackIds.map((id) => tracks?.find((t) => t.id === id)?.name)
-    if (!tracks || titles.some((t) => t === undefined)) {
+    const playlistTracks = getTracks(ticket.playlistId)
+    const tracks = ticket.trackIds.map((id) => playlistTracks?.find((t) => t.id === id))
+    if (tracks.some((t) => t === undefined)) {
       return error(409, 'This playlist has changed since the game started')
     }
 
@@ -130,7 +130,7 @@ export function createLeaderboardApi({
       return error(409, 'This game has already been submitted')
     }
 
-    const { score, maxScore, correct } = scoreRounds(titles as string[], rounds)
+    const { score, maxScore, correct } = scoreRounds(tracks as Track[], rounds)
     const entry: LeaderboardEntry = {
       id: ticket.id,
       playlistId: ticket.playlistId,

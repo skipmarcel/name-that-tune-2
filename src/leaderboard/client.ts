@@ -15,8 +15,10 @@ export interface GameTicket {
 }
 
 export interface SubmittedRound {
-  guess: string | null
-  hintsUsed: number
+  /** The accepted artist guess, or null if the artist wasn't named. */
+  artist: string | null
+  /** The accepted title guess, or null if the title wasn't named. */
+  title: string | null
 }
 
 export interface Submission {

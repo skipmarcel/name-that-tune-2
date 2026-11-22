@@ -65,7 +65,7 @@ export function ScoreSubmission({ client, ticket, rounds, playlistTitle }: Score
       const result = await client.submitScore({
         ticket,
         name: name.trim(),
-        rounds: rounds.map((r) => ({ guess: r.winningGuess, hintsUsed: r.hintsUsed })),
+        rounds: rounds.map((r) => ({ artist: r.artistGuess, title: r.titleGuess })),
       })
       rememberName(name.trim())
       setState({ status: 'done', result })

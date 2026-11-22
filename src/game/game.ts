@@ -1,16 +1,16 @@
 /**
  * Game state as a pure reducer, ready for React's `useReducer`.
  *
- *   ready ──start──▶ guessing ──correct guess / give up──▶ revealed ──next──▶ guessing …
+ *   ready ──start──▶ guessing ──artist and title named / reveal──▶ revealed ──next──▶ guessing …
  *                                                              └──next (last round)──▶ finished
  *
  * Randomness stays outside the reducer: `startGame` picks the tracks and
  * passes them in the `start` action, so the reducer is deterministic.
  */
 import type { Track } from '../lib/playlist.js'
-import { displayTitle, isCorrectGuess, songKey } from './match.js'
+import { displayTitle, isCorrectArtist, isCorrectGuess, songKey } from './match.js'
 import { pickRandom } from './pick.js'
-import { HINTS, MAX_POINTS, pointsFor } from './scoring.js'
+import { MAX_POINTS, roundPoints } from './scoring.js'
 
 export const ROUNDS_PER_GAME = 10
 
@@ -18,13 +18,14 @@ export type Phase = 'ready' | 'guessing' | 'revealed' | 'finished'
 
 export interface Round {
   track: Track
-  hintsUsed: number
-  /** Wrong guesses so far, newest last. */
-  wrongGuesses: string[]
-  /** How the round ended; null while it's still being played. */
-  outcome: 'correct' | 'gaveUp' | null
-  /** The guess that was accepted, sent to the server for scoring. */
-  winningGuess: string | null
+  /** The guesses that were accepted, sent to the server for scoring. */
+  artistGuess: string | null
+  titleGuess: string | null
+  /** Most recent wrong guesses, shown as feedback; cleared once that part is right. */
+  wrongArtist: string | null
+  wrongTitle: string | null
+  /** How the round ended: both named, or the player revealed the answer. */
+  outcome: 'complete' | 'revealed' | null
   points: number
 }
 
@@ -37,9 +38,10 @@ export interface GameState {
 
 export type GameAction =
   | { type: 'start'; tracks: Track[] }
-  | { type: 'hint' }
-  | { type: 'guess'; text: string }
-  | { type: 'giveUp' }
+  /** Checks whichever fields are filled in; parts already named are ignored. */
+  | { type: 'guess'; artist?: string; title?: string }
+  /** Ends the round and shows the answer, keeping any points already earned. */
+  | { type: 'reveal' }
   | { type: 'next' }
   | { type: 'reset' }
 
@@ -91,32 +93,48 @@ export function gameReducer(state: GameState, action: GameAction): GameState {
     case 'start': {
       if (action.tracks.length === 0) return state
       const rounds = action.tracks.map(
-        (track): Round => ({ track, hintsUsed: 0, wrongGuesses: [], outcome: null, winningGuess: null, points: 0 }),
+        (track): Round => ({
+          track,
+          artistGuess: null,
+          titleGuess: null,
+          wrongArtist: null,
+          wrongTitle: null,
+          outcome: null,
+          points: 0,
+        }),
       )
       return { phase: 'guessing', rounds, roundIndex: 0, score: 0 }
     }
 
-    case 'hint':
-      if (state.phase !== 'guessing' || !round || round.hintsUsed >= HINTS.length) return state
-      return updateCurrentRound(state, { hintsUsed: round.hintsUsed + 1 })
-
     case 'guess': {
-      const text = action.text.trim()
-      if (state.phase !== 'guessing' || !round || !text) return state
-      if (!isCorrectGuess(text, round.track.name)) {
-        return updateCurrentRound(state, { wrongGuesses: [...round.wrongGuesses, text] })
+      if (state.phase !== 'guessing' || !round) return state
+      const artist = round.artistGuess === null ? action.artist?.trim() : undefined
+      const title = round.titleGuess === null ? action.title?.trim() : undefined
+      if (!artist && !title) return state
+
+      const changes: Partial<Round> = {}
+      if (artist) {
+        if (isCorrectArtist(artist, round.track.artists)) Object.assign(changes, { artistGuess: artist, wrongArtist: null })
+        else changes.wrongArtist = artist
       }
-      const points = pointsFor(round.hintsUsed)
+      if (title) {
+        if (isCorrectGuess(title, round.track.name)) Object.assign(changes, { titleGuess: title, wrongTitle: null })
+        else changes.wrongTitle = title
+      }
+
+      const updated = { ...round, ...changes }
+      const points = roundPoints({ artist: updated.artistGuess !== null, title: updated.titleGuess !== null })
+      const complete = updated.artistGuess !== null && updated.titleGuess !== null
       return {
-        ...updateCurrentRound(state, { outcome: 'correct', winningGuess: text, points }),
-        phase: 'revealed',
-        score: state.score + points,
+        ...updateCurrentRound(state, { ...changes, points, outcome: complete ? 'complete' : null }),
+        phase: complete ? 'revealed' : 'guessing',
+        score: state.score - round.points + points,
       }
     }
 
-    case 'giveUp':
+    case 'reveal':
       if (state.phase !== 'guessing' || !round) return state
-      return { ...updateCurrentRound(state, { outcome: 'gaveUp', points: 0 }), phase: 'revealed' }
+      return { ...updateCurrentRound(state, { outcome: 'revealed' }), phase: 'revealed' }
 
     case 'next':
       if (state.phase !== 'revealed') return state

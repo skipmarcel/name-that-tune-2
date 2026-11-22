@@ -6,11 +6,11 @@ import { createTicket, encodeTicket } from './ticket.js'
 
 const SECRET = 'secret'
 
-function track(id: string, name: string): Track {
-  return { id, name, artists: ['Artist'], album: 'Album', imageUrl: null, durationMs: 1000 }
+function track(id: string, name: string, artist: string): Track {
+  return { id, name, artists: [artist], album: 'Album', imageUrl: null, durationMs: 1000 }
 }
 
-const playlist = Array.from({ length: 12 }, (_, i) => track(`t${i}`, `Song Number ${i}`))
+const playlist = Array.from({ length: 12 }, (_, i) => track(`t${i}`, `Song Number ${i}`, `Band Number ${i}`))
 
 function setup() {
   let now = 1_000_000
@@ -43,16 +43,18 @@ interface ApiBody {
 
 const readBody = async (res: Response) => (await res.json()) as ApiBody
 
-const titleOf = (id: string) => playlist.find((t) => t.id === id)!.name
+const trackOf = (id: string) => playlist.find((t) => t.id === id)!
 
 async function startGame(call: ReturnType<typeof setup>['call']) {
   const res = await call('POST', '/api/games', { playlistId: 'p' })
   return (await res.json()) as { ticket: string; trackIds: string[] }
 }
 
-/** Correct guesses for the first `correct` rounds, give-ups after. */
-function rounds(trackIds: string[], correct: number, hintsUsed = 0) {
-  return trackIds.map((id, i) => ({ guess: i < correct ? titleOf(id) : null, hintsUsed }))
+/** Artist and title right for the first `correct` rounds, nothing after. */
+function rounds(trackIds: string[], correct: number): { artist: string | null; title: string | null }[] {
+  return trackIds.map((id, i) =>
+    i < correct ? { artist: trackOf(id).artists[0], title: trackOf(id).name } : { artist: null, title: null },
+  )
 }
 
 describe('POST /api/games', () => {
@@ -78,11 +80,13 @@ describe('POST /api/leaderboard', () => {
     const { ticket, trackIds } = await startGame(call)
     advance(60_000)
 
-    const res = await call('POST', '/api/leaderboard', { ticket, name: ' Tyler ', rounds: rounds(trackIds, 4, 1) })
+    const submitted = rounds(trackIds, 4)
+    submitted[4] = { artist: trackOf(trackIds[4]).artists[0], title: null } // artist only: 2 points
+    const res = await call('POST', '/api/leaderboard', { ticket, name: ' Tyler ', rounds: submitted })
     expect(res.status).toBe(201)
     const body = await readBody(res)
     expect(body.rank).toBe(1)
-    expect(body.entry).toMatchObject({ name: 'Tyler', score: 8, maxScore: 30, correct: 4 })
+    expect(body.entry).toMatchObject({ name: 'Tyler', score: 14, maxScore: 30, correct: 4 })
     expect(body.entry).not.toHaveProperty('playlistId')
 
     const board = await readBody(await call('GET', '/api/leaderboard?playlist=p'))
@@ -93,7 +97,7 @@ describe('POST /api/leaderboard', () => {
     const { call, advance } = setup()
     const { ticket, trackIds } = await startGame(call)
     advance(60_000)
-    const fake = trackIds.map(() => ({ guess: 'I definitely got this', hintsUsed: 0 }))
+    const fake = trackIds.map(() => ({ artist: 'Somebody', title: 'I definitely got this' }))
     const body = await readBody(await call('POST', '/api/leaderboard', { ticket, name: 'Cheater', rounds: fake }))
     expect(body.entry.score).toBe(0)
   })
@@ -140,7 +144,7 @@ describe('POST /api/leaderboard', () => {
     const { call, advance } = setup()
     const stale = encodeTicket(createTicket('p', ['gone', ...playlist.slice(0, 9).map((t) => t.id)], 1_000_000), SECRET)
     advance(60_000)
-    const res = await call('POST', '/api/leaderboard', { ticket: stale, name: 'A', rounds: Array(10).fill({ guess: null, hintsUsed: 0 }) })
+    const res = await call('POST', '/api/leaderboard', { ticket: stale, name: 'A', rounds: Array(10).fill({ artist: null, title: null }) })
     expect(res.status).toBe(409)
   })
 

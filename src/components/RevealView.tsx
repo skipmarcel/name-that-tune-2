@@ -11,19 +11,20 @@ function pointsLabel(points: number) {
 }
 
 export function RevealView({ round, isLastRound, onNext }: RevealViewProps) {
-  const { track, outcome, points } = round
-  const correct = outcome === 'correct'
+  const { track, outcome, points, artistGuess, titleGuess } = round
+  const complete = outcome === 'complete'
+
+  let banner: string
+  if (complete) banner = `Nailed it! +${pointsLabel(points)}`
+  else if (artistGuess !== null) banner = `You got the artist: +${pointsLabel(points)}`
+  else if (titleGuess !== null) banner = `You got the title: +${pointsLabel(points)}`
+  else banner = 'The answer was'
 
   return (
-    <section className={`card reveal ${correct ? 'is-correct' : 'is-missed'}`} aria-label="Answer">
+    <section className={`card reveal ${points > 0 ? 'is-correct' : 'is-missed'}`} aria-label="Answer">
       <p className="reveal-banner" role="status">
-        {correct ? (
-          <>
-            <span aria-hidden="true">✓ </span>Correct! +{pointsLabel(points)}
-          </>
-        ) : (
-          'The answer was'
-        )}
+        {complete && <span aria-hidden="true">✓ </span>}
+        {banner}
       </p>
       <div className="reveal-track">
         {track.imageUrl && <img className="reveal-cover" src={track.imageUrl} alt="" />}

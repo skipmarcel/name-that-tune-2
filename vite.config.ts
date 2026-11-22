@@ -16,6 +16,9 @@ export default defineConfig(({ mode }) => {
       globals: true,
       setupFiles: ['./src/test/setup.ts'],
       css: false,
+      // UI tests type into inputs keystroke by keystroke; they take 1–3s alone
+      // but can pass the 5s default when every test file runs in parallel.
+      testTimeout: 15_000,
     },
   }
 })

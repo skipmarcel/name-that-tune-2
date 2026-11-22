@@ -22,6 +22,8 @@
   --radius-sm: 10px;
   --font: ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
   --font-mono: ui-monospace, 'SF Mono', Menlo, Consolas, monospace;
+  /* Titles: Quicksand (open source, bundled with the app). */
+  --font-display: 'Quicksand Variable', var(--font);
 }
 
 /* ---------- Base ---------- */
@@ -967,4 +969,24 @@ button:disabled {
 .home .leaderboard-title,
 .home .leaderboard-note {
   text-align: center;
+}
+
+/* ---------- Titles in Quicksand ---------- */
+
+.home-title,
+.brand,
+.round-heading,
+.reveal-title,
+.results-score,
+.leaderboard-title {
+  font-family: var(--font-display);
+  font-weight: 700; /* Quicksand's boldest */
+}
+
+.home-title {
+  letter-spacing: -0.02em;
+}
+
+.results-score {
+  letter-spacing: -0.02em;
 }

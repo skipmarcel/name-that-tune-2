@@ -34,6 +34,7 @@ A perfect game is 30 points.
 | Build     | [Vite](https://vite.dev)                                                   |
 | Testing   | [Vitest](https://vitest.dev) + [Testing Library](https://testing-library.com) |
 | Linting   | [Oxlint](https://oxc.rs)                                                   |
+| Fonts     | [Quicksand](https://fonts.google.com/specimen/Quicksand) for titles, bundled with [Fontsource](https://fontsource.org) (OFL) |
 | Music API | [Spotify Web API](https://developer.spotify.com/documentation/web-api) + [iFrame API](https://developer.spotify.com/documentation/embeds/references/iframe-api) |
 | Hosting   | [Vercel](https://vercel.com) (static site + two serverless functions)      |
 | Storage   | [Upstash Redis](https://upstash.com) via Vercel's Redis integration        |
